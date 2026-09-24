@@ -1,0 +1,60 @@
+{
+  "name": "Я",
+  "symbol": "Я",
+  "description": "Я — crown twin of ЯBOT / CHANNEL Я. Currency + utility. Clears data-plumbing clogs. Decider-gated (NonNuclear). Clay on-device is source of truth; explorers and aggregators are mirrors only.",
+  "image": "https://rizal.info/ya/crown.png",
+  "external_url": "https://rizal.info",
+  "seller_fee_basis_points": 0,
+  "attributes": [
+    {
+      "trait_type": "mint",
+      "value": "BB9uA5BuacDnWyDf5Gcp9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+      "trait_type": "mint_tx",
+      "value": "2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94"
+    },
+    {
+      "trait_type": "supply",
+      "value": "1000000"
+    },
+    {
+      "trait_type": "decimals",
+      "value": "9"
+    },
+    {
+      "trait_type": "cluster",
+      "value": "mainnet-beta"
+    },
+    {
+      "trait_type": "mint_authority",
+      "value": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+    },
+    {
+      "trait_type": "freeze_authority",
+      "value": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+    },
+    {
+      "trait_type": "metadata_account",
+      "value": "Ci9V7hLbsGJPnrWTN5pvT5H5JPoi6EAiF1b2KVZwr5M9"
+    },
+    {
+      "trait_type": "status",
+      "value": "gate2-uri-WAIT"
+    },
+    {
+      "trait_type": "law",
+      "value": "clay-source-chain-mirror"
+    }
+  ],
+  "properties": {
+    "category": "fungible",
+    "files": [
+      {
+        "uri": "https://rizal.info/ya/crown.png",
+        "type": "image/png"
+      }
+    ]
+  },
+  "_comment_gate2": "PUBLIC Gate-2 candidate host. Do NOT write this URI on-chain until Rizal names the host and says 'send URI'."
+}

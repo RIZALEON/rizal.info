@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1628">
+  <meta name="description" content="rizal.info — open twin mirror for Я">
+  <meta property="og:title" content="rizal.info">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rizal.info/">
+  <meta property="og:image" content="https://rizal.info/park.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="rizal.info">
+  <meta name="twitter:image" content="https://rizal.info/park.jpg">
+  <title>rizal.info</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/favicon.png">
+  <style>
+    html, body { margin: 0; height: 100%; background: #0a1628; overflow: hidden; font-family: system-ui, -apple-system, sans-serif; }
+    .stage { position: fixed; inset: 0; width: 100%; height: 100%; }
+    .stage picture, .stage img {
+      width: 100%; height: 100%; display: block;
+      object-fit: cover; object-position: 18% 45%;
+    }
+    .bar {
+      position: fixed; left: 0; right: 0; bottom: 0;
+      display: flex; flex-wrap: wrap; gap: .55rem 1rem;
+      justify-content: center; align-items: center;
+      padding: .55rem .75rem calc(.55rem + env(safe-area-inset-bottom, 0));
+      background: rgba(8, 12, 20, 0.62);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .bar a {
+      color: rgba(230, 236, 245, 0.88);
+      text-decoration: none;
+      font-size: 12px; font-weight: 650;
+      letter-spacing: .03em;
+    }
+    .bar a:hover, .bar a:focus-visible {
+      color: #f0d060;
+      outline: 1px solid #f0d060;
+      outline-offset: 3px;
+      border-radius: 3px;
+    }
+    .bar .brand {
+      color: rgba(230, 236, 245, 0.45);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: .1em;
+      margin-right: .25rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage" role="img" aria-label="Blue goblin guard before a terraced mountain valley at sunset">
+    <picture>
+      <source type="image/webp" srcset="/park-mobile.webp 780w, /park.webp 1440w" sizes="100vw">
+      <source type="image/jpeg" srcset="/park-mobile.jpg 780w, /park.jpg 1440w" sizes="100vw">
+      <img src="/park.jpg" alt="Blue goblin guard with horned helmet and axe before a terraced mountain valley at sunset" width="1440" height="900" decoding="async" fetchpriority="high">
+    </picture>
+  </div>
+  <nav class="bar" aria-label="Public links">
+    <span class="brand">rizal.info</span>
+    <a href="/open.html">Open data</a>
+    <a href="/.well-known/ya-twin.json">Twin card</a>
+    <a href="/ya/metadata.json">Metadata</a>
+    <a href="https://rizal.pw/">Mind app</a>
+    <a href="https://rizal.pw/trueblast/">TRUEBLAST</a>
+    <a href="https://github.com/rizalward/rizal.info">Source</a>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "crown": "Я",
+  "symbol": "Я",
+  "cluster": "mainnet-beta",
+  "mint": "BB9uA5BuacDnWyDf5Gcp9nMb9yFbyThsNrQPBYJ5Q1Lv",
+  "mint_tx": "2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94",
+  "supply": "1000000",
+  "decimals": 9,
+  "mint_authority": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9",
+  "freeze_authority": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9",
+  "metadata_account": "Ci9V7hLbsGJPnrWTN5pvT5H5JPoi6EAiF1b2KVZwr5M9",
+  "status": {
+    "gate2_metadata_uri": "WAIT",
+    "freeze": "held",
+    "pool": "none",
+    "last_tokenblast_verdict": "peculiar-but-alive",
+    "trueblast": "prepping"
+  },
+  "mirrors": {
+    "solscan": "https://solscan.io/token/BB9uA5BuacDnWyDf5Gcp9nMb9yFbyThsNrQPBYJ5Q1Lv",
+    "explorer": "https://explorer.solana.com/address/BB9uA5BuacDnWyDf5Gcp9nMb9yFbyThsNrQPBYJ5Q1Lv"
+  },
+  "metadata_candidate": "https://rizal.info/ya/metadata.json",
+  "image": "https://rizal.info/ya/crown.png",
+  "trueblast_endpoint": "https://rizal.pw/trueblast/log.json",
+  "law": "clay is source, chain is mirror",
+  "nonnuclear": true,
+  "mind_app": "https://rizal.pw/"
+}

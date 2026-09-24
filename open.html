@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5b2d8e">
+  <meta name="description" content="Open data for Я — mint, authorities, public files, law.">
+  <title>Open data — rizal.info</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --stone: #14110f; --panel: #5b2d8e; --panel-2: #472070; --edge: #7a45b0;
+      --gold: #e8c547; --amber: #f0a830; --text: #f5ecd8; --muted: #b8a88a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, sans-serif; color: var(--text);
+      background: linear-gradient(160deg, var(--stone), #0e0c0a); line-height: 1.5;
+      min-height: 100vh; padding: 1.25rem 1rem 3rem;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 { color: var(--gold); font-size: clamp(1.6rem, 6vw, 2.2rem); margin: 0 0 .35rem; }
+    h2 { color: var(--gold); font-size: 1rem; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 .6rem; }
+    .muted { color: var(--muted); }
+    a { color: var(--gold); }
+    .panel {
+      background: linear-gradient(165deg, var(--panel), var(--panel-2));
+      border: 2px solid var(--edge); border-radius: 16px; padding: 1rem 1.1rem; margin: 1rem 0;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: .9rem; }
+    th, td { text-align: left; padding: .5rem .35rem; border-bottom: 1px solid rgba(255,255,255,.1); vertical-align: top; }
+    th { width: 32%; color: var(--gold); font-size: .75rem; text-transform: uppercase; }
+    .mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .78rem; word-break: break-all; }
+    ul { padding-left: 1.15rem; margin: .4rem 0; }
+    li { margin: .25rem 0; }
+    .law { border-left: 4px solid var(--gold); padding-left: .75rem; color: var(--amber); font-weight: 700; }
+    nav.top { margin-bottom: 1rem; font-size: .9rem; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="top"><a href="/">← rizal.info</a></nav>
+    <h1>Open data</h1>
+    <p class="muted">Everything public about Я on this host. 100% transparent.</p>
+
+    <section class="panel">
+      <h2>Law</h2>
+      <p class="law">Clay on-device is the source of truth. Public chains and explorers are mirrors only. NonNuclear: nothing spends or evolves without the Decider (Rizal) approving.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Live-twin facts</h2>
+      <table>
+        <tr><th scope="row">Crown</th><td>Я (Cyrillic Ya)</td></tr>
+        <tr><th scope="row">Cluster</th><td>Solana mainnet-beta</td></tr>
+        <tr><th scope="row">Mint</th><td class="mono">BB9uA5BuacDnWyDf5Gcp9nMb9yFbyThsNrQPBYJ5Q1Lv<br>
+          <a href="https://solscan.io/token/BB9uA5BuacDnWyDf5Gcp9nMb9yFbyThsNrQPBYJ5Q1Lv" rel="noopener">Solscan</a> ·
+          <a href="https://explorer.solana.com/address/BB9uA5BuacDnWyDf5Gcp9nMb9yFbyThsNrQPBYJ5Q1Lv" rel="noopener">Explorer</a></td></tr>
+        <tr><th scope="row">Mint tx</th><td class="mono">2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94<br>
+          <a href="https://solscan.io/tx/2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94" rel="noopener">Solscan tx</a></td></tr>
+        <tr><th scope="row">Supply</th><td>1,000,000 · decimals 9</td></tr>
+        <tr><th scope="row">Mint + freeze authority</th><td class="mono">BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9<br><span class="muted">freeze: held</span></td></tr>
+        <tr><th scope="row">Metadata account</th><td class="mono">Ci9V7hLbsGJPnrWTN5pvT5H5JPoi6EAiF1b2KVZwr5M9</td></tr>
+        <tr><th scope="row">Liquidity</th><td>No pool</td></tr>
+        <tr><th scope="row">Gate 2 metadata URI</th><td><strong style="color:var(--amber)">WAIT</strong> — candidate file is hosted here; do not write on-chain until Decider names the host and says “send URI”.</td></tr>
+        <tr><th scope="row">Last TOKENBLAST verdict</th><td>peculiar-but-alive (probe-only)</td></tr>
+      </table>
+    </section>
+
+    <section class="panel">
+      <h2>Public files on rizal.info</h2>
+      <ul>
+        <li><a href="/">/</a> — parked image</li>
+        <li><a href="/open.html">/open.html</a> — this page</li>
+        <li><a href="/ya/metadata.json">/ya/metadata.json</a> — Metaplex-style metadata (Gate-2 candidate)</li>
+        <li><a href="/ya/crown.png">/ya/crown.png</a> — crown image</li>
+        <li><a href="/.well-known/ya-twin.json">/.well-known/ya-twin.json</a> — twin card</li>
+        <li><a href="/park.jpg">/park.jpg</a> · <a href="/park.webp">/park.webp</a> · mobile variants</li>
+        <li><a href="/robots.txt">/robots.txt</a> · <a href="/CNAME">/CNAME</a> · <a href="/LICENSE">/LICENSE</a> · <a href="/README.md">/README.md</a></li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Sister host — rizal.pw</h2>
+      <ul>
+        <li><a href="https://rizal.pw/">https://rizal.pw/</a> — ЯBOT Mind app (offline transcript recorder)</li>
+        <li><a href="https://rizal.pw/trueblast/">https://rizal.pw/trueblast/</a> — TRUEBLAST portal</li>
+        <li><a href="https://rizal.pw/trueblast/log.json">https://rizal.pw/trueblast/log.json</a> — report log</li>
+        <li><a href="https://github.com/rizalward/rizal.pw">github.com/rizalward/rizal.pw</a> — source</li>
+      </ul>
+    </section>
+
+    <p class="muted" style="font-size:.85rem">Source for this site: <a href="https://github.com/rizalward/rizal.info">github.com/rizalward/rizal.info</a></p>
+  </div>
+</body>
+</html>
