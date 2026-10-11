@@ -1,0 +1,14 @@
+ЯZL · rvm-linux 0.1.0 · GPL source status · 2026-10-11 (plain UTF-8 .rzl, read with: rzl-doc cat STATUS-NOW.rzl)
+
+Published here now: license texts (licenses/), Bellard's kernel + bbl patches and kernel configs (bellard/),
+the 49 riscv-linux commits v4.15..a3b1e7acc6a1 as one patch (linux/), SOURCE.rzl (component map + WRITTEN OFFER), SHA256SUMS.
+
+Large upstream tarballs follow in a later commit to this same folder (same names and sha256 as SHA256SUMS):
+  linux/linux-4.15.tar.xz.part00..02  = https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.tar.xz
+                                         sha256 5a26478906d5005f4f809402e981518d2b8844949199f60c4b6e1f986ca2a769
+  busybox/busybox-1.21.1.tar.bz2      = https://busybox.net/downloads/busybox-1.21.1.tar.bz2
+                                         sha256 cd5be0912ec856110ae12c76c3ec9cd5cba1df45b5a9da2b095b8284d1481303
+  buildroot/buildroot-riscv-2018-10-20.tar.gz = https://bellard.org/tinyemu/buildroot-riscv-2018-10-20.tar.gz
+                                         sha256 27cb3289ee4469ec7bdfcc612298367c7b8b44644f35f53a7f226c708c699c89
+Until then the WRITTEN OFFER in SOURCE.rzl covers them as well (3 years, no charge beyond distribution cost,
+request via https://github.com/rizalward/rizal.info/issues).
