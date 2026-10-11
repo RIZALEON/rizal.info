@@ -213,7 +213,7 @@
       "version" : "1.0.0"
     },
     {
-      "ed25519" : "k65okAft2JCaH/zMtmm26nwndnS9WZvuuezXwMhfSGnnEE646ebyRJH3BhyhloxhRVa2DRQ0R/ieNEUJfbcRAA==",
+      "ed25519" : "/6Y+EFr2Yp8X/MY7O/D2CM8yDKecuEcgIweW4eqSGnbg1xDi9hxKDaOGGPeLHDjuuKmWHZTE76fgglQxkHQxCg==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -227,15 +227,15 @@
         "ios",
         "ipados"
       ],
-      "sha256" : "d546ff8236ce8a8f7982229cce53625a1906659ba374ffaff8e539d3b243f35f",
-      "size" : 29322,
-      "title" : "ЯSEED 0.1.0 · founding model on either device · device-signer + Ghost Chain + code/grow/evolve · offline (public)",
+      "sha256" : "d57268be8bf6a688f4092e8ed47dc9ddd18b43a0b70d574fb205ce31c46f60ce",
+      "size" : 33447,
+      "title" : "ЯSEED 0.1.0 · founding model + Package ЯID (rid.v1) in bootloader · Ghost Chain · offline (public)",
       "url" : "eggs/yaseed-0.1.0.rzl.zip",
       "version" : "0.1.0"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-11T03:32:01Z",
+  "generated" : "2026-10-11T03:54:11Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
