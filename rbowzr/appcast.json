@@ -276,27 +276,6 @@
       "version" : "0.1.0"
     },
     {
-      "ed25519" : "EBQ5HlP+JetAbSNAhDpm948j1P+3U+vnMArgwo2cy3L4f2xSYg8cdtxt56mBMMS4tZ7hoDKRonamPEvIwRlMAA==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rvm-linux",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RVM-LINUX-0.1.0.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "e966b2dafccdda5359c7450009c89ce4adca0ffceeb6c611a7539ca8144076df",
-      "size" : 4459831,
-      "title" : "ЯVM Linux 0.1.0 · TinyEMU RISC-V64 · Linux 4.15 + BusyBox (GPL source: rizal.info/src/rvm-linux-0.1.0/)",
-      "url" : "eggs/RVM-LINUX-0.1.0.rzl",
-      "version" : "0.1.0"
-    },
-    {
       "ed25519" : "S5S4j6Mzn5SXHyTgv0WQ3FtIBD32WLa3Vk8Wz1CPNd7a1UdlJ0XwKfMlrM6B5bvNQx00uU5RoYs06faOy0wIBQ==",
       "hosts" : [
         "rbowzr",
@@ -316,10 +295,31 @@
       "title" : "ЯDOC 0.1.1 · RZL-DOC reader · /doc <id|name> · rzl:// · human + bot view · offline (data-only: CLI ships in ЯLAB/bin + kit)",
       "url" : "eggs/RZLDOC-0.1.1.rzl",
       "version" : "0.1.1"
+    },
+    {
+      "ed25519" : "ZHMgRkSzPCWPd6SVbjmRpxrzd6eHp9V8n3ngKtw9oepCWrxuY+oKnXfSi5Ein145tuIM1ZaOW8XCF/1L65YjBw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rvm-linux",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RVM-LINUX-0.1.1.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "53c99279285af7009a15340a03559680e10f8e13a309ecb32c053de815c8ba54",
+      "size" : 4460719,
+      "title" : "ЯVM Linux 0.1.1 · TinyEMU RISC-V64 · Linux 4.15 + BusyBox · data-only names (fixes 0.1.0 .cfg/.bin/.wasm rejection) · GPL source: rizal.info/src/rvm-linux-0.1.0/",
+      "url" : "eggs/RVM-LINUX-0.1.1.rzl",
+      "version" : "0.1.1"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-11T17:09:17Z",
+  "generated" : "2026-10-11T17:18:55Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
