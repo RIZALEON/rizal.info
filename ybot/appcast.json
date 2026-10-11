@@ -195,48 +195,6 @@
       "version" : "0.1.0"
     },
     {
-      "ed25519" : "UJm170EfoET7zRo2azrIqpmY/GI0rykGaXQNVkCY/Fej8JA2sj2gRON8FCk6OPH6c0CWQNG1eT2phnC3MDzqBQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "yaseed",
-      "kind" : "egg",
-      "minHostVersion" : "0.3.5",
-      "name" : "RSEED-0.1.5.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "16de50dbd6d5a10961a98acb231ec04219a5f8b24d67ace7f4bb08cbb90f518d",
-      "size" : 395990,
-      "title" : "ЯSEED 0.1.5 · ЯVM installed tool + chat-bar hook (/rseed /rvm /doc) · RZL-DOC reader · BIBLIOGRAPHY · L054/L055 · offline (public)",
-      "url" : "eggs/RSEED-0.1.5.rzl",
-      "version" : "0.1.5"
-    },
-    {
-      "ed25519" : "zTXixCxakNSfj7MlmLwwY1YY6USf510HY2LkGm70DhrofV3h7fGz2NruQJclCNxOT4fdSNFO91jIEFv5afoAAA==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rvm",
-      "kind" : "egg",
-      "minHostVersion" : "0.3.5",
-      "name" : "RVM-0.1.0.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "885920a057cffc2c11201b58abe58a270bc3f529deaab07d053d18f72485f238",
-      "size" : 28301,
-      "title" : "ЯVM 0.1.0 · Real Virtual Machine (installed tool) · offline, https sandbox opt-in",
-      "url" : "eggs/RVM-0.1.0.rzl",
-      "version" : "0.1.0"
-    },
-    {
       "ed25519" : "p15nNmgBSSKS/Q/vseXBQZ7Q3nr/F84c1kxAZuZdoRxy0ruQ2VwL810kFIFbFmmvanGsMXCWcbOOhmPXNXa9Cw==",
       "hosts" : [
         "rbowzr",
@@ -258,7 +216,49 @@
       "version" : "0.1.1"
     },
     {
-      "ed25519" : "jwO8MG1mlXB4hz/BB7C6TxqyuWql1WQl1DSeiRpWmtkNtWVY63VHCeze27IEA5t2M7yDjJpoSk4hhMkCqxUfDQ==",
+      "ed25519" : "7yLnO3cYaehv/iddmLb0DCaAte3WwVoTE6sMlpuEj6Ee8+rsBUIp/Twsls0aS/+rUSvLVxuxqrXDOTnPpUTBDA==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "yaseed",
+      "kind" : "egg",
+      "minHostVersion" : "0.3.5",
+      "name" : "RSEED-0.1.6.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "a5e712acd96eab3aaaa9b99a243eb0038e97070a048628acda47c3087bf23143",
+      "size" : 399984,
+      "title" : "ЯSEED 0.1.6 · ЯVM tool + https sandbox (rvm-net) · Linux boot fix (frame-src, script blobs) · pins rvm-linux 0.1.2 · ЯLINK · Ghost Chain · offline-first (public)",
+      "url" : "eggs/RSEED-0.1.6.rzl",
+      "version" : "0.1.6"
+    },
+    {
+      "ed25519" : "SZZMESAOYD4lWEpN+Y4uV6wkzMDyRFigrdaB607huYk9B6sM60RsYb9B+5eEZzSqbBLbbPcdLieI2z7+VGTWCQ==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rvm",
+      "kind" : "egg",
+      "minHostVersion" : "0.3.5",
+      "name" : "RVM-0.1.1.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "33e60623d5713c27c979a181fd22842edf7588ef913bc79c559abd4d0d523fe2",
+      "size" : 30843,
+      "title" : "ЯVM 0.1.1 · Real Virtual Machine (installed tool) · https sandbox rvm-net · rvmget gate · pins rvm-linux 0.1.2",
+      "url" : "eggs/RVM-0.1.1.rzl",
+      "version" : "0.1.1"
+    },
+    {
+      "ed25519" : "U28vtXiT9XQ711WGtGmhcyD9BSMLapLgz3HPerjq9C1BRZMZ+vtwr/L47Ue2ojeaK2hkGsF9tFYJLzBD0UGsDw==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -266,21 +266,42 @@
       "id" : "rvm-linux",
       "kind" : "egg",
       "minHostVersion" : "0.3.5",
-      "name" : "RVM-LINUX-0.1.1.rzl",
+      "name" : "RVM-LINUX-0.1.2.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "53c99279285af7009a15340a03559680e10f8e13a309ecb32c053de815c8ba54",
-      "size" : 4460719,
-      "title" : "ЯVM Linux 0.1.1 · TinyEMU RISC-V64 · Linux 4.15 + BusyBox · data-only names (fixes 0.1.0 .cfg/.bin/.wasm rejection) · GPL source: rizal.info/src/rvm-linux-0.1.0/",
-      "url" : "eggs/RVM-LINUX-0.1.1.rzl",
-      "version" : "0.1.1"
+      "sha256" : "cfd77a1921fe800e14eb4e03388c5cb31bcb1c9606fb4318dc12ef5d5feb7791",
+      "size" : 5335387,
+      "title" : "ЯVM Linux 0.1.2 · TinyEMU RISC-V64 · Linux 4.15 + BusyBox · script blobs for WKWebView · rvmget · GPL source: rizal.info/src/rvm-linux-0.1.0/",
+      "url" : "eggs/RVM-LINUX-0.1.2.rzl",
+      "version" : "0.1.2"
+    },
+    {
+      "ed25519" : "6ooFGL3f21FJF8sDwbTp0mTqv9nWo6DGK8JTqHdV37Hmw9ro/Adl0vAj4fEAcaArjCDexzAB0miZXpRB1I1ADQ==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rlink-drop",
+      "kind" : "egg",
+      "minHostVersion" : "0.3.5",
+      "name" : "RLINK-DROP-0.1.0.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "f12abcde65bfdd330e522e5218728c4ff2c97f917f8abf6b9020f89fe79bdda4",
+      "size" : 13015,
+      "title" : "ЯLINK-DROP 0.1.0 · phone⇄box drop box over a private GitHub repo · own page connect-src https://api.github.com only · Approve tap per upload",
+      "url" : "eggs/RLINK-DROP-0.1.0.rzl",
+      "version" : "0.1.0"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-11T17:18:56Z",
+  "generated" : "2026-10-11T17:59:58Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
