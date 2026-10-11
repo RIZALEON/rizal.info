@@ -174,7 +174,7 @@
       "version" : "1.0.0"
     },
     {
-      "ed25519" : "eV+9vPgXY5KawB8oI6ZGecWxYkEglOeOYeDGvuXCfW7DxvItNS1mQcQEZ8h55RDMhfHnF1jQVEh/dmdXS0hGAg==",
+      "ed25519" : "mQDmwxJn0OTxcLd7iYpzkkGGjlgKRmNOIQKknUOsiHtsAtBceTAputQbYG8BbSCN4TsRhl3dsfjQR9MI7v+qAg==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -182,21 +182,21 @@
       "id" : "yaseed",
       "kind" : "egg",
       "minHostVersion" : "0.3.5",
-      "name" : "RSEED-0.0.1.rzl",
+      "name" : "RSEED-0.1.1.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "8379888850114443c7071760216fd1fd4701e0cf760c4875dde7d8c38f5535d3",
-      "size" : 109248,
-      "title" : "ЯSEED 0.0.1 · founding model + self-condensing .rzl seed pack + ЯVM (on-device build/test/train/sign/chain/self-update) · ЯID · offline (public)",
-      "url" : "eggs/RSEED-0.0.1.rzl",
-      "version" : "0.0.1"
+      "sha256" : "e1198685bd0e51befedc0139330da0cfd53324a4128cd374766c1c09a7b3db7a",
+      "size" : 255300,
+      "title" : "ЯSEED 0.1.1 · full dynamic loop + GCCO confirmations + ЯMINT local ledger + ЯID generator · ЯVM · Ghost Chain · offline (public)",
+      "url" : "eggs/RSEED-0.1.1.rzl",
+      "version" : "0.1.1"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-11T04:36:30Z",
+  "generated" : "2026-10-11T06:40:47Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
