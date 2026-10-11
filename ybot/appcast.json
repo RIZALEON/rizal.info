@@ -174,7 +174,7 @@
       "version" : "1.0.0"
     },
     {
-      "ed25519" : "ZvQsHKBBG1ShM946fwNWAenJEM32AaXTD6FFO1BXLAjJPeDopp+vyk+Hh7o2Ks7d+cyOhaxHd5SXX+4lIitOBA==",
+      "ed25519" : "eV+9vPgXY5KawB8oI6ZGecWxYkEglOeOYeDGvuXCfW7DxvItNS1mQcQEZ8h55RDMhfHnF1jQVEh/dmdXS0hGAg==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -182,21 +182,21 @@
       "id" : "yaseed",
       "kind" : "egg",
       "minHostVersion" : "0.3.5",
-      "name" : "yaseed-0.1.0.rzl.zip",
+      "name" : "RSEED-0.0.1.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "d57268be8bf6a688f4092e8ed47dc9ddd18b43a0b70d574fb205ce31c46f60ce",
-      "size" : 33447,
-      "title" : "ЯSEED 0.1.0 · founding model + Package ЯID (rid.v1) in bootloader · Ghost Chain · offline (public)",
-      "url" : "eggs/yaseed-0.1.0.rzl.zip",
-      "version" : "0.1.0"
+      "sha256" : "8379888850114443c7071760216fd1fd4701e0cf760c4875dde7d8c38f5535d3",
+      "size" : 109248,
+      "title" : "ЯSEED 0.0.1 · founding model + self-condensing .rzl seed pack + ЯVM (on-device build/test/train/sign/chain/self-update) · ЯID · offline (public)",
+      "url" : "eggs/RSEED-0.0.1.rzl",
+      "version" : "0.0.1"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-11T03:54:11Z",
+  "generated" : "2026-10-11T04:36:30Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
