@@ -213,7 +213,7 @@
       "version" : "1.0.0"
     },
     {
-      "ed25519" : "8oSFpApsk69/cqYeusesXXgvKKOXdu/GEHBVxy19X1qkowwhqn2n4/iN5+YsZySXfyVaIr92AIUL6aiPTmCeBQ==",
+      "ed25519" : "Vd2v9yHjh5ceJlzSOhKUlv7KQ6lhyCXgqU9iSE+9VO//q8mUKvKAKy0ddCG+BxkR1ETYM2G0SHI1WaYCco3QDg==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -221,21 +221,21 @@
       "id" : "yaseed",
       "kind" : "egg",
       "minHostVersion" : "1.1.2",
-      "name" : "RSEED-0.1.2.rzl",
+      "name" : "RSEED-0.1.3.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "eeca8ab99c2caf01af526948069f68563f0cbba78516b0692cac10afe982c526",
-      "size" : 295914,
-      "title" : "ЯSEED 0.1.2 · talks back: intent router + grounded composer (English · Tagalog · Cebuano · Spanglish) + MIND without self-echo + lessons/laws index · loop · GCCO · ЯMINT · ЯVM · Ghost Chain · offline (public)",
-      "url" : "eggs/RSEED-0.1.2.rzl",
-      "version" : "0.1.2"
+      "sha256" : "a98b61e762222f7afed2d883babd0f821945e94239f353bc4964078c79ad0dfb",
+      "size" : 312432,
+      "title" : "ЯSEED 0.1.3 · on-phone conversation test (/rseed demo, scores on chain + RZL-DOC + app chat log) · reflect/doc composed · intent router + grounded composer (en · tl · ceb · es-en) · Ghost Chain · offline (public)",
+      "url" : "eggs/RSEED-0.1.3.rzl",
+      "version" : "0.1.3"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-11T07:46:45Z",
+  "generated" : "2026-10-11T08:04:25Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
