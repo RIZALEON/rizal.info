@@ -213,7 +213,7 @@
       "version" : "1.0.0"
     },
     {
-      "ed25519" : "ALBGyD7iBWlFfAz0i7VDHLcLHrmnNFk0VRf/Zlht1p7YBAjsI20IfE48IRUzMREkDedY/JGyaq0zUCK8MRe0DA==",
+      "ed25519" : "8oSFpApsk69/cqYeusesXXgvKKOXdu/GEHBVxy19X1qkowwhqn2n4/iN5+YsZySXfyVaIr92AIUL6aiPTmCeBQ==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -221,21 +221,21 @@
       "id" : "yaseed",
       "kind" : "egg",
       "minHostVersion" : "1.1.2",
-      "name" : "RSEED-0.1.1.rzl",
+      "name" : "RSEED-0.1.2.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "e1198685bd0e51befedc0139330da0cfd53324a4128cd374766c1c09a7b3db7a",
-      "size" : 255300,
-      "title" : "ЯSEED 0.1.1 · full dynamic loop + GCCO confirmations + ЯMINT local ledger + ЯID generator · ЯVM · Ghost Chain · offline (public)",
-      "url" : "eggs/RSEED-0.1.1.rzl",
-      "version" : "0.1.1"
+      "sha256" : "eeca8ab99c2caf01af526948069f68563f0cbba78516b0692cac10afe982c526",
+      "size" : 295914,
+      "title" : "ЯSEED 0.1.2 · talks back: intent router + grounded composer (English · Tagalog · Cebuano · Spanglish) + MIND without self-echo + lessons/laws index · loop · GCCO · ЯMINT · ЯVM · Ghost Chain · offline (public)",
+      "url" : "eggs/RSEED-0.1.2.rzl",
+      "version" : "0.1.2"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-11T06:40:46Z",
+  "generated" : "2026-10-11T07:46:45Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
