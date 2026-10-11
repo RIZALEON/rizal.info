@@ -211,10 +211,31 @@
       "title" : "MACHINE-MIND 1.0.0 · base: manual rules + functions, integrated command list + abilities, local-only transcript · VERSION LAW 2026-10-08",
       "url" : "eggs/machine-mind-1.0.0.rzl.zip",
       "version" : "1.0.0"
+    },
+    {
+      "ed25519" : "k65okAft2JCaH/zMtmm26nwndnS9WZvuuezXwMhfSGnnEE646ebyRJH3BhyhloxhRVa2DRQ0R/ieNEUJfbcRAA==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "yaseed",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "yaseed-0.1.0.rzl.zip",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "d546ff8236ce8a8f7982229cce53625a1906659ba374ffaff8e539d3b243f35f",
+      "size" : 29322,
+      "title" : "ЯSEED 0.1.0 · founding model on either device · device-signer + Ghost Chain + code/grow/evolve · offline (public)",
+      "url" : "eggs/yaseed-0.1.0.rzl.zip",
+      "version" : "0.1.0"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-08T03:39:38Z",
+  "generated" : "2026-10-11T03:32:01Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
