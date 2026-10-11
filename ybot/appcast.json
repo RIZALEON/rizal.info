@@ -279,7 +279,7 @@
       "version" : "0.1.2"
     },
     {
-      "ed25519" : "6ooFGL3f21FJF8sDwbTp0mTqv9nWo6DGK8JTqHdV37Hmw9ro/Adl0vAj4fEAcaArjCDexzAB0miZXpRB1I1ADQ==",
+      "ed25519" : "ws7JFiLCIvW5PMj+kBMpKiwdskABcu9Wfps7CMAtDgntgFrYG139L+Ls4YTUmoLV/+Td6tqZOWeguAXcAd+YBw==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -287,21 +287,21 @@
       "id" : "rlink-drop",
       "kind" : "egg",
       "minHostVersion" : "0.3.5",
-      "name" : "RLINK-DROP-0.1.0.rzl",
+      "name" : "RLINK-DROP-0.1.1.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "f12abcde65bfdd330e522e5218728c4ff2c97f917f8abf6b9020f89fe79bdda4",
-      "size" : 13015,
-      "title" : "ЯLINK-DROP 0.1.0 · phone⇄box drop box over a private GitHub repo · own page connect-src https://api.github.com only · Approve tap per upload",
-      "url" : "eggs/RLINK-DROP-0.1.0.rzl",
-      "version" : "0.1.0"
+      "sha256" : "fdfffb5f2afc63dad037f6580bfe19677888b2397d5445378d42d6f0f4148ba2",
+      "size" : 30665,
+      "title" : "ЯLINK-DROP 0.1.1 · /drop request safe window · STEALTH receipt lane · USB seal-key import · WebKit X25519 fix · own page connect-src https://api.github.com only · Approve tap per upload",
+      "url" : "eggs/RLINK-DROP-0.1.1.rzl",
+      "version" : "0.1.1"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-11T17:59:58Z",
+  "generated" : "2026-10-11T18:45:37Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
