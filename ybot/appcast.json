@@ -174,7 +174,7 @@
       "version" : "1.0.0"
     },
     {
-      "ed25519" : "uznyxp6AiKX2PUf+tgIl3XMQNjyGoEcZTSUtwLV42Ml5LGfEZ5Y3KBe40GRlISbwyEqg2llJsAmGJzolQdU0CQ==",
+      "ed25519" : "fZvFwOZZ6qWlSdOypk/SFbyhc1S7Up4Y+pnRGtEE3iRrq8aFtUTdYLyVTsl8Z0mHp60tug7j+71Wk4FMTGZOCQ==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -182,21 +182,42 @@
       "id" : "yaseed",
       "kind" : "egg",
       "minHostVersion" : "0.3.5",
-      "name" : "RSEED-0.1.3.rzl",
+      "name" : "RSEED-0.1.4.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "a98b61e762222f7afed2d883babd0f821945e94239f353bc4964078c79ad0dfb",
-      "size" : 312432,
-      "title" : "ЯSEED 0.1.3 · on-phone conversation test (/rseed demo, scores on chain + RZL-DOC + app chat log) · reflect/doc composed · intent router + grounded composer (en · tl · ceb · es-en) · Ghost Chain · offline (public)",
-      "url" : "eggs/RSEED-0.1.3.rzl",
-      "version" : "0.1.3"
+      "sha256" : "a26c0801b43f54f6bec79bcb87125821909124c8bef188b20377276f3708bf83",
+      "size" : 362405,
+      "title" : "ЯSEED 0.1.4 · ЯLINK mainline (hardline first) + WATCH + PROGRESS-LAW + ЯVM-ONLY https · Ghost Chain · offline (public)",
+      "url" : "eggs/RSEED-0.1.4.rzl",
+      "version" : "0.1.4"
+    },
+    {
+      "ed25519" : "XRmCbE82b4MP2YQctXARVAvnDnSRkrJaw+Cw94XAAccozADlvUO6lyvg0c7CqqbUpbn6xy/BIQlQzmvvDIraDg==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rlink-relay",
+      "kind" : "egg",
+      "minHostVersion" : "0.3.5",
+      "name" : "RLINK-RELAY-0.1.0.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "0720fc5531c575c8f722456744475e48476d578f1ebfd98771e4877175ba6cb1",
+      "size" : 2727,
+      "title" : "ЯLINK relay 0.1.0 · hub ⇄ ЯSEED (LAN)",
+      "url" : "eggs/RLINK-RELAY-0.1.0.rzl",
+      "version" : "0.1.0"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-11T08:04:26Z",
+  "generated" : "2026-10-11T16:15:58Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
