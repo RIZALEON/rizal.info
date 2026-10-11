@@ -297,7 +297,7 @@
       "version" : "0.1.0"
     },
     {
-      "ed25519" : "TO5GfE9h6aFknetoQjoeMQvG7ZxdVH+pfw3Jwg3zfTGsyjTnsjG0d0EzPzBSx5OnStSrG+xE27QW/Z+4bEQoCA==",
+      "ed25519" : "S5S4j6Mzn5SXHyTgv0WQ3FtIBD32WLa3Vk8Wz1CPNd7a1UdlJ0XwKfMlrM6B5bvNQx00uU5RoYs06faOy0wIBQ==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -305,21 +305,21 @@
       "id" : "rzldoc",
       "kind" : "egg",
       "minHostVersion" : "1.1.2",
-      "name" : "RZLDOC-0.1.0.rzl",
+      "name" : "RZLDOC-0.1.1.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "273e963100df912d16a62179083b81814840c6eec35ffc79a1dbd5451ec460fa",
-      "size" : 68290,
-      "title" : "ЯDOC 0.1.0 · RZL-DOC reader · /doc <id|name> · rzl:// · human + bot view · offline",
-      "url" : "eggs/RZLDOC-0.1.0.rzl",
-      "version" : "0.1.0"
+      "sha256" : "796ed8a746620417366bd9985ac9ff33e17a6eae278343ac3c1b6d942f8a0734",
+      "size" : 65420,
+      "title" : "ЯDOC 0.1.1 · RZL-DOC reader · /doc <id|name> · rzl:// · human + bot view · offline (data-only: CLI ships in ЯLAB/bin + kit)",
+      "url" : "eggs/RZLDOC-0.1.1.rzl",
+      "version" : "0.1.1"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-11T17:00:55Z",
+  "generated" : "2026-10-11T17:09:17Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
