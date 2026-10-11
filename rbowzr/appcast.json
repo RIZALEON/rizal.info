@@ -132,27 +132,6 @@
       "version" : "1.1.1"
     },
     {
-      "ed25519" : "uQsxzi4SlbX8h/v+JxeDolzMNP9Gd4fSPrITaGaWXArL8nNppGLdUnd5swKlZ+9svnDnNPRoPZgbSmghCTZ3BQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rbotbridge",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "rbotbridge-1.0.0.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "11eb47e9074da39340664e7f573d1e1e13a1ffe983d5e48b2c97b41e43205d16",
-      "size" : 5415,
-      "title" : "RBOTBRIDGE · in-app bot bridge skill (ЯBOT + ЯBOWZR)",
-      "url" : "eggs/rbotbridge-1.0.0.rzl.zip",
-      "version" : "1.0.0"
-    },
-    {
       "ed25519" : "KFdT3goNoafygMRq6XqsuAriy2+u4qLXpworsZb47wd0CIvcrgGLsxspAUiMp4M57Ygzcnx9HTYrvhxttk77Dg==",
       "hosts" : [
         "rbowzr"
@@ -213,90 +192,6 @@
       "version" : "1.0.0"
     },
     {
-      "ed25519" : "0V7iFijYXUVggi9/L/WSESP84Xo7CnW8uiJuHg6tV4H9pBUUOCAvqR9YICg2pMv7K2Fg6DoQRbXJ4o6XRyYPCQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rlink-relay",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RLINK-RELAY-0.1.0.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "0720fc5531c575c8f722456744475e48476d578f1ebfd98771e4877175ba6cb1",
-      "size" : 2727,
-      "title" : "ЯLINK relay 0.1.0 · hub ⇄ ЯSEED (LAN)",
-      "url" : "eggs/RLINK-RELAY-0.1.0.rzl",
-      "version" : "0.1.0"
-    },
-    {
-      "ed25519" : "S5S4j6Mzn5SXHyTgv0WQ3FtIBD32WLa3Vk8Wz1CPNd7a1UdlJ0XwKfMlrM6B5bvNQx00uU5RoYs06faOy0wIBQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rzldoc",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RZLDOC-0.1.1.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "796ed8a746620417366bd9985ac9ff33e17a6eae278343ac3c1b6d942f8a0734",
-      "size" : 65420,
-      "title" : "ЯDOC 0.1.1 · RZL-DOC reader · /doc <id|name> · rzl:// · human + bot view · offline (data-only: CLI ships in ЯLAB/bin + kit)",
-      "url" : "eggs/RZLDOC-0.1.1.rzl",
-      "version" : "0.1.1"
-    },
-    {
-      "ed25519" : "ZPVcnUntJhp2fT3mx+SwJpTQp/Z0dJcoUg3AuHXVezXbBLosf7gG20n4U3K+tFEgSKED/QdC0xn9hZ4dMnoZCQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "yaseed",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RSEED-0.1.6.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "a5e712acd96eab3aaaa9b99a243eb0038e97070a048628acda47c3087bf23143",
-      "size" : 399984,
-      "title" : "ЯSEED 0.1.6 · ЯVM tool + https sandbox (rvm-net) · Linux boot fix (frame-src, script blobs) · pins rvm-linux 0.1.2 · ЯLINK · Ghost Chain · offline-first (public)",
-      "url" : "eggs/RSEED-0.1.6.rzl",
-      "version" : "0.1.6"
-    },
-    {
-      "ed25519" : "Radh/evKrWJhczosc3frKbTMiQHQ9uBltqOQyOd2DpqD7/+IetK8rv3hnh7H1Ttti7C/XI4lMUdT8U/aE5H7Cg==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rvm",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RVM-0.1.1.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "33e60623d5713c27c979a181fd22842edf7588ef913bc79c559abd4d0d523fe2",
-      "size" : 30843,
-      "title" : "ЯVM 0.1.1 · Real Virtual Machine (installed tool) · https sandbox rvm-net · rvmget gate · pins rvm-linux 0.1.2",
-      "url" : "eggs/RVM-0.1.1.rzl",
-      "version" : "0.1.1"
-    },
-    {
       "ed25519" : "HYK0MxfqjEeWAu5ZQgS91FNCgqhNolLWpi+XQJOKO5810R6Z0i4il1pTrJ8mOg6G4kb1P6Ok5Kp5Mdf+XyEABQ==",
       "hosts" : [
         "rbowzr",
@@ -318,7 +213,70 @@
       "version" : "0.1.2"
     },
     {
-      "ed25519" : "9ki6q6y9nlELyNpl5WosM59QNdBBHMUNszqURu/a9733xT+Dk5nu+OeJnruHWaNysc24o7cmDLMLK4vcY9ZZCA==",
+      "ed25519" : "f5w2g95CM7qFFnakAcmXfiNbpONnVgzoDRCwa0U6l56L+VQ7LsF3S+cUzAkDQKj740w1wGWC1uAn8Q9npUIBAw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "yaseed",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RSEED-0.1.7.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "fae01f1c5e753932867f50ee8977f41ac2558c6896f2a436f6c8e88ca694ef60",
+      "size" : 406135,
+      "title" : "ЯSEED 0.1.7 · LIVE VERSION: an open panel reopens at the newly installed version (progress bar, input kept, egg.reload chained) · every shown version from the installed manifest · ЯVM tool · Ghost Chain · offline (public)",
+      "url" : "eggs/RSEED-0.1.7.rzl",
+      "version" : "0.1.7"
+    },
+    {
+      "ed25519" : "tuO5J4CE/EdFygo3aUWVRqOmSYEvmAc3GabJK9l2/kivK9CqE229cd68LOmMYAOacmvH3WbXZW1ffCNLZQ6gCw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rvm",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RVM-0.1.2.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "eb74bd0da650055ac8d06e5e8628206ee5f2bcde6726a90edf28c6be2277a868",
+      "size" : 36664,
+      "title" : "ЯVM 0.1.2 · Real Virtual Machine (installed tool) · LIVE VERSION reopen · version shown from the installed manifest (was rvm-egg-0.1.0) · Run button fixed · pins rvm-linux 0.1.2",
+      "url" : "eggs/RVM-0.1.2.rzl",
+      "version" : "0.1.2"
+    },
+    {
+      "ed25519" : "qUlkqBIOEdYTnna/mWyZW3HHSMYj/O4wXHVskA/YmIYq1grkV5s75VBqTZM9xtyJMjeTqeOetjSOZfl0KKRwAg==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rzldoc",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RZLDOC-0.1.2.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "d3d44ff2de1dbf211ab12c5d91e2e7f4aca6672e167b54558097a9a3451a6cf4",
+      "size" : 71033,
+      "title" : "rzldoc 0.1.2 · RZL-DOC reader (every app) · LIVE VERSION reopen · version shown from the installed manifest",
+      "url" : "eggs/RZLDOC-0.1.2.rzl",
+      "version" : "0.1.2"
+    },
+    {
+      "ed25519" : "egV4JCeJa8T7EMLf989R1rPTixDcT+J3u9yZ0WfJ1HoR1DmmzVifKLP3wVwJvjbmqwf1xOzNLfAIb6mq75+nDg==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -326,21 +284,63 @@
       "id" : "rlink-drop",
       "kind" : "egg",
       "minHostVersion" : "1.1.2",
-      "name" : "RLINK-DROP-0.1.1.rzl",
+      "name" : "RLINK-DROP-0.1.2.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "fdfffb5f2afc63dad037f6580bfe19677888b2397d5445378d42d6f0f4148ba2",
-      "size" : 30665,
-      "title" : "ЯLINK-DROP 0.1.1 · /drop request safe window · STEALTH receipt lane · USB seal-key import · WebKit X25519 fix · own page connect-src https://api.github.com only · Approve tap per upload",
-      "url" : "eggs/RLINK-DROP-0.1.1.rzl",
+      "sha256" : "2c65bc66b7d1ec56c700a996776120acde17b6f14cab4b3fe7347497b9fd849d",
+      "size" : 36493,
+      "title" : "ЯLINK-DROP 0.1.2 · LIVE VERSION reopen (never during the safe paste window; input never carried) · version from the installed manifest · own page connect-src https://api.github.com only",
+      "url" : "eggs/RLINK-DROP-0.1.2.rzl",
+      "version" : "0.1.2"
+    },
+    {
+      "ed25519" : "pnAq+nBGVRdd2B/Cuh86IMD6mXKsqonKu2IMvCuo+pmUGQqXWUiokEXG7hbXWfyYqp5wrzrcZHTjc5gWJFgIBw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rlink-relay",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RLINK-RELAY-0.1.1.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "0213a48cf67c9a55b0431f2c5fc0b73d49d780fc58b20e920a7b17a998a63811",
+      "size" : 8412,
+      "title" : "ЯLINK relay 0.1.1 · hub ⇄ ЯSEED (LAN) · LIVE VERSION reopen · version from the installed manifest",
+      "url" : "eggs/RLINK-RELAY-0.1.1.rzl",
       "version" : "0.1.1"
+    },
+    {
+      "ed25519" : "2sHT8aCRRkcVEbVHr66t9rP69q1gNNp0aRwzgd/8GZ4OSq5DdFh0HWDG6rfIG4C5EiLTh8cXlegFK6Dr+M6OCg==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rbotbridge",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RBOTBRIDGE-1.0.1.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "e80d9fc699695d827f5350c4c072c53867f65e785b3b1b78adc606a152745dbb",
+      "size" : 11126,
+      "title" : "RBOTBRIDGE 1.0.1 · in-app bot bridge skill · SKILL.md → SKILL.rzl (.rzl only) · page CSP connect-src none · LIVE VERSION reopen",
+      "url" : "eggs/RBOTBRIDGE-1.0.1.rzl",
+      "version" : "1.0.1"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-11T18:45:37Z",
+  "generated" : "2026-10-11T19:09:34Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
