@@ -1,0 +1,20 @@
+{
+ "checkpoint": {
+  "note": "public base has no live ledger; seq advances only with a new signed public egg",
+  "seq": 0
+ },
+ "egg": {
+  "id": "machine-mind",
+  "sha256": "5bd78bea581f97014b7ed6a2ecfc49582753751a32932ee85789dc0a2f2a1501",
+  "size": 10573,
+  "url": "../eggs/machine-mind-1.0.1.rzl.zip",
+  "version": "1.0.1"
+ },
+ "host": "rbowzr",
+ "keyId": "e5833fdfbbfe",
+ "lane": "public",
+ "poll": "<=3600s",
+ "schema": "rlab.mind-repeater.v1",
+ "site": "rizal.info",
+ "verify": "REPEATER.json.sig (rlab-sign-feed signfile, ed25519 e5833fdfbbfe), then the egg's own appcast signature"
+}

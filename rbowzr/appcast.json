@@ -1,22 +1,22 @@
 {
   "app" : {
-    "build" : "2026101303",
-    "ed25519" : "jhaARyhteqp511rHT4t4OZEYkdWkhbj2+uWHt3sl1Y6X8h5Lf0dw2tMg2d+b9P465eky0svYoEsUrNtAx6KJBA==",
+    "build" : "2026101304",
+    "ed25519" : "OEElNl168ZLuvOm0OhPr5VVLn2YHXk3PP5xDTU1l5XTXS4IxFl6pqqsEMLclmcx2ySLP9dun8Ki+ar6i4OvGDg==",
     "id" : "info.rizal.rbowzr.native",
     "kind" : "app",
     "minimumSystemVersion" : "14.0",
-    "name" : "RBOWZR-2.1.4.dmg",
-    "notes" : "ЯBOWZR 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation",
-    "sha256" : "7a1ff4b1585237759297a787066411cd7e9412fe080301db6912ab29aadbbd0e",
-    "size" : 633227872,
+    "name" : "RBOWZR-2.1.5.dmg",
+    "notes" : "ЯBOWZR 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt)",
+    "sha256" : "6e293d64347abace1362fa98671009813de78543197708b50a27fd422a18f3d9",
+    "size" : 644557104,
     "title" : "ЯBOWZR",
-    "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4.dmg",
-    "version" : "2.1.4"
+    "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5.dmg",
+    "version" : "2.1.5"
   },
   "apps" : {
     "ios" : {
-      "build" : "2026101303",
-      "ed25519" : "yTUWDiEikcmkhhXyonQSQDOVbjYt8a1meS6mFY0qT/iX28GNMbhYNI7ggF8pMWNW3Kb+10+fPf7rAUAOMdLvDA==",
+      "build" : "2026101304",
+      "ed25519" : "poPxLjbw6fD55KZZmGp4GbZxM3fw7obYchE1TN3ooe/hJwA404k/r3jDZLk5fwpsbweURwan5YjhXfaBXgYPBg==",
       "heart" : {
         "bytes" : 639446688,
         "id" : "qwen3-0.6b-q8",
@@ -25,19 +25,19 @@
       },
       "id" : "info.rizal.rbowzr.native",
       "kind" : "app",
-      "name" : "RBOWZR-2.1.4-ios.ipa",
-      "notes" : "ios 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation · development-signed IPA (registered devices)",
+      "name" : "RBOWZR-2.1.5-ios.ipa",
+      "notes" : "ios 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt) · development-signed IPA (registered devices)",
       "platform" : "ios",
       "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "189e3958ea2a188368fb74e189285a517616169a477b9980ef6da34217fb612d",
-      "size" : 642387485,
+      "sha256" : "fd476935eb3048be84d1df5779ca3ca83a4db2c0cf5297dd8b804f0b6f4ef1eb",
+      "size" : 652562980,
       "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4-ios.ipa",
-      "version" : "2.1.4"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5-ios.ipa",
+      "version" : "2.1.5"
     },
     "ipados" : {
-      "build" : "2026101303",
-      "ed25519" : "5v47Sgo/YsT9qCRqawo0ARpl2GQGjpRmqUY8oO3oZm4Iw6vU23ZI6PgZkMPiQsGCb5OLx/E/CMzs8EUC8/n3CA==",
+      "build" : "2026101304",
+      "ed25519" : "SYQJ4vT8MnlPzcsUuaBMrHf5f4G8KEYDVLa+e5yXuQLrqfikUV6ZisrjBQEAjCIsELwRwDZ/+ZSRfrLiUKqLBQ==",
       "heart" : {
         "bytes" : 639446688,
         "id" : "qwen3-0.6b-q8",
@@ -46,29 +46,29 @@
       },
       "id" : "info.rizal.rbowzr.native",
       "kind" : "app",
-      "name" : "RBOWZR-2.1.4-ios.ipa",
-      "notes" : "ipados 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation · development-signed IPA (registered devices)",
+      "name" : "RBOWZR-2.1.5-ios.ipa",
+      "notes" : "ipados 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt) · development-signed IPA (registered devices)",
       "platform" : "ipados",
       "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "189e3958ea2a188368fb74e189285a517616169a477b9980ef6da34217fb612d",
-      "size" : 642387485,
+      "sha256" : "fd476935eb3048be84d1df5779ca3ca83a4db2c0cf5297dd8b804f0b6f4ef1eb",
+      "size" : 652562980,
       "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4-ios.ipa",
-      "version" : "2.1.4"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5-ios.ipa",
+      "version" : "2.1.5"
     },
     "macos" : {
-      "build" : "2026101303",
-      "ed25519" : "4ZJtCcbrfL8x/IuCyu2/0r71kD8Gxgs6x6J+MZTGh5G8hXGJFet6Gh/W5CmWCF1f9nN9GXE7vg1YyEmfo71YCg==",
+      "build" : "2026101304",
+      "ed25519" : "w/oNxh2f1whDN9DzWT8TyQv8YVwObe9m4xtko/NFUEaPG8lZpJ3jhK2YKIpqSHl4T0Bvn4YTXdczCX3IeKOrBQ==",
       "id" : "info.rizal.rbowzr.native",
       "kind" : "app",
       "minimumSystemVersion" : "14.0",
-      "name" : "RBOWZR-2.1.4.dmg",
-      "notes" : "ЯBOWZR 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation",
-      "sha256" : "7a1ff4b1585237759297a787066411cd7e9412fe080301db6912ab29aadbbd0e",
-      "size" : 633227872,
+      "name" : "RBOWZR-2.1.5.dmg",
+      "notes" : "ЯBOWZR 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt)",
+      "sha256" : "6e293d64347abace1362fa98671009813de78543197708b50a27fd422a18f3d9",
+      "size" : 644557104,
       "title" : "ЯBOWZR",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4.dmg",
-      "version" : "2.1.4"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5.dmg",
+      "version" : "2.1.5"
     }
   },
   "eggs" : [
@@ -360,10 +360,31 @@
       "title" : "MACHINE-MIND 1.0.1 · base: manual rules + functions, integrated command list + abilities, local-only transcript · VERSION LAW 2026-10-08",
       "url" : "eggs/machine-mind-1.0.1.rzl.zip",
       "version" : "1.0.1"
+    },
+    {
+      "ed25519" : "4UNRax+IScQVLDrcwPMHB/KX+qD1LJAaJuOu+xnZe7Lsn+H0GEB2IVHrnMNQ/AWaIOnTb/JoWNGnsCO6kWkZCg==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "batibabox-embed",
+      "kind" : "egg",
+      "minHostVersion" : "2.1.5",
+      "name" : "BATIBABOX-EMBED-2.1.5.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "4b47f7b6671f83f9f47c9cc4df7e90dd4581329e77e34ad9c8e3a58c398b9f69",
+      "size" : 11143195,
+      "title" : "BATIBABOX 2.1.5 · ЯENJIN memory organ + .rzl vector model (static-retrieval-mrl-en-v1, Apache-2.0, 384-d int8) · RVM-seated · add-only",
+      "url" : "eggs/BATIBABOX-EMBED-2.1.5.rzl",
+      "version" : "2.1.5"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-13T16:56:40Z",
+  "generated" : "2026-10-13T21:54:52Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",

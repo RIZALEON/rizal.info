@@ -1,6 +1,6 @@
 {
   "schema": "rlab-downloads.v1",
-  "updated": "2026-10-13T10:30:00-06:00",
+  "updated": "2026-10-13T15:45:00-06:00",
   "note": "Build numbers (CFBundleVersion) for feed versions, read from the signed release apps. The appcasts stay the source of truth for version / size / sha256 / url.",
   "builds": {
     "info.rizal.rbowzr.native": {
@@ -8,16 +8,58 @@
       "1.2.2": "9",
       "1.2.8": "17",
       "2.1.2": "2026101218",
-      "2.1.4": "2026101303"
+      "2.1.4": "2026101303",
+      "2.1.5": "2026101304"
     },
     "io.github.rizaleon.yaaim": {
       "0.3.5": "2026092501",
       "0.3.8": "2026100507",
       "2.1.2": "2026101218",
-      "2.1.4": "2026101303"
+      "2.1.4": "2026101303",
+      "2.1.5": "2026101304"
     }
   },
   "published": [
+    {
+      "app": "rbowzr",
+      "platform": "macos",
+      "version": "2.1.5",
+      "build": "2026101304",
+      "name": "RBOWZR-2.1.5.dmg",
+      "size": 644557104,
+      "sha256": "6e293d64347abace1362fa98671009813de78543197708b50a27fd422a18f3d9",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5.dmg"
+    },
+    {
+      "app": "rbowzr",
+      "platform": "ios",
+      "version": "2.1.5",
+      "build": "2026101304",
+      "name": "RBOWZR-2.1.5-ios.ipa",
+      "size": 652562980,
+      "sha256": "fd476935eb3048be84d1df5779ca3ca83a4db2c0cf5297dd8b804f0b6f4ef1eb",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5-ios.ipa"
+    },
+    {
+      "app": "ybot",
+      "platform": "macos",
+      "version": "2.1.5",
+      "build": "2026101304",
+      "name": "YBOT-2.1.5.dmg",
+      "size": 697327550,
+      "sha256": "421e806912484409f43876afe85a63b4a397cf02091a1d6aa64e75d7d959bcb1",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.5/YBOT-2.1.5.dmg"
+    },
+    {
+      "app": "ybot",
+      "platform": "ios",
+      "version": "2.1.5",
+      "build": "2026101304",
+      "name": "YBOT-2.1.5-ios.ipa",
+      "size": 690192072,
+      "sha256": "e062bd831725bc809dc12c514d3a41f112b46c3fc958054d031d6f4951ec7435",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.5/YBOT-2.1.5-ios.ipa"
+    },
     {
       "app": "rbowzr",
       "platform": "macos",

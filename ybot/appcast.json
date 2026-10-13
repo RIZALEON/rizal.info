@@ -1,22 +1,22 @@
 {
   "app" : {
-    "build" : "2026101303",
-    "ed25519" : "L23kdYid8o8wLni62mQlyB5NUaY5AMlcmX2Xqt4GVUQLYWBlVNc8/UWgbYozzbzJqLaPIhCxuxO1N1PZX4YDBA==",
+    "build" : "2026101304",
+    "ed25519" : "BmPABCjy4t8cDvabjlGp+R3XII1d4ZOU6ql8zj1pS/3KnLuJIFS88GLzl7NwWAkLvSg+IrwuYemQiKeSHQxKDw==",
     "id" : "io.github.rizaleon.yaaim",
     "kind" : "app",
     "minimumSystemVersion" : "26.6.2",
-    "name" : "YBOT-2.1.4.dmg",
-    "notes" : "ЯBOT 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation",
-    "sha256" : "c329e9d9bfdfae82867bb85a3e92691073afd7c7edfa675d45874701110d81cc",
-    "size" : 686111786,
+    "name" : "YBOT-2.1.5.dmg",
+    "notes" : "ЯBOT 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt)",
+    "sha256" : "421e806912484409f43876afe85a63b4a397cf02091a1d6aa64e75d7d959bcb1",
+    "size" : 697327550,
     "title" : "ЯBOT",
-    "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4.dmg",
-    "version" : "2.1.4"
+    "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.5/YBOT-2.1.5.dmg",
+    "version" : "2.1.5"
   },
   "apps" : {
     "ios" : {
-      "build" : "2026101303",
-      "ed25519" : "DXq7+YjOvKtVUBWfHn9kWrFtLQyNI6lPDysqexgav1YMNOBLNiGRnISQdYKIg4yKSXGf4yZ8dc+GvoxuUjZwBQ==",
+      "build" : "2026101304",
+      "ed25519" : "bJBF1RNvIotRWA9GVvDrqlHLwdtyYPduT7GurMFfrq9QR35lTOMKo8/+na88VusfCZQMINQkpO+MAFktAzQjCQ==",
       "heart" : {
         "bytes" : 639446688,
         "id" : "qwen3-0.6b-q8",
@@ -25,19 +25,19 @@
       },
       "id" : "io.github.rizaleon.yaaim",
       "kind" : "app",
-      "name" : "YBOT-2.1.4-ios.ipa",
-      "notes" : "ios 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation · development-signed IPA (registered devices)",
+      "name" : "YBOT-2.1.5-ios.ipa",
+      "notes" : "ios 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt) · development-signed IPA (registered devices)",
       "platform" : "ios",
       "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "e399f3d394500e5dbd750abf2aade9f12bf87f5740a77df72bb578ae2b7f11ed",
-      "size" : 680079512,
+      "sha256" : "e062bd831725bc809dc12c514d3a41f112b46c3fc958054d031d6f4951ec7435",
+      "size" : 690192072,
       "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4-ios.ipa",
-      "version" : "2.1.4"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.5/YBOT-2.1.5-ios.ipa",
+      "version" : "2.1.5"
     },
     "ipados" : {
-      "build" : "2026101303",
-      "ed25519" : "wMEpgt0nZB0WUv4jA3m92WgzKO6i9icPbNP8xqPAlpvima0T25CsAqZAokT19dPvvhuGnf/q6MWHOxPWBMw+CQ==",
+      "build" : "2026101304",
+      "ed25519" : "exelTo7o0ioUR5cfvifx+iwL/3pdS6iOwoEfE0Lr9UDwvBJqjZjuDsfLHRW2UNEy6+KlRAlJIkU3JWU0xuP0Aw==",
       "heart" : {
         "bytes" : 639446688,
         "id" : "qwen3-0.6b-q8",
@@ -46,29 +46,29 @@
       },
       "id" : "io.github.rizaleon.yaaim",
       "kind" : "app",
-      "name" : "YBOT-2.1.4-ios.ipa",
-      "notes" : "ipados 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation · development-signed IPA (registered devices)",
+      "name" : "YBOT-2.1.5-ios.ipa",
+      "notes" : "ipados 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt) · development-signed IPA (registered devices)",
       "platform" : "ipados",
       "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "e399f3d394500e5dbd750abf2aade9f12bf87f5740a77df72bb578ae2b7f11ed",
-      "size" : 680079512,
+      "sha256" : "e062bd831725bc809dc12c514d3a41f112b46c3fc958054d031d6f4951ec7435",
+      "size" : 690192072,
       "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4-ios.ipa",
-      "version" : "2.1.4"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.5/YBOT-2.1.5-ios.ipa",
+      "version" : "2.1.5"
     },
     "macos" : {
-      "build" : "2026101303",
-      "ed25519" : "c/L3W5MXDyUP79N4UXubiQgVF3xKEt5kL/omSoEuNdaTpb9OTMMVnCUVHpiAKiMij1EGdS27IHM20tV/lmgoBA==",
+      "build" : "2026101304",
+      "ed25519" : "/Zj/cFSbi0X2I+vqpspy7mnsPaUhXBxROSbnmA/FGheHvGdKOgVwJQ4xhnPwgwarFwXflY9otzGL1waTXNEVDw==",
       "id" : "io.github.rizaleon.yaaim",
       "kind" : "app",
       "minimumSystemVersion" : "26.6.2",
-      "name" : "YBOT-2.1.4.dmg",
-      "notes" : "ЯBOT 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation",
-      "sha256" : "c329e9d9bfdfae82867bb85a3e92691073afd7c7edfa675d45874701110d81cc",
-      "size" : 686111786,
+      "name" : "YBOT-2.1.5.dmg",
+      "notes" : "ЯBOT 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt)",
+      "sha256" : "421e806912484409f43876afe85a63b4a397cf02091a1d6aa64e75d7d959bcb1",
+      "size" : 697327550,
       "title" : "ЯBOT",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4.dmg",
-      "version" : "2.1.4"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.5/YBOT-2.1.5.dmg",
+      "version" : "2.1.5"
     }
   },
   "eggs" : [
@@ -321,10 +321,31 @@
       "title" : "MACHINE-MIND 1.0.1 · base: manual rules + functions, integrated command list + abilities, local-only transcript · VERSION LAW 2026-10-08",
       "url" : "eggs/machine-mind-1.0.1.rzl.zip",
       "version" : "1.0.1"
+    },
+    {
+      "ed25519" : "e7jV/gF3n9H/Nq2X6ARSKAOTClo1jl3z7vxmgoY4MvLdxqGIwbPTDiNCyJ5Wi4SmGIwGliwUjTFCSii5RuUuAA==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "batibabox-embed",
+      "kind" : "egg",
+      "minHostVersion" : "2.1.5",
+      "name" : "BATIBABOX-EMBED-2.1.5.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "4b47f7b6671f83f9f47c9cc4df7e90dd4581329e77e34ad9c8e3a58c398b9f69",
+      "size" : 11143195,
+      "title" : "BATIBABOX 2.1.5 · ЯENJIN memory organ + .rzl vector model (static-retrieval-mrl-en-v1, Apache-2.0, 384-d int8) · RVM-seated · add-only",
+      "url" : "eggs/BATIBABOX-EMBED-2.1.5.rzl",
+      "version" : "2.1.5"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-13T16:56:40Z",
+  "generated" : "2026-10-13T21:54:52Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
