@@ -215,48 +215,6 @@
       "version" : "0.1.2"
     },
     {
-      "ed25519" : "f5w2g95CM7qFFnakAcmXfiNbpONnVgzoDRCwa0U6l56L+VQ7LsF3S+cUzAkDQKj740w1wGWC1uAn8Q9npUIBAw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "yaseed",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RSEED-0.1.7.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "fae01f1c5e753932867f50ee8977f41ac2558c6896f2a436f6c8e88ca694ef60",
-      "size" : 406135,
-      "title" : "ЯSEED 0.1.7 · LIVE VERSION: an open panel reopens at the newly installed version (progress bar, input kept, egg.reload chained) · every shown version from the installed manifest · ЯVM tool · Ghost Chain · offline (public)",
-      "url" : "eggs/RSEED-0.1.7.rzl",
-      "version" : "0.1.7"
-    },
-    {
-      "ed25519" : "tuO5J4CE/EdFygo3aUWVRqOmSYEvmAc3GabJK9l2/kivK9CqE229cd68LOmMYAOacmvH3WbXZW1ffCNLZQ6gCw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rvm",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RVM-0.1.2.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "eb74bd0da650055ac8d06e5e8628206ee5f2bcde6726a90edf28c6be2277a868",
-      "size" : 36664,
-      "title" : "ЯVM 0.1.2 · Real Virtual Machine (installed tool) · LIVE VERSION reopen · version shown from the installed manifest (was rvm-egg-0.1.0) · Run button fixed · pins rvm-linux 0.1.2",
-      "url" : "eggs/RVM-0.1.2.rzl",
-      "version" : "0.1.2"
-    },
-    {
       "ed25519" : "qUlkqBIOEdYTnna/mWyZW3HHSMYj/O4wXHVskA/YmIYq1grkV5s75VBqTZM9xtyJMjeTqeOetjSOZfl0KKRwAg==",
       "hosts" : [
         "rbowzr",
@@ -339,10 +297,52 @@
       "title" : "RBOTBRIDGE 1.0.1 · in-app bot bridge skill · SKILL.md → SKILL.rzl (.rzl only) · page CSP connect-src none · LIVE VERSION reopen",
       "url" : "eggs/RBOTBRIDGE-1.0.1.rzl",
       "version" : "1.0.1"
+    },
+    {
+      "ed25519" : "UaiE+wMYSzyR425P1KPPl9ixY6xaJEsnRPEdb9kRyg8Gb/cBfSqYk2YRhaZ5Jh75Ww6EureRkgq0yCvGSbLcAw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "yaseed",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RSEED-0.1.8.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "6e71d32839729beefd9bb66da4cede87a3ec83664ff6b460c4e3029ca19b2b91",
+      "size" : 411078,
+      "title" : "ЯSEED 0.1.8 · /rvm linux run passes the full command line (paced console input) · chained ?cmd= links (boot;run;run) · Linux console in-flow above the readout · every /rvm + /rseed command and reply to the chat log and the paired Neo botbridge (rvm-out) · pins rvm-linux 0.1.2 · offline (public)",
+      "url" : "eggs/RSEED-0.1.8.rzl",
+      "version" : "0.1.8"
+    },
+    {
+      "ed25519" : "eQg/KUiGIFgAVtOW6OL7b4H3rcUwkIQHW7GeEtBxZBaKGXhEkiQkpfjFeRer+VEas4W5/3yoqLQO5gVMQXoNBg==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "rvm",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RVM-0.1.3.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "be5fd11c7bc5d0b5c2515440196c182723677f0cfa0c09918c59e68d51b9ede4",
+      "size" : 40190,
+      "title" : "ЯVM 0.1.3 · /rvm linux run full command line (paced console input, Run fires once) · ?cmd= chains · console in-flow above the readout · output to chat log + paired Neo botbridge (rvm-out) · pins rvm-linux 0.1.2",
+      "url" : "eggs/RVM-0.1.3.rzl",
+      "version" : "0.1.3"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-13T01:56:57Z",
+  "generated" : "2026-10-13T06:45:36Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
