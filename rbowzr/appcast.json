@@ -320,7 +320,7 @@
       "version" : "0.1.3"
     },
     {
-      "ed25519" : "7gmT+eSdQ/zSajHEiSnvcm0SDwYNTGMRE0srkw0g3HNNv8uLubcnk1wbNx+tdX7X94aupBhiato6bXRc9zFpDg==",
+      "ed25519" : "1Ak+NaJO+wK6wjHgcqWGDwB0SN0IR1HFil9GUkLb9k+d/gakhsLt8lHLiRHzvTpc6MLbIbBjYd2Jb+WlrHtADg==",
       "hosts" : [
         "rbowzr",
         "ybot"
@@ -328,21 +328,21 @@
       "id" : "rzldoc",
       "kind" : "egg",
       "minHostVersion" : "0.3.5",
-      "name" : "RZLDOC-0.1.3.rzl",
+      "name" : "RZLDOC-0.1.4.rzl",
       "platforms" : [
         "macos",
         "ios",
         "ipados"
       ],
-      "sha256" : "f4ec706f95057ce7e56ef152dc83ce9d63b0ed80be4e98fac37ee849d800b704",
-      "size" : 71296,
-      "title" : "rzldoc 0.1.3 · RZL-DOC reader (every app) · opens a specific page or file from its link (?rzl= / #rzl= base64url + name; host `doc <file>`) · ?doc= #doc= kept · add-only",
-      "url" : "eggs/RZLDOC-0.1.3.rzl",
-      "version" : "0.1.3"
+      "sha256" : "acee23d1aa62c286d356a0bcd841eef5a6f94db2cad7e93351ff85bdbd2b255d",
+      "size" : 71690,
+      "title" : "rzldoc 0.1.4 · RZL-DOC reader (every app) · opens a doc BY FILE (#file= / ?file=, no size cap) · ?rzl= #rzl= ?doc= #doc= kept · add-only",
+      "url" : "eggs/RZLDOC-0.1.4.rzl",
+      "version" : "0.1.4"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-13T16:27:02Z",
+  "generated" : "2026-10-13T16:27:34Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
