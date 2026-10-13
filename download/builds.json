@@ -1,29 +1,118 @@
 {
   "schema": "rlab-downloads.v1",
-  "updated": "2026-10-07T21:45:00-06:00",
+  "updated": "2026-10-12T20:15:00-06:00",
   "note": "Build numbers (CFBundleVersion) for feed versions, read from the signed release apps. The appcasts stay the source of truth for version / size / sha256 / url.",
   "builds": {
-    "info.rizal.rbowzr.native": { "1.1.2": "6", "1.2.2": "9", "1.2.8": "17" },
-    "io.github.rizaleon.yaaim": { "0.3.5": "2026092501", "0.3.8": "2026100507" }
+    "info.rizal.rbowzr.native": {
+      "1.1.2": "6",
+      "1.2.2": "9",
+      "1.2.8": "17",
+      "2.1.2": "2026101218"
+    },
+    "io.github.rizaleon.yaaim": {
+      "0.3.5": "2026092501",
+      "0.3.8": "2026100507",
+      "2.1.2": "2026101218"
+    }
   },
   "published": [
-    { "app": "rbowzr", "platform": "macos", "version": "1.2.8", "build": "17", "name": "RBOWZR-1.2.8-mac.dmg", "size": 630052860,
+    {
+      "app": "rbowzr",
+      "platform": "macos",
+      "version": "2.1.2",
+      "build": "2026101218",
+      "name": "RBOWZR-2.1.2.dmg",
+      "size": 631785736,
+      "sha256": "5b5bacfce8afcf569a6e2ef8dd40ebd3329820177e51dd1cec65c459d721ddc2",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.2/RBOWZR-2.1.2.dmg"
+    },
+    {
+      "app": "rbowzr",
+      "platform": "ios",
+      "version": "2.1.2",
+      "build": "2026101218",
+      "name": "RBOWZR-2.1.2-ios.ipa",
+      "size": 641114530,
+      "sha256": "c17a44cf47caf0e69bcc6ff64ccba442f1b69f751339592bd0397218db169420",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.2/RBOWZR-2.1.2-ios.ipa"
+    },
+    {
+      "app": "ybot",
+      "platform": "macos",
+      "version": "2.1.2",
+      "build": "2026101218",
+      "name": "YBOT-2.1.2.dmg",
+      "size": 685673801,
+      "sha256": "26b71749698505218d13eeece9192017883fa36ad880d0f3608032c2dd8e1dcb",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.2/YBOT-2.1.2.dmg"
+    },
+    {
+      "app": "ybot",
+      "platform": "ios",
+      "version": "2.1.2",
+      "build": "2026101218",
+      "name": "YBOT-2.1.2-ios.ipa",
+      "size": 679864546,
+      "sha256": "fcf6b9430122eaca494cb052df503e21a5c8dc2e227016baad3f21e94bfbc71d",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.2/YBOT-2.1.2-ios.ipa"
+    },
+    {
+      "app": "rbowzr",
+      "platform": "macos",
+      "version": "1.2.8",
+      "build": "17",
+      "name": "RBOWZR-1.2.8-mac.dmg",
+      "size": 630052860,
       "sha256": "45ddbdefdd4c12399b976b9dc253d08f415e88268e6d7459f9e9f7f326e82a64",
-      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v1.2.8/RBOWZR-1.2.8-mac.dmg" },
-    { "app": "rbowzr", "platform": "ios", "version": "1.2.8", "build": "17", "name": "RBOWZR-1.2.8-ios.ipa", "size": 639888545,
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v1.2.8/RBOWZR-1.2.8-mac.dmg"
+    },
+    {
+      "app": "rbowzr",
+      "platform": "ios",
+      "version": "1.2.8",
+      "build": "17",
+      "name": "RBOWZR-1.2.8-ios.ipa",
+      "size": 639888545,
       "sha256": "569c9137ee4a5f574788a2f68a946bff1975638717b0e762fc981d13ed0070cd",
-      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v1.2.8/RBOWZR-1.2.8-ios.ipa" },
-    { "app": "rbowzr", "platform": "macos", "version": "1.2.2", "build": "9", "name": "RBOWZR-1.2.2.dmg", "size": 626877777,
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v1.2.8/RBOWZR-1.2.8-ios.ipa"
+    },
+    {
+      "app": "rbowzr",
+      "platform": "macos",
+      "version": "1.2.2",
+      "build": "9",
+      "name": "RBOWZR-1.2.2.dmg",
+      "size": 626877777,
       "sha256": "f8263bb9981d5f286189819fe743e55106714dd73af0aaf272e5c83a2f5effe4",
-      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v1.2.2/RBOWZR-1.2.2.dmg" },
-    { "app": "ybot", "platform": "macos", "version": "0.3.8", "build": "2026100507", "name": "YBOT-0.3.8.dmg", "size": 678423676,
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v1.2.2/RBOWZR-1.2.2.dmg"
+    },
+    {
+      "app": "ybot",
+      "platform": "macos",
+      "version": "0.3.8",
+      "build": "2026100507",
+      "name": "YBOT-0.3.8.dmg",
+      "size": 678423676,
       "sha256": "e25ab9935bb0e59e62329c4ee50fc4b5fc226049e2e81ff7bfb018262c0a58ec",
-      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v0.3.8/YBOT-0.3.8.dmg" }
+      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v0.3.8/YBOT-0.3.8.dmg"
+    }
   ],
   "lab": [
-    { "app": "rbowzr", "platform": "ios", "version": "1.2.2", "build": "9", "size": 680856269,
-      "note": "app bundle incl. fused heart · lab USB / Wi-Fi devicectl install · no public IPA" },
-    { "app": "ybot", "platform": "ios", "version": "0.3.8", "build": "2026100507", "size": null,
-      "note": "PUBLIC flavour incl. fused heart · lab USB / Wi-Fi devicectl install · no public IPA" }
+    {
+      "app": "rbowzr",
+      "platform": "ios",
+      "version": "1.2.2",
+      "build": "9",
+      "size": 680856269,
+      "note": "app bundle incl. fused heart · lab USB / Wi-Fi devicectl install · no public IPA"
+    },
+    {
+      "app": "ybot",
+      "platform": "ios",
+      "version": "0.3.8",
+      "build": "2026100507",
+      "size": null,
+      "note": "PUBLIC flavour incl. fused heart · lab USB / Wi-Fi devicectl install · no public IPA"
+    }
   ]
 }
