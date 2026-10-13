@@ -1,21 +1,63 @@
 {
   "schema": "rlab-downloads.v1",
-  "updated": "2026-10-12T20:15:00-06:00",
+  "updated": "2026-10-13T10:30:00-06:00",
   "note": "Build numbers (CFBundleVersion) for feed versions, read from the signed release apps. The appcasts stay the source of truth for version / size / sha256 / url.",
   "builds": {
     "info.rizal.rbowzr.native": {
       "1.1.2": "6",
       "1.2.2": "9",
       "1.2.8": "17",
-      "2.1.2": "2026101218"
+      "2.1.2": "2026101218",
+      "2.1.4": "2026101303"
     },
     "io.github.rizaleon.yaaim": {
       "0.3.5": "2026092501",
       "0.3.8": "2026100507",
-      "2.1.2": "2026101218"
+      "2.1.2": "2026101218",
+      "2.1.4": "2026101303"
     }
   },
   "published": [
+    {
+      "app": "rbowzr",
+      "platform": "macos",
+      "version": "2.1.4",
+      "build": "2026101303",
+      "name": "RBOWZR-2.1.4.dmg",
+      "size": 633227872,
+      "sha256": "7a1ff4b1585237759297a787066411cd7e9412fe080301db6912ab29aadbbd0e",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4.dmg"
+    },
+    {
+      "app": "rbowzr",
+      "platform": "ios",
+      "version": "2.1.4",
+      "build": "2026101303",
+      "name": "RBOWZR-2.1.4-ios.ipa",
+      "size": 642387485,
+      "sha256": "189e3958ea2a188368fb74e189285a517616169a477b9980ef6da34217fb612d",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4-ios.ipa"
+    },
+    {
+      "app": "ybot",
+      "platform": "macos",
+      "version": "2.1.4",
+      "build": "2026101303",
+      "name": "YBOT-2.1.4.dmg",
+      "size": 686111786,
+      "sha256": "c329e9d9bfdfae82867bb85a3e92691073afd7c7edfa675d45874701110d81cc",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4.dmg"
+    },
+    {
+      "app": "ybot",
+      "platform": "ios",
+      "version": "2.1.4",
+      "build": "2026101303",
+      "name": "YBOT-2.1.4-ios.ipa",
+      "size": 680079512,
+      "sha256": "e399f3d394500e5dbd750abf2aade9f12bf87f5740a77df72bb578ae2b7f11ed",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4-ios.ipa"
+    },
     {
       "app": "rbowzr",
       "platform": "macos",

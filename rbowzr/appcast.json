@@ -1,22 +1,22 @@
 {
   "app" : {
-    "build" : "2026101218",
-    "ed25519" : "q3wriEFK8W4NMHef4zNTl1YRTxl2YkQap1dy3xiGsbXIOnCSQBcGHWZat1/83AfuXNhJpo0Ce4PIrTgILdcACw==",
+    "build" : "2026101303",
+    "ed25519" : "jhaARyhteqp511rHT4t4OZEYkdWkhbj2+uWHt3sl1Y6X8h5Lf0dw2tMg2d+b9P465eky0svYoEsUrNtAx6KJBA==",
     "id" : "info.rizal.rbowzr.native",
     "kind" : "app",
     "minimumSystemVersion" : "14.0",
-    "name" : "RBOWZR-2.1.2.dmg",
-    "notes" : "ЯBOWZR 2.1.2 (2026101218) · ALL APPS UPDATE TOGETHER (ЯBOT + ЯBOWZR, iOS + macOS, same version+build) · self-evolving shell: core-base eggs raise the effective version/build · add-only guard · commands with or without slash · offline chat fix · BENCHMARK-AIRPLANE-HEART-001 PASS",
-    "sha256" : "5b5bacfce8afcf569a6e2ef8dd40ebd3329820177e51dd1cec65c459d721ddc2",
-    "size" : 631785736,
+    "name" : "RBOWZR-2.1.4.dmg",
+    "notes" : "ЯBOWZR 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation",
+    "sha256" : "7a1ff4b1585237759297a787066411cd7e9412fe080301db6912ab29aadbbd0e",
+    "size" : 633227872,
     "title" : "ЯBOWZR",
-    "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.2/RBOWZR-2.1.2.dmg",
-    "version" : "2.1.2"
+    "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4.dmg",
+    "version" : "2.1.4"
   },
   "apps" : {
     "ios" : {
-      "build" : "2026101218",
-      "ed25519" : "zt4ANiS+zuEHM4hnnHs8Eq73DTpCA0cbQTymzUYu2x0PG+Jj+FdzdpvSkmzr5iEUyVHccZDHcgqAyVkwH0+oAw==",
+      "build" : "2026101303",
+      "ed25519" : "yTUWDiEikcmkhhXyonQSQDOVbjYt8a1meS6mFY0qT/iX28GNMbhYNI7ggF8pMWNW3Kb+10+fPf7rAUAOMdLvDA==",
       "heart" : {
         "bytes" : 639446688,
         "id" : "qwen3-0.6b-q8",
@@ -25,19 +25,19 @@
       },
       "id" : "info.rizal.rbowzr.native",
       "kind" : "app",
-      "name" : "RBOWZR-2.1.2-ios.ipa",
-      "notes" : "ios 2.1.2 (2026101218) · ALL APPS UPDATE TOGETHER (ЯBOT + ЯBOWZR, iOS + macOS, same version+build) · self-evolving shell: core-base eggs raise the effective version/build · add-only guard · commands with or without slash · offline chat fix · BENCHMARK-AIRPLANE-HEART-001 PASS · development-signed IPA (registered devices)",
+      "name" : "RBOWZR-2.1.4-ios.ipa",
+      "notes" : "ios 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation · development-signed IPA (registered devices)",
       "platform" : "ios",
       "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "c17a44cf47caf0e69bcc6ff64ccba442f1b69f751339592bd0397218db169420",
-      "size" : 641114530,
+      "sha256" : "189e3958ea2a188368fb74e189285a517616169a477b9980ef6da34217fb612d",
+      "size" : 642387485,
       "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.2/RBOWZR-2.1.2-ios.ipa",
-      "version" : "2.1.2"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4-ios.ipa",
+      "version" : "2.1.4"
     },
     "ipados" : {
-      "build" : "2026101218",
-      "ed25519" : "GXFLTcrPaywaaVdNdc0jOmZREk8zFA3rIyY4hWQz+19/d7rxPztcGjsv5zUSXwA3Znaq/rh7nQM3v05/mffsBw==",
+      "build" : "2026101303",
+      "ed25519" : "5v47Sgo/YsT9qCRqawo0ARpl2GQGjpRmqUY8oO3oZm4Iw6vU23ZI6PgZkMPiQsGCb5OLx/E/CMzs8EUC8/n3CA==",
       "heart" : {
         "bytes" : 639446688,
         "id" : "qwen3-0.6b-q8",
@@ -46,29 +46,29 @@
       },
       "id" : "info.rizal.rbowzr.native",
       "kind" : "app",
-      "name" : "RBOWZR-2.1.2-ios.ipa",
-      "notes" : "ipados 2.1.2 (2026101218) · ALL APPS UPDATE TOGETHER (ЯBOT + ЯBOWZR, iOS + macOS, same version+build) · self-evolving shell: core-base eggs raise the effective version/build · add-only guard · commands with or without slash · offline chat fix · BENCHMARK-AIRPLANE-HEART-001 PASS · development-signed IPA (registered devices)",
+      "name" : "RBOWZR-2.1.4-ios.ipa",
+      "notes" : "ipados 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation · development-signed IPA (registered devices)",
       "platform" : "ipados",
       "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "c17a44cf47caf0e69bcc6ff64ccba442f1b69f751339592bd0397218db169420",
-      "size" : 641114530,
+      "sha256" : "189e3958ea2a188368fb74e189285a517616169a477b9980ef6da34217fb612d",
+      "size" : 642387485,
       "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.2/RBOWZR-2.1.2-ios.ipa",
-      "version" : "2.1.2"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4-ios.ipa",
+      "version" : "2.1.4"
     },
     "macos" : {
-      "build" : "2026101218",
-      "ed25519" : "xYDa9qgN7B8LfFnmTwbYZTrqkxViYSrsF81O5K1VOjB8LdVWy0eM8k5pUfqafvXOc1CewxbnCqT96EdcvXuLAg==",
+      "build" : "2026101303",
+      "ed25519" : "4ZJtCcbrfL8x/IuCyu2/0r71kD8Gxgs6x6J+MZTGh5G8hXGJFet6Gh/W5CmWCF1f9nN9GXE7vg1YyEmfo71YCg==",
       "id" : "info.rizal.rbowzr.native",
       "kind" : "app",
       "minimumSystemVersion" : "14.0",
-      "name" : "RBOWZR-2.1.2.dmg",
-      "notes" : "ЯBOWZR 2.1.2 (2026101218) · ALL APPS UPDATE TOGETHER (ЯBOT + ЯBOWZR, iOS + macOS, same version+build) · self-evolving shell: core-base eggs raise the effective version/build · add-only guard · commands with or without slash · offline chat fix · BENCHMARK-AIRPLANE-HEART-001 PASS",
-      "sha256" : "5b5bacfce8afcf569a6e2ef8dd40ebd3329820177e51dd1cec65c459d721ddc2",
-      "size" : 631785736,
+      "name" : "RBOWZR-2.1.4.dmg",
+      "notes" : "ЯBOWZR 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation",
+      "sha256" : "7a1ff4b1585237759297a787066411cd7e9412fe080301db6912ab29aadbbd0e",
+      "size" : 633227872,
       "title" : "ЯBOWZR",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.2/RBOWZR-2.1.2.dmg",
-      "version" : "2.1.2"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4.dmg",
+      "version" : "2.1.4"
     }
   },
   "eggs" : [
@@ -342,7 +342,7 @@
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-13T08:03:31Z",
+  "generated" : "2026-10-13T16:27:02Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",

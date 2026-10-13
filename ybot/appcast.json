@@ -1,22 +1,22 @@
 {
   "app" : {
-    "build" : "2026101218",
-    "ed25519" : "tR9cZYPdEKn7OzxQA9AxRXOQmStKT+xNznBMjF3kEv8OUq13gtRieVfNhoKRXIsteE0VOLkU7oENCM9ewUWoCw==",
+    "build" : "2026101303",
+    "ed25519" : "L23kdYid8o8wLni62mQlyB5NUaY5AMlcmX2Xqt4GVUQLYWBlVNc8/UWgbYozzbzJqLaPIhCxuxO1N1PZX4YDBA==",
     "id" : "io.github.rizaleon.yaaim",
     "kind" : "app",
     "minimumSystemVersion" : "26.6.2",
-    "name" : "YBOT-2.1.2.dmg",
-    "notes" : "ЯBOT 2.1.2 (2026101218) · ALL APPS UPDATE TOGETHER (ЯBOT + ЯBOWZR, iOS + macOS, same version+build) · self-evolving shell: core-base eggs raise the effective version/build · add-only guard · commands with or without slash · offline chat fix · BENCHMARK-AIRPLANE-HEART-001 PASS",
-    "sha256" : "26b71749698505218d13eeece9192017883fa36ad880d0f3608032c2dd8e1dcb",
-    "size" : 685673801,
+    "name" : "YBOT-2.1.4.dmg",
+    "notes" : "ЯBOT 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation",
+    "sha256" : "c329e9d9bfdfae82867bb85a3e92691073afd7c7edfa675d45874701110d81cc",
+    "size" : 686111786,
     "title" : "ЯBOT",
-    "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.2/YBOT-2.1.2.dmg",
-    "version" : "2.1.2"
+    "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4.dmg",
+    "version" : "2.1.4"
   },
   "apps" : {
     "ios" : {
-      "build" : "2026101218",
-      "ed25519" : "GUd7T/DS/Uu8YZhXXJFlQBKH5SzjeRtdh0EM9LFr/O2ElnxW2HDENTwOTOW5BE/cdLzMO5CRqNwnOQSVC6I0Ag==",
+      "build" : "2026101303",
+      "ed25519" : "DXq7+YjOvKtVUBWfHn9kWrFtLQyNI6lPDysqexgav1YMNOBLNiGRnISQdYKIg4yKSXGf4yZ8dc+GvoxuUjZwBQ==",
       "heart" : {
         "bytes" : 639446688,
         "id" : "qwen3-0.6b-q8",
@@ -25,19 +25,19 @@
       },
       "id" : "io.github.rizaleon.yaaim",
       "kind" : "app",
-      "name" : "YBOT-2.1.2-ios.ipa",
-      "notes" : "ios 2.1.2 (2026101218) · ALL APPS UPDATE TOGETHER (ЯBOT + ЯBOWZR, iOS + macOS, same version+build) · self-evolving shell: core-base eggs raise the effective version/build · add-only guard · commands with or without slash · offline chat fix · BENCHMARK-AIRPLANE-HEART-001 PASS · development-signed IPA (registered devices)",
+      "name" : "YBOT-2.1.4-ios.ipa",
+      "notes" : "ios 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation · development-signed IPA (registered devices)",
       "platform" : "ios",
       "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "fcf6b9430122eaca494cb052df503e21a5c8dc2e227016baad3f21e94bfbc71d",
-      "size" : 679864546,
+      "sha256" : "e399f3d394500e5dbd750abf2aade9f12bf87f5740a77df72bb578ae2b7f11ed",
+      "size" : 680079512,
       "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.2/YBOT-2.1.2-ios.ipa",
-      "version" : "2.1.2"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4-ios.ipa",
+      "version" : "2.1.4"
     },
     "ipados" : {
-      "build" : "2026101218",
-      "ed25519" : "Jh3RdZSCdsoCzFp0Yrsgk9XGsPHIjsQmw9xPhvRFc9oItmewgWfjAcqrFO71ILrpo3xsVGJlVSNLqvnkruA5Cg==",
+      "build" : "2026101303",
+      "ed25519" : "wMEpgt0nZB0WUv4jA3m92WgzKO6i9icPbNP8xqPAlpvima0T25CsAqZAokT19dPvvhuGnf/q6MWHOxPWBMw+CQ==",
       "heart" : {
         "bytes" : 639446688,
         "id" : "qwen3-0.6b-q8",
@@ -46,29 +46,29 @@
       },
       "id" : "io.github.rizaleon.yaaim",
       "kind" : "app",
-      "name" : "YBOT-2.1.2-ios.ipa",
-      "notes" : "ipados 2.1.2 (2026101218) · ALL APPS UPDATE TOGETHER (ЯBOT + ЯBOWZR, iOS + macOS, same version+build) · self-evolving shell: core-base eggs raise the effective version/build · add-only guard · commands with or without slash · offline chat fix · BENCHMARK-AIRPLANE-HEART-001 PASS · development-signed IPA (registered devices)",
+      "name" : "YBOT-2.1.4-ios.ipa",
+      "notes" : "ipados 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation · development-signed IPA (registered devices)",
       "platform" : "ipados",
       "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "fcf6b9430122eaca494cb052df503e21a5c8dc2e227016baad3f21e94bfbc71d",
-      "size" : 679864546,
+      "sha256" : "e399f3d394500e5dbd750abf2aade9f12bf87f5740a77df72bb578ae2b7f11ed",
+      "size" : 680079512,
       "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.2/YBOT-2.1.2-ios.ipa",
-      "version" : "2.1.2"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4-ios.ipa",
+      "version" : "2.1.4"
     },
     "macos" : {
-      "build" : "2026101218",
-      "ed25519" : "RsBBixXJG5siab8TRD93VUBy23v2uJ5TFNrUMQpQdjZGjVSMT6UlYaBGI3ePei17VVNCSx7SLjBWsv14p6NWAg==",
+      "build" : "2026101303",
+      "ed25519" : "c/L3W5MXDyUP79N4UXubiQgVF3xKEt5kL/omSoEuNdaTpb9OTMMVnCUVHpiAKiMij1EGdS27IHM20tV/lmgoBA==",
       "id" : "io.github.rizaleon.yaaim",
       "kind" : "app",
       "minimumSystemVersion" : "26.6.2",
-      "name" : "YBOT-2.1.2.dmg",
-      "notes" : "ЯBOT 2.1.2 (2026101218) · ALL APPS UPDATE TOGETHER (ЯBOT + ЯBOWZR, iOS + macOS, same version+build) · self-evolving shell: core-base eggs raise the effective version/build · add-only guard · commands with or without slash · offline chat fix · BENCHMARK-AIRPLANE-HEART-001 PASS",
-      "sha256" : "26b71749698505218d13eeece9192017883fa36ad880d0f3608032c2dd8e1dcb",
-      "size" : 685673801,
+      "name" : "YBOT-2.1.4.dmg",
+      "notes" : "ЯBOT 2.1.4 (2026101303) · ALL 8 APPS ONE NUMBER (ЯBOT + ЯBOWZR · iOS + macOS · public + private) · FUNCTION PARITY (same 36 functions + 50 commands in every app, slash optional) · talk to any ЯID bot (honest receive-only status) · .rzl docs open in both apps (no size cap, own viewer in ЯBOT) · scroll full · per-window navigation",
+      "sha256" : "c329e9d9bfdfae82867bb85a3e92691073afd7c7edfa675d45874701110d81cc",
+      "size" : 686111786,
       "title" : "ЯBOT",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.2/YBOT-2.1.2.dmg",
-      "version" : "2.1.2"
+      "url" : "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4.dmg",
+      "version" : "2.1.4"
     }
   },
   "eggs" : [
@@ -303,7 +303,7 @@
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-13T08:03:32Z",
+  "generated" : "2026-10-13T16:27:02Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
