@@ -381,6 +381,27 @@
       "title" : "BATIBABOX 2.1.5 · ЯENJIN memory organ + .rzl vector model (static-retrieval-mrl-en-v1, Apache-2.0, 384-d int8) · RVM-seated · add-only",
       "url" : "eggs/BATIBABOX-EMBED-2.1.5.rzl",
       "version" : "2.1.5"
+    },
+    {
+      "ed25519" : "5NS25pOCqb2/m3JuI9uqCb0S1wgfL+UwXUDVlrsMslLXU/9vse6alBSLHP9fTp1YHekK0bTTh93rAvthucXjCw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "yaseed",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "RSEED-0.1.9.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "ca846f22a65cac32a6954acb96027f32d0de1cb6110b5b0060a8eb795b818da1",
+      "size" : 421166,
+      "title" : "ЯSEED 0.1.9 · public scrub of 0.1.8: link allow-list trusts signers by public-key id, owner ID read from this device (no personal IDs bundled) · same functions · 0.1.8 kept",
+      "url" : "eggs/RSEED-0.1.9.rzl",
+      "version" : "0.1.9"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
