@@ -515,10 +515,32 @@
       "title" : "ЯSEED 0.1.10 · + BATIBABOX skills on the ЯVM (bbx-rvm.js + jobs) · native host.read/mind.read when the 2.1.9 app provides it · public scrub · add-only",
       "url" : "eggs/RSEED-0.1.10.rzl",
       "version" : "0.1.10"
+    },
+    {
+      "ed25519" : "Q3QrZZW9ZHmQ8IwTLiL4hudUYTYV4Rqgs06ejFqjs2xw2UWhNQy3iHbiykUDvosFjUcXMJ/OqO+WXqp3iyjGBA==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "trust-keys",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "trust-keys-0.0.2.rzl.zip",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados",
+        "linux"
+      ],
+      "sha256" : "5671c2f5fa3fd8f3661f9467a7ce3d741ff6f64c2f54c645d3ed25f19ca8ecd4",
+      "size" : 1656,
+      "title" : "trust-keys 0.0.2 · seq 2 · + moto Android BIOMETRIC_STRONG P-256 signer 18d60c052a15 (full) · add-only",
+      "url" : "eggs/trust-keys-0.0.2.rzl.zip",
+      "version" : "0.0.2"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-15T08:23:27Z",
+  "generated" : "2026-10-15T16:57:12Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
