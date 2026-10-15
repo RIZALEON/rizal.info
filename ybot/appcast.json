@@ -431,6 +431,32 @@
       "version" : "0.0.1"
     },
     {
+      "ed25519" : "VQBx0QKxJDZPXqPfWEo/lesU8E7O4eK6viDLn+ttEeddg1k3Z7/cKcg4WUj/1PYH8WnOyPA9g7qdPUiQRd6ZBA==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "batibabox-embed",
+      "kind" : "egg",
+      "minHostVersion" : "2.0.0",
+      "name" : "BATIBABOX-EMBED-2.1.7-rvm2.rzl.zip",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados",
+        "android",
+        "ubuntu-touch",
+        "linux"
+      ],
+      "revision" : "rvm2",
+      "sha256" : "c4f67a979336dbc6f5eb9445bd3c131c07493ce0d9ff5c18ff0c87fee5114633",
+      "size" : 11158584,
+      "state" : "PUBLISHED · revision rvm2 (data only; native Swift/Kotlin/Rust source removed, lives in source tree + app builds)",
+      "title" : "BATIBABOX 2.1.7 rvm2 · conversation + action skills on the ЯVM · data-only (fixes rvm1 Cargo.toml rejection)",
+      "url" : "eggs/BATIBABOX-EMBED-2.1.7-rvm2.rzl.zip",
+      "version" : "2.1.7"
+    },
+    {
       "ed25519" : "nOrPHm9FbFcciLkSpXAPZ8aKOBEiG231E1484IFnN4k80aO73Rq5iKYvmoNzgF4Kt3mlDDMCD0Um8m+RW5hBCw==",
       "hosts" : [
         "rbowzr",
@@ -501,7 +527,7 @@
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-15T16:57:12Z",
+  "generated" : "2026-10-15T17:40:39Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
