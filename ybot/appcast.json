@@ -455,10 +455,31 @@
       "title" : "BATIBABOX 2.1.7 rvm1 · conversation + action skills ported to the ЯVM (rvm.v1) · 2.1.7 base zip kept",
       "url" : "eggs/BATIBABOX-EMBED-2.1.7-rvm1.rzl.zip",
       "version" : "2.1.7"
+    },
+    {
+      "ed25519" : "cmRE1GthagNPQS+WiOiZTHdxy6vuZSWk4JgbUJ/78ucRfDEIbFlgI7WvLaj7pawl0KNoZULy72Q5qxyu9mPsDw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "yaseed",
+      "kind" : "egg",
+      "minHostVersion" : "0.3.5",
+      "name" : "RSEED-0.1.10.rzl",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "b297699bb1729dd72a753b530090315e26b57395795f67d4d638d26a69a38e11",
+      "size" : 416583,
+      "title" : "ЯSEED 0.1.10 · + BATIBABOX skills on the ЯVM (bbx-rvm.js + jobs) · native host.read/mind.read when the 2.1.9 app provides it · public scrub · add-only",
+      "url" : "eggs/RSEED-0.1.10.rzl",
+      "version" : "0.1.10"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-15T08:07:22Z",
+  "generated" : "2026-10-15T08:23:30Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
