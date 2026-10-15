@@ -1,6 +1,6 @@
 {
   "schema": "rlab-downloads.v1",
-  "updated": "2026-10-13T15:45:00-06:00",
+  "updated": "2026-10-15T13:31:51-06:00",
   "note": "Build numbers (CFBundleVersion) for feed versions, read from the signed release apps. The appcasts stay the source of truth for version / size / sha256 / url.",
   "builds": {
     "info.rizal.rbowzr.native": {
@@ -17,6 +17,12 @@
       "2.1.2": "2026101218",
       "2.1.4": "2026101303",
       "2.1.5": "2026101304"
+    },
+    "local.rizal.yabowzr": {
+      "2.1.9": "219"
+    },
+    "local.rizal.yabot": {
+      "2.1.9": "219"
     }
   },
   "published": [
@@ -179,6 +185,26 @@
       "size": 678423676,
       "sha256": "e25ab9935bb0e59e62329c4ee50fc4b5fc226049e2e81ff7bfb018262c0a58ec",
       "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v0.3.8/YBOT-0.3.8.dmg"
+    },
+    {
+      "app": "rbowzr",
+      "platform": "android",
+      "version": "2.1.9",
+      "build": "219",
+      "name": "RBOWZR-2.1.9-android-debug.apk",
+      "size": 38288145,
+      "sha256": "7d1a34fb12155056687931e74e0fa53878b142341ca5502fd860d072d63dcee4",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.9/RBOWZR-2.1.9-android-debug.apk"
+    },
+    {
+      "app": "ybot",
+      "platform": "android",
+      "version": "2.1.9",
+      "build": "219",
+      "name": "YBOT-2.1.9-android-debug.apk",
+      "size": 20996705,
+      "sha256": "42c5557df8c3b492973ad2a493e1e60793f731c67e704bb33e5cd6c3d732f295",
+      "url": "https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.9/YBOT-2.1.9-android-debug.apk"
     }
   ],
   "lab": [
@@ -197,6 +223,20 @@
       "build": "2026100507",
       "size": null,
       "note": "PUBLIC flavour incl. fused heart · lab USB / Wi-Fi devicectl install · no public IPA"
+    }
+  ],
+  "held": [
+    {
+      "version": "2.1.9",
+      "platforms": [
+        "macos",
+        "ios"
+      ],
+      "apps": [
+        "rbowzr",
+        "ybot"
+      ],
+      "note": "2.1.9 macOS/iOS builds held: not clean yet (need rebuild). 2.1.5 stays current for Mac/iPhone."
     }
   ]
 }
