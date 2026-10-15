@@ -429,10 +429,36 @@
       "title" : "trust-keys 0.0.1 · seq 1 · + 17e Face ID P-256 signers (full) · add-only",
       "url" : "eggs/trust-keys-0.0.1.rzl.zip",
       "version" : "0.0.1"
+    },
+    {
+      "ed25519" : "nOrPHm9FbFcciLkSpXAPZ8aKOBEiG231E1484IFnN4k80aO73Rq5iKYvmoNzgF4Kt3mlDDMCD0Um8m+RW5hBCw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "batibabox-embed",
+      "keyId" : "e5833fdfbbfe",
+      "kind" : "egg",
+      "minHostVersion" : "2.0.0",
+      "name" : "BATIBABOX-EMBED-2.1.7-rvm1.rzl.zip",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados",
+        "android",
+        "ubuntu-touch",
+        "linux"
+      ],
+      "sha256" : "e627d78be629ded78b218bef98a21c2cbefe15a70a35145f2d8ca6b04337776e",
+      "size" : 11680424,
+      "state" : "PUBLISHED 2026-10-15 · Rizal go 02:04 MT",
+      "title" : "BATIBABOX 2.1.7 rvm1 · conversation + action skills ported to the ЯVM (rvm.v1) · 2.1.7 base zip kept",
+      "url" : "eggs/BATIBABOX-EMBED-2.1.7-rvm1.rzl.zip",
+      "version" : "2.1.7"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-13T21:54:52Z",
+  "generated" : "2026-10-15T08:07:22Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
