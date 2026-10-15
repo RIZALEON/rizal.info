@@ -407,6 +407,28 @@
       "title" : "SPONG 0.0.1 · /spong RWEB reachability (read-only)",
       "url" : "eggs/spong-0.0.1.rzl.zip",
       "version" : "0.0.1"
+    },
+    {
+      "ed25519" : "4acmyW62zEI2bsx1ERQPfX4Jma1TueGqjHJcE5qKZdxUmcjUv4T9eGFkX3btTQFet31KRBLiiebqn8FWMAVsCw==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "trust-keys",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "trust-keys-0.0.1.rzl.zip",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados",
+        "linux"
+      ],
+      "sha256" : "b71c0a1387909b4a7a7efc033fb35034aaeae8a947f76c150084f3459c1129e6",
+      "size" : 1526,
+      "title" : "trust-keys 0.0.1 · seq 1 · + 17e Face ID P-256 signers (full) · add-only",
+      "url" : "eggs/trust-keys-0.0.1.rzl.zip",
+      "version" : "0.0.1"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
