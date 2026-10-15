@@ -363,6 +363,28 @@
       "title" : "ЯSEED 0.1.9 · public scrub of 0.1.8: link allow-list trusts signers by public-key id, owner ID read from this device (no personal IDs bundled) · same functions · 0.1.8 kept",
       "url" : "eggs/RSEED-0.1.9.rzl",
       "version" : "0.1.9"
+    },
+    {
+      "ed25519" : "lxmkyT5nKSFrUCoIJGzEWHAxRvq+XDAlZ5xuPcGAj2ZGDr3z+G3GWbP6xzo3AvjU0bs6Li6kqoVNpD/mDqnnDA==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "egg-ping",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "egg-ping-0.0.2.rzl.zip",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados",
+        "linux"
+      ],
+      "sha256" : "a1af957090e78e227d010a57c1e3735e41e78949366e9961d6ad0359bed0f893",
+      "size" : 1208,
+      "title" : "egg-ping 0.0.2 · no-op update test",
+      "url" : "eggs/egg-ping-0.0.2.rzl.zip",
+      "version" : "0.0.2"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
