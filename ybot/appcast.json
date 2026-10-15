@@ -385,6 +385,28 @@
       "title" : "egg-ping 0.0.2 · no-op update test",
       "url" : "eggs/egg-ping-0.0.2.rzl.zip",
       "version" : "0.0.2"
+    },
+    {
+      "ed25519" : "2Wh0AME74iOfLow6bEmzALAgvq0YdXPbtBTWSYJj6D56n10BMVvSdiYiSCWLEc9IBfDfLDjgjHi+G/hZBzQEAg==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "spong",
+      "kind" : "egg",
+      "minHostVersion" : "1.1.2",
+      "name" : "spong-0.0.1.rzl.zip",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados",
+        "linux"
+      ],
+      "sha256" : "b411980b561f2d6d7accb10341d1327303d7868bfcca4ee2897db975b4858306",
+      "size" : 3646,
+      "title" : "SPONG 0.0.1 · /spong RWEB reachability (read-only)",
+      "url" : "eggs/spong-0.0.1.rzl.zip",
+      "version" : "0.0.1"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
