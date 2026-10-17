@@ -597,6 +597,27 @@
       "title" : "iOS 2.1.9 overlay · THUNDR Live 0.4.1 · folding bot sidebar · identity guard · stub roster with Latin/Cyrillic look-alike lookup",
       "url" : "eggs/ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
       "version" : "2.1.9.1-pub"
+    },
+    {
+      "ed25519" : "ZJ3dgnl3fe7ZOd7tAeJ9c6R7RgNEUNP8J+TWuIbVi79PvAYJCjwBObzoBEMzgORZ8QQdUbF+3NOLiKlX+xsvCg==",
+      "hosts" : [
+        "rbowzr",
+        "ybot"
+      ],
+      "id" : "ios-219-rscribe-true",
+      "kind" : "egg",
+      "minHostVersion" : "2.1.9",
+      "name" : "ios-219-rscribe-true-2.1.9.2-public.rzl.zip",
+      "platforms" : [
+        "macos",
+        "ios",
+        "ipados"
+      ],
+      "sha256" : "5874064a7167d31a00bbac55271311beb0171204e20ff9f6222f04b77b15227e",
+      "size" : 14195,
+      "title" : "ЯSCRIBE 0.2 (offline in-app component) + TEST→TRUE · merged 2.1.9.2 · add-only",
+      "url" : "eggs/ios-219-rscribe-true-2.1.9.2-public.rzl.zip",
+      "version" : "2.1.9.2"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
