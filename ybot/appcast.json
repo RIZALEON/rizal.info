@@ -539,27 +539,6 @@
       "version" : "0.0.2"
     },
     {
-      "ed25519" : "LotuLBxvA31gr03yGquT9ajSzuwRsZkCeripEU6p6AXuFZ9novAVNLdKvjLj/uUKh0I8/O6PsBShxzEaeFu7Aw==",
-      "hosts" : [
-        "ybot"
-      ],
-      "id" : "ios-219-overlay-public",
-      "kind" : "egg",
-      "minHostVersion" : "2.1.9",
-      "name" : "ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
-      "platforms" : [
-        "ios",
-        "ipados"
-      ],
-      "revision" : "pub1",
-      "sha256" : "9bc5cfe63221e5d1b82183e732157bcc5ca5e929ac3c184c85da4b3c30340da7",
-      "size" : 389400,
-      "state" : "PUBLISHED · public scrub (no roster data, no ЯIDs/names; seats read at runtime)",
-      "title" : "iOS 2.1.9 overlay · THUNDR Live 0.4.1 · folding bot sidebar · identity guard · stub roster with Latin/Cyrillic look-alike lookup",
-      "url" : "eggs/ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
-      "version" : "2.1.9.1-pub"
-    },
-    {
       "ed25519" : "ZJ3dgnl3fe7ZOd7tAeJ9c6R7RgNEUNP8J+TWuIbVi79PvAYJCjwBObzoBEMzgORZ8QQdUbF+3NOLiKlX+xsvCg==",
       "hosts" : [
         "rbowzr",
@@ -579,10 +558,31 @@
       "title" : "ЯSCRIBE 0.2 (offline in-app component) + TEST→TRUE · merged 2.1.9.2 · add-only",
       "url" : "eggs/ios-219-rscribe-true-2.1.9.2-public.rzl.zip",
       "version" : "2.1.9.2"
+    },
+    {
+      "ed25519" : "RMcieNbCI1l6IHqSRJhmsFnqH/yibLxbUP21nilazo+bBWjK8ddLUaMXKEDU0ei318IkVBrWIt03HzaZj67TCA==",
+      "hosts" : [
+        "ybot"
+      ],
+      "id" : "ios-219-overlay-public",
+      "kind" : "egg",
+      "minHostVersion" : "2.1.9",
+      "name" : "ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
+      "platforms" : [
+        "ios",
+        "ipados"
+      ],
+      "revision" : "pub2-scrubbed",
+      "sha256" : "d57dacebaf33970c15a756546261fb5b5ef4a697172cf7b4cee4228371362616",
+      "size" : 370086,
+      "state" : "PUBLISHED · public scrub (blank roster, no ЯIDs/names/IPs/tokens; heart pin 9465e63a… reference-only; MIT LICENSE)",
+      "title" : "iOS 2.1.9 PUBLIC overlay · THUNDR Live 0.4.1 · folding bot sidebar · identity guard · blank roster · MIT · fused 0.6B heart pin 9465e63a…",
+      "url" : "eggs/ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
+      "version" : "2.1.9.1-pub"
     }
   ],
   "feed" : "https://rizal.info/ybot/appcast.json",
-  "generated" : "2026-10-17T03:43:27Z",
+  "generated" : "2026-10-17T19:58:12Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOT",
   "schema" : "rlab-appcast.v1",
