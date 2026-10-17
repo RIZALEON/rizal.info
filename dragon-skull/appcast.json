@@ -1,0 +1,23 @@
+{
+  "app" : {
+    "arch" : "amd64",
+    "ed25519" : "vfW7pceGJLLyd27X4PokQdPcWq3VO1BB/wGOwH1tg5qW/1IMhFE3AL7xlFD1VNgIpnD9blqaT6vtX2b71PDkBQ==",
+    "id" : "info.rizal.dragon-skull",
+    "kind" : "app",
+    "name" : "dragon-skull_1.0.0_amd64.deb",
+    "notes" : "DRAGON SKULL 1.0.0 · Linux amd64 .deb · ЯBOWZR chat shell + llama.cpp + IBM Granite 4.0 H 1B Q4_K_M (Apache-2.0) · fully offline · model sha256-verified at launch",
+    "platform" : "linux",
+    "sha256" : "dc5081ba569e7eb829160bf4a6a4c44053432459539b953a1a63b1be4f1f0db4",
+    "size" : 901676756,
+    "title" : "DRAGON SKULL",
+    "url" : "https://github.com/rizalward/RZL-EGG/releases/download/dragon-skull-linux-1.0.0/dragon-skull_1.0.0_amd64.deb",
+    "version" : "1.0.0"
+  },
+  "eggs" : [],
+  "feed" : "https://rizal.info/dragon-skull/appcast.json",
+  "generated" : "2026-10-17T23:11:19Z",
+  "keyId" : "e5833fdfbbfe",
+  "product" : "DRAGON SKULL",
+  "schema" : "rlab-appcast.v1",
+  "signedMessage" : "rlab-update-v1\\n<kind>\\n<id>\\n<version>\\n<name>\\n<size>\\n<sha256> (ed25519; url not signed)"
+}
