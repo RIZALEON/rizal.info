@@ -576,10 +576,31 @@
       "title" : "trust-keys 0.0.2 · seq 2 · + moto Android BIOMETRIC_STRONG P-256 signer 18d60c052a15 (full) · add-only",
       "url" : "eggs/trust-keys-0.0.2.rzl.zip",
       "version" : "0.0.2"
+    },
+    {
+      "ed25519" : "LvAsSWGRp4zt7G1L2IUTsGRYn/poP+Ep2KLsbgmXskPLBbzYvRJ1GJPYxktUrKxZj5ZEqf6cicAlUQyXTwyWCw==",
+      "hosts" : [
+        "rbowzr"
+      ],
+      "id" : "ios-219-overlay-public",
+      "kind" : "egg",
+      "minHostVersion" : "2.1.9",
+      "name" : "ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
+      "platforms" : [
+        "ios",
+        "ipados"
+      ],
+      "revision" : "pub1",
+      "sha256" : "c526779ebffc6e8705b7d0b1f0e2a8b2d942ed31a45115934ee08a48d342d0f1",
+      "size" : 389427,
+      "state" : "PUBLISHED · public scrub (no roster data, no ЯIDs/names; seats read at runtime)",
+      "title" : "iOS 2.1.9 overlay · THUNDR Live 0.4.1 · folding bot sidebar · identity guard · stub roster with Latin/Cyrillic look-alike lookup",
+      "url" : "eggs/ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
+      "version" : "2.1.9.1-pub"
     }
   ],
   "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-15T19:31:51Z",
+  "generated" : "2026-10-17T03:43:27Z",
   "keyId" : "e5833fdfbbfe",
   "product" : "ЯBOWZR",
   "schema" : "rlab-appcast.v1",
