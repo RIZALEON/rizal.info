@@ -1,655 +1,655 @@
 {
-  "app" : {
-    "build" : "2026101304",
-    "ed25519" : "OEElNl168ZLuvOm0OhPr5VVLn2YHXk3PP5xDTU1l5XTXS4IxFl6pqqsEMLclmcx2ySLP9dun8Ki+ar6i4OvGDg==",
-    "id" : "info.rizal.rbowzr.native",
-    "kind" : "app",
-    "minimumSystemVersion" : "14.0",
-    "name" : "RBOWZR-2.1.5.dmg",
-    "notes" : "ЯBOWZR 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt)",
-    "sha256" : "6e293d64347abace1362fa98671009813de78543197708b50a27fd422a18f3d9",
-    "size" : 644557104,
-    "title" : "ЯBOWZR",
-    "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5.dmg",
-    "version" : "2.1.5"
+ "app": {
+  "build": "2026101304",
+  "ed25519": "OEElNl168ZLuvOm0OhPr5VVLn2YHXk3PP5xDTU1l5XTXS4IxFl6pqqsEMLclmcx2ySLP9dun8Ki+ar6i4OvGDg==",
+  "id": "info.rizal.rbowzr.native",
+  "kind": "app",
+  "minimumSystemVersion": "14.0",
+  "name": "RBOWZR-2.1.5.dmg",
+  "notes": "ЯBOWZR 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt)",
+  "sha256": "6e293d64347abace1362fa98671009813de78543197708b50a27fd422a18f3d9",
+  "size": 644557104,
+  "title": "ЯBOWZR",
+  "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5.dmg",
+  "version": "2.1.5"
+ },
+ "apps": {
+  "android": {
+   "build": "219",
+   "ed25519": "zo3KjxqGoZTQBHdkZmGi5/6j7qlV6HeFNi/JMxOSjk3tB1NeWKKTQ1GPrRbxku+COM6RrndYenbK9LrU1X0SDA==",
+   "id": "local.rizal.yabowzr",
+   "kind": "app",
+   "name": "RBOWZR-2.1.9-android-debug.apk",
+   "notes": "android 2.1.9 (219) · debug-signed (same Android debug cert as 2.1.8) · public-scrubbed · macOS/iOS 2.1.9 held (not clean)",
+   "platform": "android",
+   "sha256": "7d1a34fb12155056687931e74e0fa53878b142341ca5502fd860d072d63dcee4",
+   "size": 38288145,
+   "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.9/RBOWZR-2.1.9-android-debug.apk",
+   "version": "2.1.9"
   },
-  "apps" : {
-    "android" : {
-      "build" : "219",
-      "ed25519" : "zo3KjxqGoZTQBHdkZmGi5/6j7qlV6HeFNi/JMxOSjk3tB1NeWKKTQ1GPrRbxku+COM6RrndYenbK9LrU1X0SDA==",
-      "id" : "local.rizal.yabowzr",
-      "kind" : "app",
-      "name" : "RBOWZR-2.1.9-android-debug.apk",
-      "notes" : "android 2.1.9 (219) · debug-signed (same Android debug cert as 2.1.8) · public-scrubbed · macOS/iOS 2.1.9 held (not clean)",
-      "platform" : "android",
-      "sha256" : "7d1a34fb12155056687931e74e0fa53878b142341ca5502fd860d072d63dcee4",
-      "size" : 38288145,
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.9/RBOWZR-2.1.9-android-debug.apk",
-      "version" : "2.1.9"
-    },
-    "ios" : {
-      "build" : "2026101304",
-      "ed25519" : "poPxLjbw6fD55KZZmGp4GbZxM3fw7obYchE1TN3ooe/hJwA404k/r3jDZLk5fwpsbweURwan5YjhXfaBXgYPBg==",
-      "heart" : {
-        "bytes" : 639446688,
-        "id" : "qwen3-0.6b-q8",
-        "path" : "FusedPygmy.rzl/heart/heart.gguf",
-        "sha256" : "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031"
-      },
-      "id" : "info.rizal.rbowzr.native",
-      "kind" : "app",
-      "name" : "RBOWZR-2.1.5-ios.ipa",
-      "notes" : "ios 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt) · development-signed IPA (registered devices)",
-      "platform" : "ios",
-      "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "fd476935eb3048be84d1df5779ca3ca83a4db2c0cf5297dd8b804f0b6f4ef1eb",
-      "size" : 652562980,
-      "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5-ios.ipa",
-      "version" : "2.1.5"
-    },
-    "ipados" : {
-      "build" : "2026101304",
-      "ed25519" : "SYQJ4vT8MnlPzcsUuaBMrHf5f4G8KEYDVLa+e5yXuQLrqfikUV6ZisrjBQEAjCIsELwRwDZ/+ZSRfrLiUKqLBQ==",
-      "heart" : {
-        "bytes" : 639446688,
-        "id" : "qwen3-0.6b-q8",
-        "path" : "FusedPygmy.rzl/heart/heart.gguf",
-        "sha256" : "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031"
-      },
-      "id" : "info.rizal.rbowzr.native",
-      "kind" : "app",
-      "name" : "RBOWZR-2.1.5-ios.ipa",
-      "notes" : "ipados 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt) · development-signed IPA (registered devices)",
-      "platform" : "ipados",
-      "route" : "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
-      "sha256" : "fd476935eb3048be84d1df5779ca3ca83a4db2c0cf5297dd8b804f0b6f4ef1eb",
-      "size" : 652562980,
-      "store" : "",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5-ios.ipa",
-      "version" : "2.1.5"
-    },
-    "macos" : {
-      "build" : "2026101304",
-      "ed25519" : "w/oNxh2f1whDN9DzWT8TyQv8YVwObe9m4xtko/NFUEaPG8lZpJ3jhK2YKIpqSHl4T0Bvn4YTXdczCX3IeKOrBQ==",
-      "id" : "info.rizal.rbowzr.native",
-      "kind" : "app",
-      "minimumSystemVersion" : "14.0",
-      "name" : "RBOWZR-2.1.5.dmg",
-      "notes" : "ЯBOWZR 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt)",
-      "sha256" : "6e293d64347abace1362fa98671009813de78543197708b50a27fd422a18f3d9",
-      "size" : 644557104,
-      "title" : "ЯBOWZR",
-      "url" : "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5.dmg",
-      "version" : "2.1.5"
-    }
+  "ios": {
+   "build": "2026101304",
+   "ed25519": "poPxLjbw6fD55KZZmGp4GbZxM3fw7obYchE1TN3ooe/hJwA404k/r3jDZLk5fwpsbweURwan5YjhXfaBXgYPBg==",
+   "heart": {
+    "bytes": 639446688,
+    "id": "qwen3-0.6b-q8",
+    "path": "FusedPygmy.rzl/heart/heart.gguf",
+    "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031"
+   },
+   "id": "info.rizal.rbowzr.native",
+   "kind": "app",
+   "name": "RBOWZR-2.1.5-ios.ipa",
+   "notes": "ios 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt) · development-signed IPA (registered devices)",
+   "platform": "ios",
+   "route": "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
+   "sha256": "fd476935eb3048be84d1df5779ca3ca83a4db2c0cf5297dd8b804f0b6f4ef1eb",
+   "size": 652562980,
+   "store": "",
+   "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5-ios.ipa",
+   "version": "2.1.5"
   },
-  "eggs" : [
-    {
-      "ed25519" : "uCdpcw+LykdnPWeesJvn9O8sgXPAMpacTLTRYR0x83/MZfScEKFJLjUJqT12TsJPA5d3iHzsZKgzq3vj8EuBDw==",
-      "hosts" : [
-        "rbowzr"
-      ],
-      "id" : "welcome",
-      "kind" : "egg",
-      "name" : "welcome.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "4446b2e7f69d6fe6f30396e2b6a7614ec1fd9f9695ced8c53b9d9034397c6a6f",
-      "size" : 159,
-      "title" : "Welcome to ЯOS",
-      "url" : "eggs/welcome.rzl",
-      "version" : "1.1.1"
-    },
-    {
-      "ed25519" : "RC0ifEhB9mLfGYL8lw1tKElZn31wTHEFwLeVxnxdzXYa/kLn1bJOYPe2j/z0W/wJeJX+57Om7CBXnoNPHomzBw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "bots-panel",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "bots-panel-1.1.1.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "70e36d4b8f9b539d6a6cef04dfba67e04199bfc07874b13e6b9e0aa2db8c5475",
-      "size" : 153400,
-      "title" : "ЯBOWZR BOTS PANEL · stock ЯBOT + your bots · profile editor",
-      "url" : "eggs/bots-panel-1.1.1.rzl.zip",
-      "version" : "1.1.1"
-    },
-    {
-      "ed25519" : "Bm13HNnxkt3OJpXOJ37iu+NhvqS+QJIOCPVOiU56pe+mzfH12f9YwZyfb3CdugNtvXYJswClVNZgscu+KCndBQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "unified-bar",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "unified-bar-1.1.1.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "f366742eb7674d0df6d267061cb9d04d9a5aae22f2b4fef62a24b9e1793bf1b8",
-      "size" : 3006,
-      "title" : "UNIFIED SMART COMMAND SEARCH ADDRESS MANUAL BAR (public catalog)",
-      "url" : "eggs/unified-bar-1.1.1.rzl.zip",
-      "version" : "1.1.1"
-    },
-    {
-      "ed25519" : "KFdT3goNoafygMRq6XqsuAriy2+u4qLXpworsZb47wd0CIvcrgGLsxspAUiMp4M57Ygzcnx9HTYrvhxttk77Dg==",
-      "hosts" : [
-        "rbowzr"
-      ],
-      "id" : "offline-heart",
-      "kind" : "egg",
-      "minHostVersion" : "1.2.8",
-      "name" : "offline-heart-1.1.2.rzl.zip",
-      "platforms" : [
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "19a7f094602bc9f3482f3006b21c6fb4fa8662030d5a00982210ffdf786fe47b",
-      "size" : 21651,
-      "title" : "Offline heart 1.1.2 · iOS ЯBOWZR on-device Heart · airplane-mode safe (public: no personal data)",
-      "url" : "eggs/offline-heart-1.1.2.rzl.zip",
-      "version" : "1.1.2"
-    },
-    {
-      "ed25519" : "v4j8Yclvy63H89g8TwXgZQRe1/YvMQwoA5G9zwx/je4h4MCf3KxQOvGW9DcfbnSbqcNC+rg+4qm6zqyyC3q7Bw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rid-roster",
-      "kind" : "egg",
-      "minHostVersion" : "1.2.8",
-      "name" : "rid-roster-1.0.1.rzl.zip",
-      "platforms" : [
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "307f9e84f274abbfe948ec9409dd17fe41d45f00614de7a157c176e2917066c3",
-      "size" : 1705,
-      "title" : "ЯID roster (public) · zero seats · one bot slot, ЯID minted on first run",
-      "url" : "eggs/rid-roster-1.0.1.rzl.zip",
-      "version" : "1.0.1"
-    },
-    {
-      "ed25519" : "U7IxdS3D1c1KdaeO6mdLLZKOBANniMta4z8uQvsaUlmc6FL9tsFqwaqb3NzIGTCYW7tbZE0jpbZeOxOVqR5kCg==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "machine-mind",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "machine-mind-1.0.0.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "e0ff22e4c533d09f7ac526fc62b496c31c3e411bac748aef790049e0ffcbf549",
-      "size" : 9100,
-      "title" : "MACHINE-MIND 1.0.0 · base: manual rules + functions, integrated command list + abilities, local-only transcript · VERSION LAW 2026-10-08",
-      "url" : "eggs/machine-mind-1.0.0.rzl.zip",
-      "version" : "1.0.0"
-    },
-    {
-      "ed25519" : "HYK0MxfqjEeWAu5ZQgS91FNCgqhNolLWpi+XQJOKO5810R6Z0i4il1pTrJ8mOg6G4kb1P6Ok5Kp5Mdf+XyEABQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rvm-linux",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RVM-LINUX-0.1.2.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "cfd77a1921fe800e14eb4e03388c5cb31bcb1c9606fb4318dc12ef5d5feb7791",
-      "size" : 5335387,
-      "title" : "ЯVM Linux 0.1.2 · TinyEMU RISC-V64 · Linux 4.15 + BusyBox · script blobs for WKWebView · rvmget · GPL source: rizal.info/src/rvm-linux-0.1.0/",
-      "url" : "eggs/RVM-LINUX-0.1.2.rzl",
-      "version" : "0.1.2"
-    },
-    {
-      "ed25519" : "buHnFMq63OTsVS1osholawFt5D5bx/RxW/5ACvv2HlILkyFxfU/N9j7awgXwtUxgUZb0IgEOJTFbuHN4coDdBA==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rlink-drop",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RLINK-DROP-0.1.3.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "95f8db4ea8a1e851672ad6807648350f15d060f458135e2608697c175e4dafc9",
-      "size" : 36563,
-      "title" : "ЯLINK-DROP 0.1.3 · public scrub of 0.1.2 (device UDID removed from the spec doc) · same behaviour · own page connect-src https://api.github.com only",
-      "url" : "eggs/RLINK-DROP-0.1.3.rzl",
-      "version" : "0.1.3"
-    },
-    {
-      "ed25519" : "pnAq+nBGVRdd2B/Cuh86IMD6mXKsqonKu2IMvCuo+pmUGQqXWUiokEXG7hbXWfyYqp5wrzrcZHTjc5gWJFgIBw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rlink-relay",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RLINK-RELAY-0.1.1.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "0213a48cf67c9a55b0431f2c5fc0b73d49d780fc58b20e920a7b17a998a63811",
-      "size" : 8412,
-      "title" : "ЯLINK relay 0.1.1 · hub ⇄ ЯSEED (LAN) · LIVE VERSION reopen · version from the installed manifest",
-      "url" : "eggs/RLINK-RELAY-0.1.1.rzl",
-      "version" : "0.1.1"
-    },
-    {
-      "ed25519" : "2sHT8aCRRkcVEbVHr66t9rP69q1gNNp0aRwzgd/8GZ4OSq5DdFh0HWDG6rfIG4C5EiLTh8cXlegFK6Dr+M6OCg==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rbotbridge",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RBOTBRIDGE-1.0.1.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "e80d9fc699695d827f5350c4c072c53867f65e785b3b1b78adc606a152745dbb",
-      "size" : 11126,
-      "title" : "RBOTBRIDGE 1.0.1 · in-app bot bridge skill · SKILL.md → SKILL.rzl (.rzl only) · page CSP connect-src none · LIVE VERSION reopen",
-      "url" : "eggs/RBOTBRIDGE-1.0.1.rzl",
-      "version" : "1.0.1"
-    },
-    {
-      "ed25519" : "UaiE+wMYSzyR425P1KPPl9ixY6xaJEsnRPEdb9kRyg8Gb/cBfSqYk2YRhaZ5Jh75Ww6EureRkgq0yCvGSbLcAw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "yaseed",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RSEED-0.1.8.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "6e71d32839729beefd9bb66da4cede87a3ec83664ff6b460c4e3029ca19b2b91",
-      "size" : 411078,
-      "title" : "ЯSEED 0.1.8 · /rvm linux run passes the full command line (paced console input) · chained ?cmd= links (boot;run;run) · Linux console in-flow above the readout · every /rvm + /rseed command and reply to the chat log and the paired Neo botbridge (rvm-out) · pins rvm-linux 0.1.2 · offline (public)",
-      "url" : "eggs/RSEED-0.1.8.rzl",
-      "version" : "0.1.8"
-    },
-    {
-      "ed25519" : "eQg/KUiGIFgAVtOW6OL7b4H3rcUwkIQHW7GeEtBxZBaKGXhEkiQkpfjFeRer+VEas4W5/3yoqLQO5gVMQXoNBg==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rvm",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RVM-0.1.3.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "be5fd11c7bc5d0b5c2515440196c182723677f0cfa0c09918c59e68d51b9ede4",
-      "size" : 40190,
-      "title" : "ЯVM 0.1.3 · /rvm linux run full command line (paced console input, Run fires once) · ?cmd= chains · console in-flow above the readout · output to chat log + paired Neo botbridge (rvm-out) · pins rvm-linux 0.1.2",
-      "url" : "eggs/RVM-0.1.3.rzl",
-      "version" : "0.1.3"
-    },
-    {
-      "ed25519" : "EU0qRNjkDObslHSe9zqcLWpj+ufycBqAo0lCX31AA0ga4z4IZybjXM6uexyOBRxQ1rbmdquRPkW6YvQTVigBBg==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "rzldoc",
-      "kind" : "egg",
-      "minHostVersion" : "0.3.5",
-      "name" : "RZLDOC-0.1.5.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "c039ab90acc72086fcba33e11c9a31668d05ddf3ce8f188a5d7d3f34ac566fd7",
-      "size" : 81091,
-      "title" : "rzldoc 0.1.5 · RZL-DOC reader + universal .rzl router · header card + markdown (.rzl/.md/.markdown/.txt) · read-only package/heart inspector · add-only",
-      "url" : "eggs/RZLDOC-0.1.5.rzl",
-      "version" : "0.1.5"
-    },
-    {
-      "ed25519" : "rsG7HbOWr8wMFr2Jpvof9qsRb5QoSPFQ4sfwz95MO07/KRWNjtprnmnku8LFNrqYng2Rm67RBQgKG0wNvMWSBQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "machine-mind",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "machine-mind-1.0.1.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "5bd78bea581f97014b7ed6a2ecfc49582753751a32932ee85789dc0a2f2a1501",
-      "size" : 10573,
-      "title" : "MACHINE-MIND 1.0.1 · base: manual rules + functions, integrated command list + abilities, local-only transcript · VERSION LAW 2026-10-08",
-      "url" : "eggs/machine-mind-1.0.1.rzl.zip",
-      "version" : "1.0.1"
-    },
-    {
-      "ed25519" : "4UNRax+IScQVLDrcwPMHB/KX+qD1LJAaJuOu+xnZe7Lsn+H0GEB2IVHrnMNQ/AWaIOnTb/JoWNGnsCO6kWkZCg==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "batibabox-embed",
-      "kind" : "egg",
-      "minHostVersion" : "2.1.5",
-      "name" : "BATIBABOX-EMBED-2.1.5.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "4b47f7b6671f83f9f47c9cc4df7e90dd4581329e77e34ad9c8e3a58c398b9f69",
-      "size" : 11143195,
-      "title" : "BATIBABOX 2.1.5 · ЯENJIN memory organ + .rzl vector model (static-retrieval-mrl-en-v1, Apache-2.0, 384-d int8) · RVM-seated · add-only",
-      "url" : "eggs/BATIBABOX-EMBED-2.1.5.rzl",
-      "version" : "2.1.5"
-    },
-    {
-      "ed25519" : "5NS25pOCqb2/m3JuI9uqCb0S1wgfL+UwXUDVlrsMslLXU/9vse6alBSLHP9fTp1YHekK0bTTh93rAvthucXjCw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "yaseed",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RSEED-0.1.9.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "ca846f22a65cac32a6954acb96027f32d0de1cb6110b5b0060a8eb795b818da1",
-      "size" : 421166,
-      "title" : "ЯSEED 0.1.9 · public scrub of 0.1.8: link allow-list trusts signers by public-key id, owner ID read from this device (no personal IDs bundled) · same functions · 0.1.8 kept",
-      "url" : "eggs/RSEED-0.1.9.rzl",
-      "version" : "0.1.9"
-    },
-    {
-      "ed25519" : "lxmkyT5nKSFrUCoIJGzEWHAxRvq+XDAlZ5xuPcGAj2ZGDr3z+G3GWbP6xzo3AvjU0bs6Li6kqoVNpD/mDqnnDA==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "egg-ping",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "egg-ping-0.0.2.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados",
-        "linux"
-      ],
-      "sha256" : "a1af957090e78e227d010a57c1e3735e41e78949366e9961d6ad0359bed0f893",
-      "size" : 1208,
-      "title" : "egg-ping 0.0.2 · no-op update test",
-      "url" : "eggs/egg-ping-0.0.2.rzl.zip",
-      "version" : "0.0.2"
-    },
-    {
-      "ed25519" : "MdbmEWwEXFWXgHPHfEwkPvqBykb456AwmE5DwljSERoLwhT+hq5vo512JNOrUHeJgsgHuUb1NdDUenKBMa0NDQ==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "spong",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "spong-0.0.2.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados",
-        "linux"
-      ],
-      "sha256" : "928354bf3f46785f720b6d3244da2c2ffa955ce23d52429b6226de5367b1c7fb",
-      "size" : 4119,
-      "title" : "SPONG 0.0.2 · /spong RWEB reachability (read-only) · public scrub: no LAN addresses bundled; LAN targets come from this device only (rlab.spong.targets)",
-      "url" : "eggs/spong-0.0.2.rzl.zip",
-      "version" : "0.0.2"
-    },
-    {
-      "ed25519" : "4acmyW62zEI2bsx1ERQPfX4Jma1TueGqjHJcE5qKZdxUmcjUv4T9eGFkX3btTQFet31KRBLiiebqn8FWMAVsCw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "trust-keys",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "trust-keys-0.0.1.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados",
-        "linux"
-      ],
-      "sha256" : "b71c0a1387909b4a7a7efc033fb35034aaeae8a947f76c150084f3459c1129e6",
-      "size" : 1526,
-      "title" : "trust-keys 0.0.1 · seq 1 · + 17e Face ID P-256 signers (full) · add-only",
-      "url" : "eggs/trust-keys-0.0.1.rzl.zip",
-      "version" : "0.0.1"
-    },
-    {
-      "ed25519" : "VQBx0QKxJDZPXqPfWEo/lesU8E7O4eK6viDLn+ttEeddg1k3Z7/cKcg4WUj/1PYH8WnOyPA9g7qdPUiQRd6ZBA==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "batibabox-embed",
-      "kind" : "egg",
-      "minHostVersion" : "2.0.0",
-      "name" : "BATIBABOX-EMBED-2.1.7-rvm2.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados",
-        "android",
-        "ubuntu-touch",
-        "linux"
-      ],
-      "revision" : "rvm2",
-      "sha256" : "c4f67a979336dbc6f5eb9445bd3c131c07493ce0d9ff5c18ff0c87fee5114633",
-      "size" : 11158584,
-      "state" : "PUBLISHED · revision rvm2 (data only; native Swift/Kotlin/Rust source removed, lives in source tree + app builds)",
-      "title" : "BATIBABOX 2.1.7 rvm2 · conversation + action skills on the ЯVM · data-only (fixes rvm1 Cargo.toml rejection)",
-      "url" : "eggs/BATIBABOX-EMBED-2.1.7-rvm2.rzl.zip",
-      "version" : "2.1.7"
-    },
-    {
-      "ed25519" : "nOrPHm9FbFcciLkSpXAPZ8aKOBEiG231E1484IFnN4k80aO73Rq5iKYvmoNzgF4Kt3mlDDMCD0Um8m+RW5hBCw==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "batibabox-embed",
-      "keyId" : "e5833fdfbbfe",
-      "kind" : "egg",
-      "minHostVersion" : "2.0.0",
-      "name" : "BATIBABOX-EMBED-2.1.7-rvm1.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados",
-        "android",
-        "ubuntu-touch",
-        "linux"
-      ],
-      "sha256" : "e627d78be629ded78b218bef98a21c2cbefe15a70a35145f2d8ca6b04337776e",
-      "size" : 11680424,
-      "state" : "PUBLISHED 2026-10-15 · Rizal go 02:04 MT",
-      "title" : "BATIBABOX 2.1.7 rvm1 · conversation + action skills ported to the ЯVM (rvm.v1) · 2.1.7 base zip kept",
-      "url" : "eggs/BATIBABOX-EMBED-2.1.7-rvm1.rzl.zip",
-      "version" : "2.1.7"
-    },
-    {
-      "ed25519" : "X97slG0jT0QhehhvEHgazrqezPykjR4+ajKHxqieocjgIxGgMLI12/PBJ/E/Cj1O+ZH6yae0M3gw9Z3myQlFDg==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "yaseed",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "RSEED-0.1.10.rzl",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "b297699bb1729dd72a753b530090315e26b57395795f67d4d638d26a69a38e11",
-      "size" : 416583,
-      "title" : "ЯSEED 0.1.10 · + BATIBABOX skills on the ЯVM (bbx-rvm.js + jobs) · native host.read/mind.read when the 2.1.9 app provides it · public scrub · add-only",
-      "url" : "eggs/RSEED-0.1.10.rzl",
-      "version" : "0.1.10"
-    },
-    {
-      "ed25519" : "Q3QrZZW9ZHmQ8IwTLiL4hudUYTYV4Rqgs06ejFqjs2xw2UWhNQy3iHbiykUDvosFjUcXMJ/OqO+WXqp3iyjGBA==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "trust-keys",
-      "kind" : "egg",
-      "minHostVersion" : "1.1.2",
-      "name" : "trust-keys-0.0.2.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados",
-        "linux"
-      ],
-      "sha256" : "5671c2f5fa3fd8f3661f9467a7ce3d741ff6f64c2f54c645d3ed25f19ca8ecd4",
-      "size" : 1656,
-      "title" : "trust-keys 0.0.2 · seq 2 · + moto Android BIOMETRIC_STRONG P-256 signer 18d60c052a15 (full) · add-only",
-      "url" : "eggs/trust-keys-0.0.2.rzl.zip",
-      "version" : "0.0.2"
-    },
-    {
-      "ed25519" : "ZJ3dgnl3fe7ZOd7tAeJ9c6R7RgNEUNP8J+TWuIbVi79PvAYJCjwBObzoBEMzgORZ8QQdUbF+3NOLiKlX+xsvCg==",
-      "hosts" : [
-        "rbowzr",
-        "ybot"
-      ],
-      "id" : "ios-219-rscribe-true",
-      "kind" : "egg",
-      "minHostVersion" : "2.1.9",
-      "name" : "ios-219-rscribe-true-2.1.9.2-public.rzl.zip",
-      "platforms" : [
-        "macos",
-        "ios",
-        "ipados"
-      ],
-      "sha256" : "5874064a7167d31a00bbac55271311beb0171204e20ff9f6222f04b77b15227e",
-      "size" : 14195,
-      "title" : "ЯSCRIBE 0.2 (offline in-app component) + TEST→TRUE · merged 2.1.9.2 · add-only",
-      "url" : "eggs/ios-219-rscribe-true-2.1.9.2-public.rzl.zip",
-      "version" : "2.1.9.2"
-    },
-    {
-      "ed25519" : "j3t619kF3mrQu/Vcy80bsQFezzzvvNzIvXBz90ymFRc+vT4lOMZvncb6sc+GoSGObkDlTCmteHRNyjytT6BDBA==",
-      "hosts" : [
-        "rbowzr"
-      ],
-      "id" : "ios-219-overlay-public",
-      "kind" : "egg",
-      "minHostVersion" : "2.1.9",
-      "name" : "ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
-      "platforms" : [
-        "ios",
-        "ipados"
-      ],
-      "revision" : "pub2-scrubbed",
-      "sha256" : "0d7c90c5ecb22deb0d3fea52cc7621385724e3c1341266955d401ce888cab8f6",
-      "size" : 370114,
-      "state" : "PUBLISHED · public scrub (blank roster, no ЯIDs/names/IPs/tokens; heart pin 9465e63a… reference-only; MIT LICENSE)",
-      "title" : "iOS 2.1.9 PUBLIC overlay · THUNDR Live 0.4.1 · folding bot sidebar · identity guard · blank roster · MIT · fused 0.6B heart pin 9465e63a…",
-      "url" : "eggs/ios-219-overlay-public-2.1.9.1-pub.rzl.zip",
-      "version" : "2.1.9.1-pub"
-    }
-  ],
-  "feed" : "https://rizal.info/rbowzr/appcast.json",
-  "generated" : "2026-10-17T19:58:12Z",
-  "keyId" : "e5833fdfbbfe",
-  "product" : "ЯBOWZR",
-  "schema" : "rlab-appcast.v1",
-  "signedMessage" : "rlab-update-v1\\n<kind>\\n<id>\\n<version>\\n<name>\\n<size>\\n<sha256> (ed25519; url not signed)",
-  "withdrawn" : [
-    {
-      "date" : "2026-10-15",
-      "id" : "rlink-drop",
-      "name" : "RLINK-DROP-0.1.1.rzl",
-      "reason" : "carried private device data; replaced by rlink-drop 0.1.3",
-      "status" : "withdrawn",
-      "version" : "0.1.1"
-    },
-    {
-      "date" : "2026-10-15",
-      "id" : "rlink-drop",
-      "name" : "RLINK-DROP-0.1.2.rzl",
-      "reason" : "carried private device data; replaced by rlink-drop 0.1.3",
-      "status" : "withdrawn",
-      "version" : "0.1.2"
-    },
-    {
-      "date" : "2026-10-15",
-      "id" : "spong",
-      "name" : "spong-0.0.1.rzl.zip",
-      "reason" : "carried private device data; replaced by spong 0.0.2",
-      "status" : "withdrawn",
-      "version" : "0.0.1"
-    }
-  ]
+  "ipados": {
+   "build": "2026101304",
+   "ed25519": "SYQJ4vT8MnlPzcsUuaBMrHf5f4G8KEYDVLa+e5yXuQLrqfikUV6ZisrjBQEAjCIsELwRwDZ/+ZSRfrLiUKqLBQ==",
+   "heart": {
+    "bytes": 639446688,
+    "id": "qwen3-0.6b-q8",
+    "path": "FusedPygmy.rzl/heart/heart.gguf",
+    "sha256": "9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031"
+   },
+   "id": "info.rizal.rbowzr.native",
+   "kind": "app",
+   "name": "RBOWZR-2.1.5-ios.ipa",
+   "notes": "ipados 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt) · development-signed IPA (registered devices)",
+   "platform": "ipados",
+   "route": "signed appcast + home-network-only token-gated iPhone→Mac tile route (never USB)",
+   "sha256": "fd476935eb3048be84d1df5779ca3ca83a4db2c0cf5297dd8b804f0b6f4ef1eb",
+   "size": 652562980,
+   "store": "",
+   "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5-ios.ipa",
+   "version": "2.1.5"
+  },
+  "macos": {
+   "build": "2026101304",
+   "ed25519": "w/oNxh2f1whDN9DzWT8TyQv8YVwObe9m4xtko/NFUEaPG8lZpJ3jhK2YKIpqSHl4T0Bvn4YTXdczCX3IeKOrBQ==",
+   "id": "info.rizal.rbowzr.native",
+   "kind": "app",
+   "minimumSystemVersion": "14.0",
+   "name": "RBOWZR-2.1.5.dmg",
+   "notes": "ЯBOWZR 2.1.5 (2026101304) · ALL 8 APPS ONE NUMBER · BATIBABOX memory organ (SPINE → BATIBABOX → HEART) with true vector search, all .rzl (384-d model + float16 vectors, built once) · recall + Garage BATIBABOX panel · SCROLL <app> + doc library (docs · doc open) · version-question fix · bridge pairing cached (no Keychain prompt)",
+   "sha256": "6e293d64347abace1362fa98671009813de78543197708b50a27fd422a18f3d9",
+   "size": 644557104,
+   "title": "ЯBOWZR",
+   "url": "https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5.dmg",
+   "version": "2.1.5"
+  }
+ },
+ "eggs": [
+  {
+   "ed25519": "uCdpcw+LykdnPWeesJvn9O8sgXPAMpacTLTRYR0x83/MZfScEKFJLjUJqT12TsJPA5d3iHzsZKgzq3vj8EuBDw==",
+   "hosts": [
+    "rbowzr"
+   ],
+   "id": "welcome",
+   "kind": "egg",
+   "name": "welcome.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "4446b2e7f69d6fe6f30396e2b6a7614ec1fd9f9695ced8c53b9d9034397c6a6f",
+   "size": 159,
+   "title": "Welcome to ЯOS",
+   "url": "eggs/welcome.rzl",
+   "version": "1.1.1"
+  },
+  {
+   "ed25519": "RC0ifEhB9mLfGYL8lw1tKElZn31wTHEFwLeVxnxdzXYa/kLn1bJOYPe2j/z0W/wJeJX+57Om7CBXnoNPHomzBw==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "bots-panel",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "bots-panel-1.1.1.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "70e36d4b8f9b539d6a6cef04dfba67e04199bfc07874b13e6b9e0aa2db8c5475",
+   "size": 153400,
+   "title": "ЯBOWZR BOTS PANEL · stock ЯBOT + your bots · profile editor",
+   "url": "eggs/bots-panel-1.1.1.rzl.zip",
+   "version": "1.1.1"
+  },
+  {
+   "ed25519": "Bm13HNnxkt3OJpXOJ37iu+NhvqS+QJIOCPVOiU56pe+mzfH12f9YwZyfb3CdugNtvXYJswClVNZgscu+KCndBQ==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "unified-bar",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "unified-bar-1.1.1.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "f366742eb7674d0df6d267061cb9d04d9a5aae22f2b4fef62a24b9e1793bf1b8",
+   "size": 3006,
+   "title": "UNIFIED SMART COMMAND SEARCH ADDRESS MANUAL BAR (public catalog)",
+   "url": "eggs/unified-bar-1.1.1.rzl.zip",
+   "version": "1.1.1"
+  },
+  {
+   "ed25519": "KFdT3goNoafygMRq6XqsuAriy2+u4qLXpworsZb47wd0CIvcrgGLsxspAUiMp4M57Ygzcnx9HTYrvhxttk77Dg==",
+   "hosts": [
+    "rbowzr"
+   ],
+   "id": "offline-heart",
+   "kind": "egg",
+   "minHostVersion": "1.2.8",
+   "name": "offline-heart-1.1.2.rzl.zip",
+   "platforms": [
+    "ios",
+    "ipados"
+   ],
+   "sha256": "19a7f094602bc9f3482f3006b21c6fb4fa8662030d5a00982210ffdf786fe47b",
+   "size": 21651,
+   "title": "Offline heart 1.1.2 · iOS ЯBOWZR on-device Heart · airplane-mode safe (public: no personal data)",
+   "url": "eggs/offline-heart-1.1.2.rzl.zip",
+   "version": "1.1.2"
+  },
+  {
+   "ed25519": "v4j8Yclvy63H89g8TwXgZQRe1/YvMQwoA5G9zwx/je4h4MCf3KxQOvGW9DcfbnSbqcNC+rg+4qm6zqyyC3q7Bw==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "rid-roster",
+   "kind": "egg",
+   "minHostVersion": "1.2.8",
+   "name": "rid-roster-1.0.1.rzl.zip",
+   "platforms": [
+    "ios",
+    "ipados"
+   ],
+   "sha256": "307f9e84f274abbfe948ec9409dd17fe41d45f00614de7a157c176e2917066c3",
+   "size": 1705,
+   "title": "ЯID roster (public) · zero seats · one bot slot, ЯID minted on first run",
+   "url": "eggs/rid-roster-1.0.1.rzl.zip",
+   "version": "1.0.1"
+  },
+  {
+   "ed25519": "U7IxdS3D1c1KdaeO6mdLLZKOBANniMta4z8uQvsaUlmc6FL9tsFqwaqb3NzIGTCYW7tbZE0jpbZeOxOVqR5kCg==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "machine-mind",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "machine-mind-1.0.0.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "e0ff22e4c533d09f7ac526fc62b496c31c3e411bac748aef790049e0ffcbf549",
+   "size": 9100,
+   "title": "MACHINE-MIND 1.0.0 · base: manual rules + functions, integrated command list + abilities, local-only transcript · VERSION LAW 2026-10-08",
+   "url": "eggs/machine-mind-1.0.0.rzl.zip",
+   "version": "1.0.0"
+  },
+  {
+   "ed25519": "HYK0MxfqjEeWAu5ZQgS91FNCgqhNolLWpi+XQJOKO5810R6Z0i4il1pTrJ8mOg6G4kb1P6Ok5Kp5Mdf+XyEABQ==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "rvm-linux",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "RVM-LINUX-0.1.2.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "cfd77a1921fe800e14eb4e03388c5cb31bcb1c9606fb4318dc12ef5d5feb7791",
+   "size": 5335387,
+   "title": "ЯVM Linux 0.1.2 · TinyEMU RISC-V64 · Linux 4.15 + BusyBox · script blobs for WKWebView · rvmget · GPL source: rizal.info/src/rvm-linux-0.1.0/",
+   "url": "eggs/RVM-LINUX-0.1.2.rzl",
+   "version": "0.1.2"
+  },
+  {
+   "ed25519": "buHnFMq63OTsVS1osholawFt5D5bx/RxW/5ACvv2HlILkyFxfU/N9j7awgXwtUxgUZb0IgEOJTFbuHN4coDdBA==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "rlink-drop",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "RLINK-DROP-0.1.3.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "95f8db4ea8a1e851672ad6807648350f15d060f458135e2608697c175e4dafc9",
+   "size": 36563,
+   "title": "ЯLINK-DROP 0.1.3 · public scrub of 0.1.2 (device UDID removed from the spec doc) · same behaviour · own page connect-src https://api.github.com only",
+   "url": "eggs/RLINK-DROP-0.1.3.rzl",
+   "version": "0.1.3"
+  },
+  {
+   "ed25519": "pnAq+nBGVRdd2B/Cuh86IMD6mXKsqonKu2IMvCuo+pmUGQqXWUiokEXG7hbXWfyYqp5wrzrcZHTjc5gWJFgIBw==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "rlink-relay",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "RLINK-RELAY-0.1.1.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "0213a48cf67c9a55b0431f2c5fc0b73d49d780fc58b20e920a7b17a998a63811",
+   "size": 8412,
+   "title": "ЯLINK relay 0.1.1 · hub ⇄ ЯSEED (LAN) · LIVE VERSION reopen · version from the installed manifest",
+   "url": "eggs/RLINK-RELAY-0.1.1.rzl",
+   "version": "0.1.1"
+  },
+  {
+   "ed25519": "2sHT8aCRRkcVEbVHr66t9rP69q1gNNp0aRwzgd/8GZ4OSq5DdFh0HWDG6rfIG4C5EiLTh8cXlegFK6Dr+M6OCg==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "rbotbridge",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "RBOTBRIDGE-1.0.1.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "e80d9fc699695d827f5350c4c072c53867f65e785b3b1b78adc606a152745dbb",
+   "size": 11126,
+   "title": "RBOTBRIDGE 1.0.1 · in-app bot bridge skill · SKILL.md → SKILL.rzl (.rzl only) · page CSP connect-src none · LIVE VERSION reopen",
+   "url": "eggs/RBOTBRIDGE-1.0.1.rzl",
+   "version": "1.0.1"
+  },
+  {
+   "ed25519": "UaiE+wMYSzyR425P1KPPl9ixY6xaJEsnRPEdb9kRyg8Gb/cBfSqYk2YRhaZ5Jh75Ww6EureRkgq0yCvGSbLcAw==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "yaseed",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "RSEED-0.1.8.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "6e71d32839729beefd9bb66da4cede87a3ec83664ff6b460c4e3029ca19b2b91",
+   "size": 411078,
+   "title": "ЯSEED 0.1.8 · /rvm linux run passes the full command line (paced console input) · chained ?cmd= links (boot;run;run) · Linux console in-flow above the readout · every /rvm + /rseed command and reply to the chat log and the paired Neo botbridge (rvm-out) · pins rvm-linux 0.1.2 · offline (public)",
+   "url": "eggs/RSEED-0.1.8.rzl",
+   "version": "0.1.8"
+  },
+  {
+   "ed25519": "eQg/KUiGIFgAVtOW6OL7b4H3rcUwkIQHW7GeEtBxZBaKGXhEkiQkpfjFeRer+VEas4W5/3yoqLQO5gVMQXoNBg==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "rvm",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "RVM-0.1.3.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "be5fd11c7bc5d0b5c2515440196c182723677f0cfa0c09918c59e68d51b9ede4",
+   "size": 40190,
+   "title": "ЯVM 0.1.3 · /rvm linux run full command line (paced console input, Run fires once) · ?cmd= chains · console in-flow above the readout · output to chat log + paired Neo botbridge (rvm-out) · pins rvm-linux 0.1.2",
+   "url": "eggs/RVM-0.1.3.rzl",
+   "version": "0.1.3"
+  },
+  {
+   "ed25519": "EU0qRNjkDObslHSe9zqcLWpj+ufycBqAo0lCX31AA0ga4z4IZybjXM6uexyOBRxQ1rbmdquRPkW6YvQTVigBBg==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "rzldoc",
+   "kind": "egg",
+   "minHostVersion": "0.3.5",
+   "name": "RZLDOC-0.1.5.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "c039ab90acc72086fcba33e11c9a31668d05ddf3ce8f188a5d7d3f34ac566fd7",
+   "size": 81091,
+   "title": "rzldoc 0.1.5 · RZL-DOC reader + universal .rzl router · header card + markdown (.rzl/.md/.markdown/.txt) · read-only package/heart inspector · add-only",
+   "url": "eggs/RZLDOC-0.1.5.rzl",
+   "version": "0.1.5"
+  },
+  {
+   "ed25519": "rsG7HbOWr8wMFr2Jpvof9qsRb5QoSPFQ4sfwz95MO07/KRWNjtprnmnku8LFNrqYng2Rm67RBQgKG0wNvMWSBQ==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "machine-mind",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "machine-mind-1.0.1.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "5bd78bea581f97014b7ed6a2ecfc49582753751a32932ee85789dc0a2f2a1501",
+   "size": 10573,
+   "title": "MACHINE-MIND 1.0.1 · base: manual rules + functions, integrated command list + abilities, local-only transcript · VERSION LAW 2026-10-08",
+   "url": "eggs/machine-mind-1.0.1.rzl.zip",
+   "version": "1.0.1"
+  },
+  {
+   "ed25519": "4UNRax+IScQVLDrcwPMHB/KX+qD1LJAaJuOu+xnZe7Lsn+H0GEB2IVHrnMNQ/AWaIOnTb/JoWNGnsCO6kWkZCg==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "batibabox-embed",
+   "kind": "egg",
+   "minHostVersion": "2.1.5",
+   "name": "BATIBABOX-EMBED-2.1.5.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "4b47f7b6671f83f9f47c9cc4df7e90dd4581329e77e34ad9c8e3a58c398b9f69",
+   "size": 11143195,
+   "title": "BATIBABOX 2.1.5 · ЯENJIN memory organ + .rzl vector model (static-retrieval-mrl-en-v1, Apache-2.0, 384-d int8) · RVM-seated · add-only",
+   "url": "eggs/BATIBABOX-EMBED-2.1.5.rzl",
+   "version": "2.1.5"
+  },
+  {
+   "ed25519": "5NS25pOCqb2/m3JuI9uqCb0S1wgfL+UwXUDVlrsMslLXU/9vse6alBSLHP9fTp1YHekK0bTTh93rAvthucXjCw==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "yaseed",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "RSEED-0.1.9.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "ca846f22a65cac32a6954acb96027f32d0de1cb6110b5b0060a8eb795b818da1",
+   "size": 421166,
+   "title": "ЯSEED 0.1.9 · public scrub of 0.1.8: link allow-list trusts signers by public-key id, owner ID read from this device (no personal IDs bundled) · same functions · 0.1.8 kept",
+   "url": "eggs/RSEED-0.1.9.rzl",
+   "version": "0.1.9"
+  },
+  {
+   "ed25519": "lxmkyT5nKSFrUCoIJGzEWHAxRvq+XDAlZ5xuPcGAj2ZGDr3z+G3GWbP6xzo3AvjU0bs6Li6kqoVNpD/mDqnnDA==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "egg-ping",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "egg-ping-0.0.2.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados",
+    "linux"
+   ],
+   "sha256": "a1af957090e78e227d010a57c1e3735e41e78949366e9961d6ad0359bed0f893",
+   "size": 1208,
+   "title": "egg-ping 0.0.2 · no-op update test",
+   "url": "eggs/egg-ping-0.0.2.rzl.zip",
+   "version": "0.0.2"
+  },
+  {
+   "ed25519": "MdbmEWwEXFWXgHPHfEwkPvqBykb456AwmE5DwljSERoLwhT+hq5vo512JNOrUHeJgsgHuUb1NdDUenKBMa0NDQ==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "spong",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "spong-0.0.2.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados",
+    "linux"
+   ],
+   "sha256": "928354bf3f46785f720b6d3244da2c2ffa955ce23d52429b6226de5367b1c7fb",
+   "size": 4119,
+   "title": "SPONG 0.0.2 · /spong RWEB reachability (read-only) · public scrub: no LAN addresses bundled; LAN targets come from this device only (rlab.spong.targets)",
+   "url": "eggs/spong-0.0.2.rzl.zip",
+   "version": "0.0.2"
+  },
+  {
+   "ed25519": "4acmyW62zEI2bsx1ERQPfX4Jma1TueGqjHJcE5qKZdxUmcjUv4T9eGFkX3btTQFet31KRBLiiebqn8FWMAVsCw==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "trust-keys",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "trust-keys-0.0.1.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados",
+    "linux"
+   ],
+   "sha256": "b71c0a1387909b4a7a7efc033fb35034aaeae8a947f76c150084f3459c1129e6",
+   "size": 1526,
+   "title": "trust-keys 0.0.1 · seq 1 · + 17e Face ID P-256 signers (full) · add-only",
+   "url": "eggs/trust-keys-0.0.1.rzl.zip",
+   "version": "0.0.1"
+  },
+  {
+   "ed25519": "VQBx0QKxJDZPXqPfWEo/lesU8E7O4eK6viDLn+ttEeddg1k3Z7/cKcg4WUj/1PYH8WnOyPA9g7qdPUiQRd6ZBA==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "batibabox-embed",
+   "kind": "egg",
+   "minHostVersion": "2.0.0",
+   "name": "BATIBABOX-EMBED-2.1.7-rvm2.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados",
+    "android",
+    "ubuntu-touch",
+    "linux"
+   ],
+   "revision": "rvm2",
+   "sha256": "c4f67a979336dbc6f5eb9445bd3c131c07493ce0d9ff5c18ff0c87fee5114633",
+   "size": 11158584,
+   "state": "PUBLISHED · revision rvm2 (data only; native Swift/Kotlin/Rust source removed, lives in source tree + app builds)",
+   "title": "BATIBABOX 2.1.7 rvm2 · conversation + action skills on the ЯVM · data-only (fixes rvm1 Cargo.toml rejection)",
+   "url": "eggs/BATIBABOX-EMBED-2.1.7-rvm2.rzl.zip",
+   "version": "2.1.7"
+  },
+  {
+   "ed25519": "nOrPHm9FbFcciLkSpXAPZ8aKOBEiG231E1484IFnN4k80aO73Rq5iKYvmoNzgF4Kt3mlDDMCD0Um8m+RW5hBCw==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "batibabox-embed",
+   "keyId": "e5833fdfbbfe",
+   "kind": "egg",
+   "minHostVersion": "2.0.0",
+   "name": "BATIBABOX-EMBED-2.1.7-rvm1.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados",
+    "android",
+    "ubuntu-touch",
+    "linux"
+   ],
+   "sha256": "e627d78be629ded78b218bef98a21c2cbefe15a70a35145f2d8ca6b04337776e",
+   "size": 11680424,
+   "state": "PUBLISHED 2026-10-15 · Rizal go 02:04 MT",
+   "title": "BATIBABOX 2.1.7 rvm1 · conversation + action skills ported to the ЯVM (rvm.v1) · 2.1.7 base zip kept",
+   "url": "eggs/BATIBABOX-EMBED-2.1.7-rvm1.rzl.zip",
+   "version": "2.1.7"
+  },
+  {
+   "ed25519": "X97slG0jT0QhehhvEHgazrqezPykjR4+ajKHxqieocjgIxGgMLI12/PBJ/E/Cj1O+ZH6yae0M3gw9Z3myQlFDg==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "yaseed",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "RSEED-0.1.10.rzl",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "b297699bb1729dd72a753b530090315e26b57395795f67d4d638d26a69a38e11",
+   "size": 416583,
+   "title": "ЯSEED 0.1.10 · + BATIBABOX skills on the ЯVM (bbx-rvm.js + jobs) · native host.read/mind.read when the 2.1.9 app provides it · public scrub · add-only",
+   "url": "eggs/RSEED-0.1.10.rzl",
+   "version": "0.1.10"
+  },
+  {
+   "ed25519": "Q3QrZZW9ZHmQ8IwTLiL4hudUYTYV4Rqgs06ejFqjs2xw2UWhNQy3iHbiykUDvosFjUcXMJ/OqO+WXqp3iyjGBA==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "trust-keys",
+   "kind": "egg",
+   "minHostVersion": "1.1.2",
+   "name": "trust-keys-0.0.2.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados",
+    "linux"
+   ],
+   "sha256": "5671c2f5fa3fd8f3661f9467a7ce3d741ff6f64c2f54c645d3ed25f19ca8ecd4",
+   "size": 1656,
+   "title": "trust-keys 0.0.2 · seq 2 · + moto Android BIOMETRIC_STRONG P-256 signer 18d60c052a15 (full) · add-only",
+   "url": "eggs/trust-keys-0.0.2.rzl.zip",
+   "version": "0.0.2"
+  },
+  {
+   "ed25519": "ZJ3dgnl3fe7ZOd7tAeJ9c6R7RgNEUNP8J+TWuIbVi79PvAYJCjwBObzoBEMzgORZ8QQdUbF+3NOLiKlX+xsvCg==",
+   "hosts": [
+    "rbowzr",
+    "ybot"
+   ],
+   "id": "ios-219-rscribe-true",
+   "kind": "egg",
+   "minHostVersion": "2.1.9",
+   "name": "ios-219-rscribe-true-2.1.9.2-public.rzl.zip",
+   "platforms": [
+    "macos",
+    "ios",
+    "ipados"
+   ],
+   "sha256": "5874064a7167d31a00bbac55271311beb0171204e20ff9f6222f04b77b15227e",
+   "size": 14195,
+   "title": "ЯSCRIBE 0.2 (offline in-app component) + TEST→TRUE · merged 2.1.9.2 · add-only",
+   "url": "eggs/ios-219-rscribe-true-2.1.9.2-public.rzl.zip",
+   "version": "2.1.9.2"
+  },
+  {
+   "ed25519": "e/J+xwgGyS04rz8DSZTn8jOVBYQwcwqDVfa0+J6iJsmawbvcETIN/tBXgPSvWl9Fx/+3PEvqMQuM4ZpsIqiOBQ==",
+   "hosts": [
+    "rbowzr"
+   ],
+   "id": "ios-219-overlay-public",
+   "kind": "egg",
+   "minHostVersion": "2.1.9",
+   "name": "ios-219-overlay-public-2.2.0-pub.rzl.zip",
+   "platforms": [
+    "ios",
+    "ipados"
+   ],
+   "revision": "pub-2.2.0",
+   "sha256": "6af88a3e1bbee20348c351d248fa2f61f7e676c6880798a528d8bc5f4ba6f534",
+   "size": 7073353,
+   "state": "PUBLISHED · public scrub of 2.2.0 (no ЯIDs, bot names, IPs, hosts, tokens, keys or pairing data; MIT)",
+   "title": "ЯBOWZR iOS 2.2.0 PUBLIC · THUNDR free-floating · rabbit ЯSCRIBE · bar · bot rail · MIT",
+   "url": "eggs/ios-219-overlay-public-2.2.0-pub.rzl.zip",
+   "version": "2.2.0-pub"
+  }
+ ],
+ "feed": "https://rizal.info/rbowzr/appcast.json",
+ "generated": "2026-10-18T01:03:13Z",
+ "keyId": "e5833fdfbbfe",
+ "product": "ЯBOWZR",
+ "schema": "rlab-appcast.v1",
+ "signedMessage": "rlab-update-v1\\n<kind>\\n<id>\\n<version>\\n<name>\\n<size>\\n<sha256> (ed25519; url not signed)",
+ "withdrawn": [
+  {
+   "date": "2026-10-15",
+   "id": "rlink-drop",
+   "name": "RLINK-DROP-0.1.1.rzl",
+   "reason": "carried private device data; replaced by rlink-drop 0.1.3",
+   "status": "withdrawn",
+   "version": "0.1.1"
+  },
+  {
+   "date": "2026-10-15",
+   "id": "rlink-drop",
+   "name": "RLINK-DROP-0.1.2.rzl",
+   "reason": "carried private device data; replaced by rlink-drop 0.1.3",
+   "status": "withdrawn",
+   "version": "0.1.2"
+  },
+  {
+   "date": "2026-10-15",
+   "id": "spong",
+   "name": "spong-0.0.1.rzl.zip",
+   "reason": "carried private device data; replaced by spong 0.0.2",
+   "status": "withdrawn",
+   "version": "0.0.1"
+  }
+ ]
 }
