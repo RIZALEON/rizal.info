@@ -28,6 +28,21 @@
       "url" : "https://github.com/rizalward/RZL-EGG/releases/download/dragon-skull-android-1.0.2/DRAGON-SKULL_1.0.2.apk",
       "version" : "1.0.2"
     },
+    "ios" : {
+      "arch" : "arm64",
+      "ed25519" : "",
+      "id" : "info.rizal.dragon-skull",
+      "kind" : "app",
+      "name" : "DRAGON-SKULL_1.0.4_ios-UNSIGNED-sideload.ipa",
+      "notes" : "DRAGON SKULL 1.0.4 (build 6) · iOS .ipa · UNSIGNED sideload (no Apple signature, no provisioning profile): re-sign on install with your own Apple ID / sideload tool · same features as macOS 1.0.4",
+      "platform" : "ios",
+      "sha256" : "d0589fdb44c001a3ae6af1aa1847df5b0ac8edbbb7578814009860c6b7b87015",
+      "size" : 902080457,
+      "title" : "DRAGON SKULL",
+      "unsigned" : true,
+      "url" : "https://github.com/rizalward/RZL-EGG/releases/download/dragon-skull-ios-1.0.4/DRAGON-SKULL_1.0.4_ios-UNSIGNED-sideload.ipa",
+      "version" : "1.0.4"
+    },
     "linux" : {
       "arch" : "amd64",
       "ed25519" : "vfW7pceGJLLyd27X4PokQdPcWq3VO1BB/wGOwH1tg5qW/1IMhFE3AL7xlFD1VNgIpnD9blqaT6vtX2b71PDkBQ==",
@@ -47,14 +62,14 @@
       "ed25519" : "",
       "id" : "info.rizal.dragon-skull",
       "kind" : "app",
-      "name" : "DRAGON-SKULL_1.0.0_macos-arm64.zip",
-      "notes" : "DRAGON SKULL 1.0.0 · macOS arm64 .zip (ad-hoc signed) · new skull icon and logo · new layout · identity prompt · IBM Granite 4.0 H 1B Q4_K_M (Apache-2.0) · llama.cpp b11715 · fully offline · model sha256-verified at launch",
+      "name" : "DRAGON-SKULL_1.0.4_macos-arm64.zip",
+      "notes" : "DRAGON SKULL 1.0.4 (build 6) · macOS arm64 .zip (ad-hoc signed) · memory index (test/command turns not recalled; coding prompts skip recall) · DRAGONGATE log fix · no key/token/pairing · IBM Granite 4.0 H 1B Q4_K_M (Apache-2.0) · fully offline",
       "platform" : "macos",
-      "sha256" : "084d2b765bf8978124fc217f6d1f54270cea12b56c1f6138f210300e1a841b31",
-      "size" : 897188594,
+      "sha256" : "e6064b258e4b133045a990466b5f3f3483ab0fd007478ea52477ff80e6450b9a",
+      "size" : 908615701,
       "title" : "DRAGON SKULL",
-      "url" : "https://github.com/rizalward/RZL-EGG/releases/download/dragon-skull-macos-1.0.0/DRAGON-SKULL_1.0.0_macos-arm64.zip",
-      "version" : "1.0.0"
+      "url" : "https://github.com/rizalward/RZL-EGG/releases/download/dragon-skull-macos-1.0.4/DRAGON-SKULL_1.0.4_macos-arm64.zip",
+      "version" : "1.0.4"
     },
     "ubuntu-touch" : {
       "arch" : "arm64",
@@ -81,7 +96,8 @@
   "signaturesPending" : [
     "macos",
     "android",
-    "ubuntu-touch"
+    "ubuntu-touch",
+    "ios"
   ],
   "signedMessage" : "rlab-update-v1\\n<kind>\\n<id>\\n<version>\\n<name>\\n<size>\\n<sha256> (ed25519; url not signed)"
 }
