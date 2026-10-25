@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./coi-serviceworker.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DRAGON SKULL · play in browser</title>
+    <meta name="description" content="DRAGON SKULL: private AI chat (IBM Granite 4.0 H 1B + llama.cpp) running entirely in your browser. No install, no account, no key." />
+    <link rel="icon" type="image/png" sizes="32x32" href="./ds-icon-32.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="stylesheet" href="./scout-style.css" />
+    <link rel="stylesheet" href="./rzl-sendit.css" />
+  </head>
+  <body>
+    <aside id="roster" aria-label="Bots">
+      <div class="roster-head"><span>BOTS</span></div>
+      <nav id="roster-list" class="roster-list"></nav>
+      <div class="side-info">
+        <div class="rzl-counts" data-rzl-mount="visit" data-app="dragon-skull">
+          visitors <b data-rzl-count="visits" data-app="dragon-skull">–</b><br>
+          downloads <b data-rzl-count="downloads" data-app="dragon-skull">–</b><br>
+          <small>native <span data-rzl-count="native" data-app="dragon-skull">–</span> · browser <span data-rzl-count="loads" data-app="dragon-skull">–</span></small>
+        </div>
+        <div class="rzl-sendit compact" id="send-it"><img src="cashapp-chaserizal-1.svg" alt="QR code: cash.app/$chaserizal/1"><div><div class="k">SEND IT · Cash App</div><a class="btn" href="https://cash.app/$chaserizal/1" target="_blank" rel="noopener noreferrer">$1 · SEND IT</a><div class="tag">$chaserizal</div><small>Optional. DRAGON SKULL stays free.</small></div></div>
+        <p class="links"><a href="../">Native apps (macOS · Android · Linux · Ubuntu Touch)</a><br><a href="./LICENSES/NOTICE.txt">Licenses</a> · <a href="/botlatch/">BOTLATCH</a></p>
+      </div>
+    </aside>
+    <main>
+      <header id="bot-hero">
+        <img id="chat-avatar" alt="" />
+        <span id="chat-title">DRAGON SKULL</span>
+        <img id="ds-logo" src="./ds-logo.png" alt="DRAGON SKULL logo" />
+        <small id="ds-status" class="ds-status">not loaded</small>
+        <small id="chat-sub">in your browser</small>
+      </header>
+      <section id="ds-model" aria-label="Model">
+        <p><b>Runs entirely in this browser.</b> No install, no account, no key. The first time, your browser downloads the
+        IBM Granite 4.0 H 1B model (<b>about 900 MB</b>) straight from Hugging Face, checks its sha256, and keeps it in this
+        browser's storage, so later visits start offline. Needs about <b>2.5 GB of free memory</b>: fine on a laptop, slow or
+        impossible on many phones.</p>
+        <button id="ds-load" type="button">Load DRAGON SKULL</button> <span id="ds-prog"></span>
+        <div id="ds-bar"><div id="ds-fill"></div></div>
+      </section>
+      <section id="log" aria-live="polite"></section>
+      <form id="composer">
+        <input id="message" autocomplete="off" placeholder="Load the model first" disabled />
+        <button type="submit" disabled>Send</button>
+      </form>
+    </main>
+    <script src="./rzl-counters.js"></script>
+    <script defer src="./scout-app.js"></script>
+    <script defer src="./chatlist.js"></script>
+    <script type="module" src="./plugins/rzl-wasm/rzl-wasm.js"></script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.rzl-sendit{display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:linear-gradient(135deg,#00d64f22,#00d64f08);border:2px solid #00d64f;box-shadow:0 0 0 4px #00d64f22,0 0 24px #00d64f44;border-radius:16px;padding:14px 16px;margin:14px 0;color:#e8eef6;font:15px/1.45 ui-sans-serif,system-ui,-apple-system,sans-serif}
+.rzl-sendit img{width:132px;height:132px;background:#fff;border-radius:10px;padding:6px;box-sizing:border-box}
+.rzl-sendit .k{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:#7ef0a8}
+.rzl-sendit a.btn{display:inline-block;margin:6px 0;background:#00d64f;color:#06210f;font-weight:800;font-size:1.15rem;text-decoration:none;border-radius:999px;padding:.5rem 1.2rem}
+.rzl-sendit .tag{font:700 1.2rem ui-monospace,Menlo,monospace;color:#fff}
+.rzl-sendit small{display:block;color:#9fb3a6}
+.rzl-counts{font:12px/1.5 ui-monospace,Menlo,monospace;color:#8b97a8;margin:8px 0}
+.rzl-counts b{color:#e8eef6}
