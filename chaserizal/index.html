@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07060a"><meta name="robots" content="noindex">
+<title>Я · ChaseRizal · rizal.info (UNSIGNED DRAFT)</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{--clay-cream:#efe6d6}*{box-sizing:border-box;margin:0;padding:0}
+body{background:#07060a;color:var(--clay-cream);font-family:"Avenir Next","Segoe UI",system-ui,-apple-system,sans-serif}
+.banner{position:sticky;top:0;z-index:9;background:#7a1010;color:#fff;text-align:center;font-weight:700;padding:8px;letter-spacing:.05em}
+.shell{max-width:760px;margin:0 auto;padding:16px}
+header{display:flex;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid #2a2530}
+header img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:2px solid #3a3040}
+.h{opacity:.7}.bio{margin:10px 0;white-space:pre-wrap}.counts{display:flex;gap:16px;font-size:.9em;opacity:.85}
+.post{padding:12px 0;border-bottom:1px solid #1c1820}.post .m{font-size:.8em;opacity:.6;margin-top:4px}
+.post p{white-space:pre-wrap;word-wrap:break-word}#more{display:block;margin:16px auto;padding:8px 16px;background:#050408;color:var(--clay-cream);border:1px solid #3a3040;border-radius:8px}
+#rebirth{margin:20px 0;padding:12px;border:1px dashed #3a3040;border-radius:10px}
+.art{padding:14px 0;border-bottom:1px solid #2a2530}.art h4{font-size:1.05em}.art .m{font-size:.8em;opacity:.6;margin:4px 0}.art p{opacity:.85;font-size:.92em}#arts h3{margin:18px 0 6px}
+</style></head><body>
+<div class="banner">UNSIGNED DRAFT — not live · not signed with profile 0 key</div>
+<div class="shell">
+<header><img id="av" alt=""><div><div id="nm" style="font-size:1.3em;font-weight:700"></div><div class="h" id="hd"></div></div></header>
+<div class="bio" id="bio"></div><div class="counts" id="ct"></div>
+<section id="rebirth"><h3>TWEETBACK · Profile REBIRTH</h3><div id="tbi-mount"></div></section>
+<section id="arts"><h3>Articles</h3><div id="artlist"></div></section>
+<main id="feed"></main><button id="more">Load more</button><div id="end"></div>
+</div>
+<script>
+let P,next=0,busy=false;const $=i=>document.getElementById(i),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function load(){if(busy||!P||next>=P.chunks)return;busy=true;const r=await fetch(`data/posts-${String(next).padStart(4,'0')}.json`);const a=await r.json();next++;
+$('feed').insertAdjacentHTML('beforeend',a.map(p=>`<article class="post"><p>${esc(p.t)}</p><div class="m">${new Date(p.ts).toLocaleString()}${p.retweet?' · repost':''}${p.reply_to?' · reply':''}${p.media.length?' · '+p.media.length+' media':''} · <a style="color:inherit" href="https://x.com/i/status/${esc(p.src_id)}">${esc(p.src_id)}</a></div></article>`).join(''));
+if(next>=P.chunks)$('more').hidden=true;busy=false}
+fetch('data/profile.json').then(r=>r.json()).then(p=>{P=p;$('av').src=p.avatar;$('nm').textContent=p.name;$('hd').textContent=p.handle+' · joined '+new Date(p.joined).toLocaleDateString()+' · '+p.location;$('bio').textContent=p.bio;
+$('ct').innerHTML=`<span><b>${p.counts.posts.toLocaleString()}</b> posts</span><span><b>${p.counts.media.toLocaleString()}</b> media</span><span><b>${p.counts.articles.toLocaleString()}</b> articles</span>`;load()});
+fetch('data/articles.json').then(r=>r.json()).then(a=>{a=a.filter(x=>!x.draft).sort((x,y)=>x.ts<y.ts?1:-1);$('artlist').innerHTML=a.map(x=>`<div class="art"><h4><a style="color:inherit" href="${esc(x.url)}">${esc(x.title)}</a></h4><div class="m">${new Date(x.ts).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric',timeZone:'UTC'})} · ${x.words.toLocaleString()} words</div><p>${esc(x.excerpt)}…</p></div>`).join('')});
+$('more').onclick=load;new IntersectionObserver(e=>{if(e[0].isIntersecting)load()}).observe($('end'));
+</script>
+<script src="tweetback/tbi-core.js"></script><script src="tweetback/tbi-panel.js"></script><script>window.TBI_PANEL&&TBI_PANEL.mount("#tbi-mount")</script>
+</body></html>
