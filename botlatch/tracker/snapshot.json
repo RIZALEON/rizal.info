@@ -1,0 +1,149 @@
+{
+ "schema": "botlatch.tracker.v1",
+ "generated": "2026-10-29T01:23:19-06:00",
+ "note": "Read-only public snapshot. Counts only. Not money; no trades. RTOKEN = Я TOKEN.",
+ "categories": [
+  {
+   "category": "ghostchain",
+   "label": "Ghost Chain (main)",
+   "source": "GHOSTCHAIN.jsonl",
+   "count": 274,
+   "unit": "entries",
+   "last": "2026-10-27T06:11:53Z",
+   "kinds": {
+    "egg-auto-install": 86,
+    "signed-phone-faceid": 73,
+    "egg-seated": 35,
+    "?": 29,
+    "egg-installed": 12,
+    "egg-published-private": 8,
+    "egg-signed": 5,
+    "trust-keys-sign": 2,
+    "spong-run": 2,
+    "law": 2,
+    "egg-stage": 2,
+    "installed": 2
+   },
+   "status": "ledger"
+  },
+  {
+   "category": "ai",
+   "label": "AI Heart calls (MACHINE-MIND)",
+   "source": "GHOSTCHAIN.jsonl",
+   "count": 108,
+   "unit": "calls",
+   "last": "2026-10-24T01:03:25-0600",
+   "kinds": {
+    "ЯBAT": 18,
+    "ЯSCOUT": 22,
+    "ЯВОТ": 8,
+    "ЯМАХ": 7,
+    "ЯBEE": 15,
+    "ЯBWZR": 15,
+    "ЯBOT": 13,
+    "ЯMAX": 10
+   },
+   "status": "ledger"
+  },
+  {
+   "category": "data",
+   "label": "Data packages (rid.v1 Я-DATA)",
+   "source": "*.ghostchain.json",
+   "count": 143,
+   "unit": "packages",
+   "last": "20261029-005136",
+   "kinds": {
+    "signed": 129,
+    "?": 14
+   },
+   "status": "ledger"
+  },
+  {
+   "category": "bots",
+   "label": "Bot RFID mints (ЯBOT registry)",
+   "source": "BOT-RFID-REGISTRY.json",
+   "count": 0,
+   "unit": "bots",
+   "last": null,
+   "kinds": {},
+   "status": "gap: registry file not found on Neo"
+  },
+  {
+   "category": "rgenerator",
+   "label": "RGENERATOR ЯID tags (public)",
+   "source": "rid-tags.json",
+   "count": 0,
+   "unit": "tags",
+   "last": null,
+   "kinds": {},
+   "status": "ledger"
+  },
+  {
+   "category": "social",
+   "label": "rizal.pw site posts",
+   "source": "site-posts.json",
+   "count": 2,
+   "unit": "posts",
+   "last": "2026-10-29T06:40:00.000Z",
+   "kinds": {
+    "video": 1,
+    "project": 1
+   },
+   "status": "ledger"
+  },
+  {
+   "category": "social",
+   "label": "RDRAGON cryptosocial feed",
+   "source": "cryptosocial-public.json",
+   "count": 0,
+   "unit": "source entries",
+   "last": "2026-10-25T21:41:16-06:00",
+   "kinds": {},
+   "status": "ledger"
+  },
+  {
+   "category": "token",
+   "label": "Я / R Token (Solana, public)",
+   "source": "PUBLIC-NUMBERS.md",
+   "count": 1000000,
+   "unit": "supply (9 dec)",
+   "last": null,
+   "kinds": {
+    "mint": "BB9uA5Bu…Q1Lv",
+    "freeze_authority": "None (revoked)"
+   },
+   "status": "public facts (display only, not live)"
+  },
+  {
+   "category": "nft",
+   "label": "NFTs",
+   "source": "Orca Whirlpool position NFT 24uKAFYi…RV7 only",
+   "count": 1,
+   "unit": "nft",
+   "last": null,
+   "kinds": {},
+   "status": "gap: no NFT mint ledger exists"
+  },
+  {
+   "category": "token",
+   "label": "ЯMINT local R credits (mint.js)",
+   "source": "RGENERATOR mint.js (browser localStorage)",
+   "count": null,
+   "unit": "credits",
+   "last": null,
+   "kinds": {},
+   "status": "gap: lives per-device in browser; no shared file ledger"
+  },
+  {
+   "category": "token",
+   "label": "GENESIS FIRST MINT (BSC)",
+   "source": "GENESIS-FIRST-MINT.txt",
+   "count": null,
+   "unit": "",
+   "last": null,
+   "kinds": {},
+   "status": "gap: fields blank — awaiting Rizal"
+  }
+ ],
+ "sha256": "6826a944c498523dd52d3361e1bd84d0f230bad6d7c884a2385e221b0176ca8d"
+}

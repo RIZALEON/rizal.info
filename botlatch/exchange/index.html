@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BOTLATCH Exchange · TerraformЯ</title>
+<style>body{margin:0;background:#000;color:#eee;font:15px/1.5 system-ui,sans-serif;padding:24px 14px}a{color:#f2b25c}.w{max-width:960px;margin:0 auto}
+.tabs{display:flex;gap:8px;margin:16px 0}.tabs button{flex:1;padding:12px;border-radius:10px;border:1px solid #333;background:#111;color:#eee;font:700 15px system-ui;letter-spacing:.15em;cursor:pointer}.tabs button.on{background:#f2b25c;color:#2a1406}
+.box{border:1px solid #2a2a2a;border-radius:14px;padding:18px;margin-bottom:18px}label{display:block;margin:8px 0 2px;color:#999;font-size:12px}select,input{background:#111;color:#eee;border:1px solid #333;border-radius:6px;padding:8px;width:100%;max-width:320px}
+.go{margin-top:14px;padding:12px 28px;border-radius:999px;border:0;background:#444;color:#aaa;font-weight:800}[hidden]{display:none!important}.warn{color:#e08a5c;font-size:13px}</style></head>
+<body><div class="w"><nav><a href="/">TerraformЯ</a> · <a href="/terraformya/play/">▶ Play</a> · <a href="/botlatch/tracker/">Mint tracker</a></nav>
+<h1>BOTLATCH Exchange</h1><p>Buy · sell · trade · swap game assets, bot tokens, data packages and R credits for TerraformЯ.</p>
+<p class="warn">PREVIEW ONLY. Trading is not live: no wallet connects, nothing is sent, nothing is minted. R credits are local game credit, not money, and no player is promised profit. Opens only after the owner signs off.</p>
+<div class="tabs" id="tabs"><button class="on">BUY</button><button>SELL</button><button>TRADE</button><button>SWAP</button></div>
+<div class="box"><b id="mode">BUY</b>
+<label>Asset</label><select><option>R credit (local)</option><option>Bot token (ЯID)</option><option>Data package (Я-DATA)</option><option>Game item</option><option>NFT (pending ledger)</option></select>
+<label>Amount</label><input type="number" value="1" min="0">
+<label id="forL" hidden>For</label><select id="forS" hidden><option>R credit (local)</option><option>Game item</option><option>Data package (Я-DATA)</option></select><br>
+<button class="go" disabled title="Not live — awaiting owner sign-off">Not live yet</button></div>
+<div data-botlatch="/botlatch/tracker/snapshot.json"></div></div>
+<script>document.querySelectorAll('#tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#tabs button').forEach(function(x){x.className=''});b.className='on';document.getElementById('mode').textContent=b.textContent;var t=/TRADE|SWAP/.test(b.textContent);forL.hidden=forS.hidden=!t}})</script>
+<script src="/botlatch/tracker/botlatch-tracker.js"></script></body></html>
