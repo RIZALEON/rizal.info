@@ -1,0 +1,169 @@
+{
+ "schema": "rzl.botlatch.activity.v1",
+ "mint": "BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv",
+ "pool": "HSroUxVkVKv6kX9e7dpoJtbFqKcL76BzrkuuRfAGxs9s",
+ "source": "Solana mainnet RPC getSignaturesForAddress + getTransaction(jsonParsed)",
+ "generated": "2026-10-29T07:54:19.620166+00:00",
+ "signatures_seen": 14,
+ "rows": [
+  {
+   "sig": "4ttn27qtLRFTn6czNKTDZ15HobVxmoTF8BCCokZX8zVoXMLcBumYMLHvDUgde4NfeswcXwEfhpSFokXhcAkHt1GA",
+   "time": 1792507975,
+   "slot": 459269903,
+   "type": "sell",
+   "amount": 24265.6944,
+   "from": "Em8sWuf9BX9PUghUA8sk5aGvc4YKmWxKu44G6YAN29Ak",
+   "to": "HSroUxVkVKv6kX9e7dpoJtbFqKcL76BzrkuuRfAGxs9s",
+   "ix": [
+    "RouteV2",
+    "SwapV2"
+   ],
+   "signer": "Em8sWuf9BX9PUghUA8sk5aGvc4YKmWxKu44G6YAN29Ak"
+  },
+  {
+   "sig": "2pvS9fEUH56pe8hNJoLn4DroqagkrmXeEQqA43scYVvzeUUMJCqMkxC1yiAJ7MApk7BzBiNQ7oixskbzgtK3LwNJ",
+   "time": 1792501893,
+   "slot": 459242078,
+   "type": "buy",
+   "amount": 24265.6944,
+   "from": "HSroUxVkVKv6kX9e7dpoJtbFqKcL76BzrkuuRfAGxs9s",
+   "to": "Em8sWuf9BX9PUghUA8sk5aGvc4YKmWxKu44G6YAN29Ak",
+   "ix": [
+    "RouteV2",
+    "SwapV2"
+   ],
+   "signer": "Em8sWuf9BX9PUghUA8sk5aGvc4YKmWxKu44G6YAN29Ak"
+  },
+  {
+   "sig": "XibVmqUoc6bHVNn6G833AyxhE5EM4tny5BsXZQBzPvbC669Loknch2x4nrwYiodR8FdVpg5u9rN6RAf7H2WtXQy",
+   "time": 1791959165,
+   "slot": 456738221,
+   "type": "other",
+   "amount": 0,
+   "from": null,
+   "to": null,
+   "ix": [],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  },
+  {
+   "sig": "28S2Lxc7CqRe2hA9YaMiWUWhxmczANCQ8mENdAr8um7AwFfMKrBDEGmtAUZPdWWCRkHeAG9KnXb5kZ5C2aPESuj4",
+   "time": 1791937950,
+   "slot": 456640759,
+   "type": "lp_add",
+   "amount": 99999.999998,
+   "from": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9",
+   "to": "HSroUxVkVKv6kX9e7dpoJtbFqKcL76BzrkuuRfAGxs9s",
+   "ix": [
+    "GetAccountDataSize",
+    "Initialize",
+    "InitializeAccount3",
+    "InitializeImmutableOwner",
+    "InitializeMint2",
+    "InitializeMintCloseAuthority"
+   ],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  },
+  {
+   "sig": "3J4dHTH4Prs1qPBDmC8Dxxgmq3WfzRg5LHYLbNtnSHNbcJeVxGjAcVhx8W7uo6JpwYMQom1Ab1N62SmC4ENQtnQw",
+   "time": 1791935385,
+   "slot": 456629006,
+   "type": "pool_setup",
+   "amount": 0,
+   "from": null,
+   "to": null,
+   "ix": [
+    "InitializeDynamicTickArray",
+    "InitializePoolV2"
+   ],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  },
+  {
+   "sig": "KBK3iS4pxkKavemN6iopRmBx82JuRNJwNDbbnmG8C4zTUmrKvsuX1C4mGojkovAWsbFRnuGZPKxgj3T672fm2P1",
+   "time": 1790647648,
+   "slot": 451502362,
+   "type": "transfer",
+   "amount": 1.0,
+   "from": "3gLUfDdw1etDGeJ2PnqUtitam5TwZAsC3BhXCQYx2Gfk",
+   "to": "E611TFJh9y2eipt984hhBjhUQ1EsrUDodbLsrpN9Zmhn",
+   "ix": [],
+   "signer": "3gLUfDdw1etDGeJ2PnqUtitam5TwZAsC3BhXCQYx2Gfk"
+  },
+  {
+   "sig": "4Nq38k9NjU7u77TXbkAvQKaJMWrV14sCWUekhB9DXHqd46urPp76hkAWQKPL8B2vXku6fHnrNb9dYDVWJYNMoKS1",
+   "time": 1790647451,
+   "slot": 451501623,
+   "type": "transfer",
+   "amount": 1.0,
+   "from": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9",
+   "to": "E611TFJh9y2eipt984hhBjhUQ1EsrUDodbLsrpN9Zmhn",
+   "ix": [],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  },
+  {
+   "sig": "5PL7YTDvztpqajzAM7LJp58QXBrSLKeAcKx14XWHriTSFagNCLTMyCL91ept4roz6HD1YohTZwWBe6mfqWaAqbi8",
+   "time": 1790638113,
+   "slot": 451466764,
+   "type": "transfer",
+   "amount": 10.0,
+   "from": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9",
+   "to": "3gLUfDdw1etDGeJ2PnqUtitam5TwZAsC3BhXCQYx2Gfk",
+   "ix": [],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  },
+  {
+   "sig": "wVQJqkHzNSEshxwimxviDw3TdEv7wEigPPFqet4Q61WfWQDLPxPWHM3qfuzQT6QnF8z2LZWYkEghDMXduKdXBwx",
+   "time": 1789956645,
+   "slot": 448916324,
+   "type": "other",
+   "amount": 0,
+   "from": null,
+   "to": null,
+   "ix": [],
+   "signer": "FpwQQhQQoEaVu3WU2qZMfF1hx48YyfwsLoRgXG83E99Q"
+  },
+  {
+   "sig": "5aKXsjYLvh73dB4ircC4jdQKbNNgv4yyxCgv4a4TbjZGXU3NsqumM88fboXd3iwF3jyT96n1FeKZJLrwpbv1nWX7",
+   "time": 1789923160,
+   "slot": 448791101,
+   "type": "other",
+   "amount": 0,
+   "from": null,
+   "to": null,
+   "ix": [],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  },
+  {
+   "sig": "nhVeNxtteysyCW8wDim7F6vE3Ks76P3ZRwpYr1eedUGzKq4bJwqQCmWdqbL7uEtdAMKASbpU16vSkxoiKVAv4ho",
+   "time": 1789841528,
+   "slot": 448484891,
+   "type": "other",
+   "amount": 0,
+   "from": null,
+   "to": null,
+   "ix": [],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  },
+  {
+   "sig": "2jRr6staQgpyAYDHRS5gasVu57j6qDaZ6VtPAYoCPq2eHUkf3d3zUNQ3FmNYdorqAWVzuVnNaFPwnrm3HkNiRe8H",
+   "time": 1789787337,
+   "slot": 448281418,
+   "type": "other",
+   "amount": 0,
+   "from": null,
+   "to": null,
+   "ix": [],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  },
+  {
+   "sig": "2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94",
+   "time": 1789787259,
+   "slot": 448281123,
+   "type": "mint",
+   "amount": 1000000.0,
+   "from": null,
+   "to": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9",
+   "ix": [],
+   "signer": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9"
+  }
+ ]
+}

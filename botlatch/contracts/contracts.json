@@ -1,0 +1,134 @@
+{
+ "schema": "botlatch.contracts.v1",
+ "generated": "2026-10-29T01:45:00-06:00",
+ "note": "Public on-chain reads only. 'unknown' = not verified from a public source. Not financial advice; R credits are local game credit, not money.",
+ "tokens": [
+  {
+   "id": "r-token",
+   "name": "Я / R Token (RTOKEN = Я TOKEN)",
+   "chain": "solana",
+   "mint": "BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv",
+   "decimals": 9,
+   "supply": 1000000,
+   "mint_authority": "BwpVNk1Rtncpv5HMTLwxB4Yfjkfv6mFaBQUTpjneH1F9",
+   "freeze_authority": null,
+   "holders": "unknown",
+   "verified": {
+    "source": "Solana mainnet RPC getAccountInfo",
+    "at": "2026-10-29T01:40-06:00"
+   },
+   "pools": [
+    {
+     "dex": "orca",
+     "pair": "Я / SOL",
+     "address": "HSroUxVkVKv6kX9e7dpoJtbFqKcL76BzrkuuRfAGxs9s",
+     "created": "2026-10-13T23:50:16Z",
+     "price_usd": 3.672334606e-05,
+     "price_sol": 3.47267581175445e-07,
+     "liquidity_usd": 4.0647,
+     "fdv_usd": 36.72,
+     "volume_24h_usd": 0,
+     "source": "GeckoTerminal API",
+     "at": "2026-10-29T01:40-06:00"
+    }
+   ],
+   "extra": {
+    "position_nft": "24uKAFYi…RV7 (full address not in readable lab records)",
+    "crown_ata": "8bCnr63C…c9Q1 (full address not in readable lab records)"
+   },
+   "mint_tx": "2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94",
+   "trackers": [
+    {
+     "name": "Solscan token",
+     "url": "https://solscan.io/token/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "Solscan account",
+     "url": "https://solscan.io/account/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "Solana Explorer",
+     "url": "https://explorer.solana.com/address/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "SolanaFM",
+     "url": "https://solana.fm/address/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "Mint tx · Solscan",
+     "url": "https://solscan.io/tx/2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94"
+    },
+    {
+     "name": "Mint tx · Solana Explorer",
+     "url": "https://explorer.solana.com/tx/2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94"
+    },
+    {
+     "name": "Mint tx · SolanaFM",
+     "url": "https://solana.fm/tx/2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94"
+    }
+   ],
+   "price_lookups": [
+    {
+     "name": "Jupiter",
+     "url": "https://jup.ag/tokens/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "GeckoTerminal",
+     "url": "https://www.geckoterminal.com/solana/tokens/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "DexScreener",
+     "url": "https://dexscreener.com/solana/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "CoinGecko",
+     "url": "https://www.coingecko.com/en/search?query=BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv",
+     "note": "not listed on CoinGecko yet (coingecko_coin_id null)"
+    }
+   ],
+   "excluded": [
+    {
+     "source": "DexScreener",
+     "pair": "GnM6…pump",
+     "reason": "different token, not R"
+    }
+   ]
+  },
+  {
+   "id": "genesis-bsc",
+   "name": "GENESIS FIRST MINT",
+   "chain": "bsc (chainId 56)",
+   "contract": "unknown",
+   "supply": "unknown",
+   "holders": "unknown",
+   "pools": [],
+   "status": "needs Rizal: NAME/SYMBOL/CONTRACT/DEPLOY_TX blank in GENESIS-FIRST-MINT.txt",
+   "trackers": "none yet",
+   "note_bsc": "BNB Chain: no R token tracker; only a bare bscscan.com link exists"
+  },
+  {
+   "id": "rzl",
+   "name": "RZL token",
+   "chain": "unknown",
+   "contract": "unknown",
+   "supply": "unknown",
+   "holders": "unknown",
+   "pools": [],
+   "status": "needs Rizal: no RZL contract found in lab records or public DEX indexes (RZLR / RZLABS on Solana are unrelated third-party tokens)"
+  },
+  {
+   "id": "rizal",
+   "name": "Rizal token",
+   "chain": "unknown",
+   "contract": "unknown",
+   "supply": "unknown",
+   "holders": "unknown",
+   "pools": [],
+   "status": "needs Rizal: confirm whether this is the Я mint above or a separate contract"
+  }
+ ],
+ "other_trackers": {
+  "bsc": "none yet",
+  "opensea": "none yet (no collection or wallet tracker)"
+ }
+}
