@@ -10,7 +10,7 @@ h1{font:bold 34px/1.1 var(--mono)!important;color:var(--g)!important;text-shadow
 h1::before{content:"R:\\BOTLATCH> ";color:var(--pl);font-size:.45em;display:block;text-shadow:none}
 h2,h3{font-family:var(--mono)!important;color:var(--pl)!important}
 nav{border:1px solid var(--g);padding:6px 10px;background:#0a1a0a;margin-bottom:16px!important}
-.bl-head{max-width:980px;margin:0 auto 10px;border:2px solid var(--p);background:#1a0630 url(/botlatch/thunderbird.svg) center/contain no-repeat;height:170px;position:relative;box-shadow:0 0 18px rgba(138,43,226,.45)}
+.bl-head{max-width:980px;margin:0 auto 10px;border:2px solid var(--p);background:#1a0630 url(/botlatch/market-banner.jpg) center/cover no-repeat;aspect-ratio:8/3;height:auto;position:relative;box-shadow:0 0 18px rgba(138,43,226,.45)}
 .bl-head span{position:absolute;left:10px;bottom:6px;font:bold 12px var(--mono);color:var(--g)}
 .bl-head i{position:absolute;right:10px;top:6px;font:11px var(--mono);color:var(--pl);font-style:normal}
 .bl-ticker{max-width:980px;margin:0 auto 16px;overflow:hidden;white-space:nowrap;border-top:1px solid var(--red);border-bottom:1px solid var(--red);color:var(--g);font:11px var(--mono)}
@@ -32,3 +32,7 @@ code{color:var(--pl)}
 .bl-foot{max-width:980px;margin:18px auto 0;font:12px var(--mono);color:var(--g);border-top:1px dashed var(--g);padding-top:6px}
 .bl-foot::after{content:"_";animation:bk 1s steps(1) infinite}@keyframes bk{50%{opacity:0}}
 .bl-respect{color:#777;font-size:11px}
+
+@media(max-width:640px){.bl-head{background-image:url(/botlatch/market-banner-mobile.jpg);aspect-ratio:1/1}}
+.bl-head span,.bl-head i{background:rgba(0,0,0,.75);padding:2px 6px}
+.bl-mark{width:64px;height:auto;vertical-align:middle}

@@ -35,7 +35,64 @@
    "extra": {
     "position_nft": "24uKAFYi…RV7 (full address not in readable lab records)",
     "crown_ata": "8bCnr63C…c9Q1 (full address not in readable lab records)"
-   }
+   },
+   "mint_tx": "2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94",
+   "trackers": [
+    {
+     "name": "Solscan token",
+     "url": "https://solscan.io/token/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "Solscan account",
+     "url": "https://solscan.io/account/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "Solana Explorer",
+     "url": "https://explorer.solana.com/address/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "SolanaFM",
+     "url": "https://solana.fm/address/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "Mint tx · Solscan",
+     "url": "https://solscan.io/tx/2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94"
+    },
+    {
+     "name": "Mint tx · Solana Explorer",
+     "url": "https://explorer.solana.com/tx/2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94"
+    },
+    {
+     "name": "Mint tx · SolanaFM",
+     "url": "https://solana.fm/tx/2Lxr2mEZnFnwwBMQjCgRt8EJLaJbwEp61K51mdx16z8oncWg2JCXzCKnisMi78V3L4w7w2pizQ8P1p2H5XMLvx94"
+    }
+   ],
+   "price_lookups": [
+    {
+     "name": "Jupiter",
+     "url": "https://jup.ag/tokens/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "GeckoTerminal",
+     "url": "https://www.geckoterminal.com/solana/tokens/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "DexScreener",
+     "url": "https://dexscreener.com/solana/BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv"
+    },
+    {
+     "name": "CoinGecko",
+     "url": "https://www.coingecko.com/en/search?query=BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv",
+     "note": "not listed on CoinGecko yet (coingecko_coin_id null)"
+    }
+   ],
+   "excluded": [
+    {
+     "source": "DexScreener",
+     "pair": "GnM6…pump",
+     "reason": "different token, not R"
+    }
+   ]
   },
   {
    "id": "genesis-bsc",
@@ -45,7 +102,9 @@
    "supply": "unknown",
    "holders": "unknown",
    "pools": [],
-   "status": "needs Rizal: NAME/SYMBOL/CONTRACT/DEPLOY_TX blank in GENESIS-FIRST-MINT.txt"
+   "status": "needs Rizal: NAME/SYMBOL/CONTRACT/DEPLOY_TX blank in GENESIS-FIRST-MINT.txt",
+   "trackers": "none yet",
+   "note_bsc": "BNB Chain: no R token tracker; only a bare bscscan.com link exists"
   },
   {
    "id": "rzl",
@@ -67,5 +126,9 @@
    "pools": [],
    "status": "needs Rizal: confirm whether this is the Я mint above or a separate contract"
   }
- ]
+ ],
+ "other_trackers": {
+  "bsc": "none yet",
+  "opensea": "none yet (no collection or wallet tracker)"
+ }
 }

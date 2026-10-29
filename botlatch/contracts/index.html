@@ -4,7 +4,7 @@
 <body><div class="w"><nav><a href="/">TerraformЯ</a> · <a href="/botlatch/tracker/">Mint tracker</a> · <a href="/botlatch/exchange/">BOTLATCH Exchange</a></nav>
 <h1>BOTLATCH · Contract tracker</h1><p class="k">Я / R Token, RZL, Rizal token and pools. Public on-chain reads only; anything unverified is shown as <span class="unk">unknown</span>. RGENERATOR feed: <a href="contracts.json">contracts.json</a></p>
 <div class="t"><h3>RWALLET</h3><button id="rwBtn">Connect RWALLET</button><div id="rw"></div></div>
-<div id="list"></div>
+<div id="list"></div><div class="t"><h3>OTHER CHAINS</h3><p>BNB Chain (BSC): <span class="unk">none yet</span> · OpenSea: <span class="unk">none yet</span></p></div>
 <div class="t"><h3>CONVERTER</h3><p><input id="cv" type="number" value="1000" min="0"> Я = <b id="cvo"></b></p><p class="k">Uses the Orca pool price. Display only; not a quote and not an offer.</p></div></div>
 <script src="rwallet-connect.js"></script>
 <script>
@@ -14,7 +14,7 @@ fetch('contracts.json',{cache:'no-store'}).then(r=>r.json()).then(function(R){va
  document.getElementById('list').innerHTML=R.tokens.map(function(t){var p=t.pools||[];if(t.id==='r-token'&&p[0])px=p[0].price_usd;
   return '<div class="t" id="'+t.id+'"><h3>'+t.name+'</h3><div class="g">'+C('chain',t.chain)+C('mint / contract',t.mint||t.contract)+C('supply',t.supply==null?null:(typeof t.supply==='number'?t.supply.toLocaleString():t.supply))+C('holders',t.holders)+(t.mint_authority?C('mint authority',t.mint_authority):'')+(t.id==='r-token'?C('freeze authority',t.freeze_authority||'None (revoked)'):'')+'</div>'+
   (p.length?p.map(function(q){return '<h3 style="margin-top:12px">POOL · '+q.dex.toUpperCase()+' · '+q.pair+'</h3><div class="g">'+C('pool',q.address)+C('price USD',q.price_usd)+C('liquidity USD',q.liquidity_usd)+C('FDV USD',q.fdv_usd)+C('24h volume USD',q.volume_24h_usd)+'</div><p class="k">'+q.source+' · '+q.at+'</p>'}).join(''):'<p class="k">No pools on record.</p>')+
-  (t.status?'<p class="unk">'+t.status+'</p>':'')+(t.verified?'<p class="k">'+t.verified.source+' · '+t.verified.at+'</p>':'')+'</div>'}).join('');
+  (Array.isArray(t.trackers)?'<h3 style="margin-top:12px">TRACKERS</h3><p>'+t.trackers.map(function(x){return '<a href="'+x.url+'" target="_blank" rel="noopener">'+x.name+'</a>'}).join(' · ')+'</p>':'')+(t.price_lookups?'<h3>PRICE LOOKUPS</h3><p>'+t.price_lookups.map(function(x){return '<a href="'+x.url+'" target="_blank" rel="noopener">'+x.name+'</a>'+(x.note?' <span class="k">('+x.note+')</span>':'')}).join(' · ')+'</p>':'')+(t.excluded?'<p class="k">Excluded: '+t.excluded.map(function(x){return x.source+' '+x.pair+', '+x.reason}).join('; ')+'</p>':'')+(t.mint_tx?'<div class="g">'+C('mint tx',t.mint_tx)+'</div>':'')+(t.trackers==='none yet'?'<p class="unk">Trackers: none yet</p>':'')+(t.status?'<p class="unk">'+t.status+'</p>':'')+(t.verified?'<p class="k">'+t.verified.source+' · '+t.verified.at+'</p>':'')+'</div>'}).join('');
  function cv(){var v=+document.getElementById('cv').value||0;document.getElementById('cvo').textContent=px==null?'unknown':'$'+(v*px).toFixed(6)+' USD at pool price'}
  document.getElementById('cv').oninput=cv;cv();
  /* live refresh from public sources; keeps snapshot if they fail */
