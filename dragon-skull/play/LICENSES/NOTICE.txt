@@ -1,0 +1,7 @@
+DRAGON SKULL web · third-party notices
+- Model: IBM Granite 4.0 H 1B (ibm-granite/granite-4.0-h-1b), Apache-2.0. GGUF Q4_K_M quantization by Unsloth
+  (huggingface.co/unsloth/granite-4.0-h-1b-GGUF, revision 74f5511840300fdee7c70ccfc5bd57ecde0c8bbc), Apache-2.0.
+  The model is NOT redistributed by this site: your browser downloads it directly from Hugging Face and checks
+  sha256 fd3b85f09520df9d898e2bbcf5da22fc518dbf9d662bb52e214d946c72aafacc (the same file bundled in the DRAGON SKULL apps).
+- Engine: llama.cpp (MIT, The ggml authors) compiled to WebAssembly by wllama 3.8.1 (MIT, Xuan Son Nguyen).
+- Chat shell: DRAGON SKULL / ЯBOWZR chat shell (MIT), from the DRAGON SKULL 1.0.0 Linux package.

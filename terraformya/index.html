@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TerraformЯ · play in browser</title>
+<meta name="description" content="TerraformЯ: an offline 2D world built with Godot 4.7, playable in your browser. No install, no account, no key.">
+<link rel="icon" href="./tile-180.png"><link rel="stylesheet" href="./rzl-sendit.css">
+<style>:root{color-scheme:dark}body{margin:0;background:#0b0f1a;color:#efe6d6;font:15px/1.5 ui-sans-serif,system-ui,-apple-system,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:1.2rem 1rem 3rem}header{display:flex;gap:14px;align-items:center}header img{width:64px;height:64px;border-radius:12px}
+h1{margin:0;font-size:1.6rem;color:#c9a227}.sub{color:#a99f8d;margin:.2rem 0}
+#stage{position:relative;width:100%;aspect-ratio:16/9;background:#000;border:1px solid #2a3142;border-radius:12px;overflow:hidden;margin:14px 0}
+#stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:radial-gradient(#1a2338,#0b0f1a)}
+#play{background:#c9a227;color:#111;border:0;border-radius:10px;padding:.7rem 1.6rem;font-size:1.15rem;font-weight:800;cursor:pointer}
+.row{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start}.row>div{flex:1 1 320px}a{color:#6ee7b7}
+.card{background:#121827;border:1px solid #2a3142;border-radius:12px;padding:.8rem 1rem}</style></head>
+<body><main>
+<header><img src="./tile-180.png" alt=""><div><h1>TerraformЯ</h1><p class="sub">Offline 2D world · Godot 4.7.2 web build 0.5.0 (dev) · runs entirely in your browser · no install, no account, no key</p></div></header>
+<div id="stage"><div id="cover"><button id="play" type="button">▶ Play in browser</button><small>About 56 MB, loads once per visit. Needs WebGL 2. Keyboard and mouse recommended.</small></div></div>
+<p><a id="full" href="./play/" target="_blank" rel="noopener">Open full screen ↗</a></p>
+<div class="row">
+ <div class="card"><div class="rzl-counts" data-rzl-mount="visit" data-app="terraformya">visitors <b data-rzl-count="visits" data-app="terraformya">–</b> · downloads <b data-rzl-count="downloads" data-app="terraformya">–</b> <small>(browser plays <span data-rzl-count="loads" data-app="terraformya">–</span> · native <span data-rzl-count="native" data-app="terraformya">–</span>)</small></div>
+ <p>The game runs locally: the page never sends anything about your play. Saves stay in this browser.<br><a href="./LICENSES/NOTICE-godot-and-thirdparty.txt">Licenses</a> (Godot Engine MIT and third-party) · <a href="/botlatch/">BOTLATCH</a> · <a href="/dragon-skull/play/">DRAGON SKULL in browser</a></p></div>
+ <div><div class="rzl-sendit" id="send-it"><img src="cashapp-chaserizal-1.svg" alt="QR code: cash.app/$chaserizal/1"><div><div class="k">SEND IT · Cash App · optional</div><a class="btn" href="https://cash.app/$chaserizal/1" target="_blank" rel="noopener noreferrer">$1 · SEND IT</a><div class="tag">$chaserizal</div><small>Scan or tap to send $1. TerraformЯ stays free.</small></div></div></div>
+</div>
+</main>
+<script src="./rzl-counters.js"></script>
+<script>
+(function(){
+  var stage=document.getElementById("stage"), started=false;
+  function watch(f){ var t0=Date.now(); var iv=setInterval(function(){ var st=null; try{ st=f.contentWindow.TFY_STATUS; }catch(e){}
+    if(st==="running"){ clearInterval(iv); window.TFY_WRAP_STATUS="running"; window.RZL_COUNTERS&&RZL_COUNTERS.firstLoad("terraformya"); }
+    else if(st==="failed"||Date.now()-t0>180000){ clearInterval(iv); window.TFY_WRAP_STATUS=st||"timeout"; } },500); }
+  function play(){ if(started) return; started=true; var f=document.createElement("iframe"); f.src="./play/"; f.title="TerraformЯ"; f.allow="fullscreen; autoplay; gamepad";
+    document.getElementById("cover").remove(); stage.appendChild(f); f.addEventListener("load",function(){ try{ f.contentWindow.focus(); }catch(e){} }); watch(f); }
+  document.getElementById("play").addEventListener("click",play);
+  if(new URLSearchParams(location.search).get("autoplay")==="1") play();
+})();
+</script></body></html>
