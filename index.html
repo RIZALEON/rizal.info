@@ -4,142 +4,64 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#000000">
-<title>Download · rizal.info</title>
-<meta name="description" content="One line in Terminal installs ЯBOWZR or ЯBOT on an Apple-silicon Mac. Verified, ad-hoc signed, self-updating.">
+<title>TerraformЯ · rizal.info</title>
+<meta name="description" content="TerraformЯ: a claymation sandbox in the Cordilleras. Explore, mine, craft, build and survive. Play free in your browser.">
+<meta property="og:title" content="TerraformЯ · rizal.info">
+<meta property="og:description" content="Claymation Cordilleras sandbox. Explore · mine · craft · build · survive. Play in your browser.">
+<meta property="og:image" content="https://rizal.info/assets/teraformr/v5-title.webp">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
-  :root {
-    --bg:#000; --fg:#fff; --muted:#8a8a8a; --line:#222; --btn:#fff; --btn-fg:#000;
-    --ok:#3d8f4a; --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-    --sans:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
-  }
-  * { box-sizing:border-box }
-  html,body { margin:0; min-height:100%; background:var(--bg); color:var(--fg); font:16px/1.5 var(--sans) }
-  body { display:flex; flex-direction:column; min-height:100vh }
-  main { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:48px 20px 64px; max-width:720px; margin:0 auto; width:100% }
-  .mark { font:600 13px/1 var(--sans); letter-spacing:.28em; text-transform:uppercase; color:var(--muted); margin:0 0 28px }
-  h1 { margin:0 0 12px; font:600 clamp(36px,7vw,64px)/1.05 var(--sans); letter-spacing:-.02em; color:var(--fg) }
-  .lede { margin:0 0 36px; color:var(--muted); max-width:34em }
-  .cta { appearance:none; border:0; cursor:pointer; background:var(--btn); color:var(--btn-fg); font:600 17px/1 var(--sans); letter-spacing:.01em; padding:16px 36px; border-radius:999px; min-width:220px; transition:transform .12s ease, opacity .12s ease }
-  .cta:hover { opacity:.92 } .cta:active { transform:scale(.98) } .cta.done { background:var(--ok); color:#fff }
-  .cmd-wrap { margin:28px 0 0; width:100%; max-width:560px }
-  .cmd { display:flex; align-items:center; gap:8px; background:#0a0a0a; border:1px solid var(--line); border-radius:10px; padding:10px 10px 10px 14px; text-align:left }
-  code.line { flex:1; font:13px/1.4 var(--mono); color:#e8e8e8; overflow-x:auto; white-space:nowrap }
-  .copy { appearance:none; border:1px solid var(--line); background:transparent; color:var(--fg); font:600 11px var(--mono); letter-spacing:.06em; padding:8px 12px; border-radius:8px; cursor:pointer }
-  .copy.done { border-color:var(--ok); color:#b6f0c0 }
-  .sec { margin:40px 0 0; width:100%; max-width:560px; text-align:left }
-  .sec h2 { margin:0 0 10px; font:600 13px/1 var(--sans); letter-spacing:.16em; text-transform:uppercase; color:var(--muted) }
-  .sec p, .sec li { color:var(--muted); font-size:14px }
-  .sec a { color:var(--fg); text-decoration:underline; text-underline-offset:3px }
-  .sec ul { margin:8px 0 0; padding-left:18px }
-  .sec li { margin:6px 0 }
-  .meta { margin-top:48px; font:12px/1.5 var(--mono); color:#555 }
-  .meta a { color:#888 }
-  footer { padding:20px; text-align:center; font:12px var(--mono); color:#444; border-top:1px solid #111 }
+:root{--bg:#000;--fg:#fff;--muted:#8a8a8a;--line:#222;--accent:#f2b25c;--sans:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 var(--sans)}
+.hero{position:relative;min-height:78vh;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding:24px 20px 56px;background:#000 url(/assets/teraformr/v6-farm-terraces.webp) center/cover no-repeat}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.35) 50%,#000)}
+.hero>*{position:relative}
+.banner{width:min(920px,100%);height:auto;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.mark{font:600 12px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:#ddd;margin:22px 0 10px}
+.lede{max-width:40em;margin:0 auto 28px;color:#e6e6e6;font-size:18px}
+.play{display:inline-block;background:var(--accent);color:#2a1406;font:800 26px/1 var(--sans);letter-spacing:.12em;padding:22px 64px;border-radius:999px;text-decoration:none;box-shadow:0 0 0 4px #3a1d0b,0 10px 40px rgba(242,178,92,.45);transition:transform .15s}
+.play:hover{transform:scale(1.05)}
+.sub{margin-top:14px;color:var(--muted);font-size:13px}
+main{max-width:1100px;margin:0 auto;padding:48px 20px}
+h2{font:700 13px/1 var(--sans);letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+.verbs{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 36px}.verbs span{border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-weight:600}
+.about{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin:0 0 44px}
+.about div{border:1px solid var(--line);border-radius:12px;padding:18px}.about b{display:block;margin-bottom:6px}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.shots figure{margin:0}.shots img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block}
+.shots figcaption{color:var(--muted);font-size:13px;margin-top:6px}
+footer{border-top:1px solid var(--line);padding:24px 20px 40px;text-align:center;color:var(--muted);font-size:14px}
+footer a{color:var(--fg)}
 </style>
 </head>
 <body>
+<header class="hero">
+  <img class="banner" src="/assets/teraformr/banner.svg" alt="TerraformЯ" width="1200" height="300">
+  <p class="mark">Я · rizal.info · TerraformЯ 0.5.0</p>
+  <p class="lede">A hand-made claymation sandbox set in the Cordilleras. Step through the BLUEFACE door, stand alone on a cliff above an endless ocean, and throw one penny into the abyss. That penny starts the world's economy and its story. Everything after it is yours to shape.</p>
+  <a class="play" href="/terraformya/play/">▶ PLAY</a>
+  <p class="sub">Free · runs in your browser · desktop and phone · Linux build: coming soon / on request</p>
+</header>
 <main>
-  <p class="mark" id="hostMark">rizal.info</p>
-  <h1>Download ЯBOWZR</h1>
-  <p class="lede">One click copies the install line. Paste it in Terminal on an Apple‑silicon Mac. Verified SHA‑256 · ad‑hoc signed · no Gatekeeper warning.</p>
-
-  <button type="button" class="cta" id="downloadBtn" aria-label="Copy install command">Download</button>
-
-  <div class="cmd-wrap">
-    <div class="cmd">
-      <code class="line" id="c1">curl -fsSL https://rizal.info/install.sh | sh</code>
-      <button type="button" class="copy" data-for="c1">COPY</button>
-    </div>
+  <h2>What you do</h2>
+  <div class="verbs"><span>Explore</span><span>Mine</span><span>Craft</span><span>Build</span><span>Survive</span></div>
+  <div class="about">
+    <div><b>Claymation Cordilleras</b>Rice terraces, cloud forest, reef and peaks, all sculpted in clay and built tile by tile.</div>
+    <div><b>BLUEFACE</b>The permanent door into the world. It runs the same engine online and offline, with one save that carries forward as the game grows.</div>
+    <div><b>The penny opening</b>A lone hero, a cliff, an endless ocean and one penny thrown into the abyss. That is how the economy and the story begin.</div>
   </div>
-
-  <section class="sec" aria-label="Also install ЯBOT">
-    <h2>ЯBOT</h2>
-    <div class="cmd" style="margin-top:8px">
-      <code class="line" id="c2">curl -fsSL https://rizal.info/install-ybot.sh | sh</code>
-      <button type="button" class="copy" data-for="c2">COPY</button>
-    </div>
-    <p style="margin:10px 0 0">Same installer family. One DMG with the heart fused inside — no separate heart download. Alternate: <code id="c2alt">curl -fsSL https://rizal.info/install.sh | sh -s -- ybot</code></p>
-  </section>
-
-  <section class="sec" aria-label="What happens">
-    <h2>What the line does</h2>
-    <ul>
-      <li>Finds the newest GitHub Release over HTTPS and downloads the DMG + <a href="/SHA256SUMS">SHA256SUMS</a>.</li>
-      <li>Checks SHA‑256 (and ed25519 on the sums when your openssl supports it). Mismatch → abort.</li>
-      <li>Mounts read‑only, copies into <b>~/ЯLAB/APPS</b> only (created if missing) with <code>ditto</code>, clears quarantine. One app · one tile: an existing copy is replaced in place and the old one is parked in <code>~/ЯLAB/UPDATES</code> — never deleted. Nothing is written to /Applications.</li>
-    </ul>
-  </section>
-
-  <section class="sec" aria-label="Advanced">
-    <h2>Advanced · DMG only</h2>
-    <p>Prefer a manual disk image after publish (not required for most users):</p>
-    <ul>
-      <li>ЯBOWZR + ЯBOT 2.1.5 (build 2026101304) · one set · tags <code>rbowzr-v2.1.5</code> / <code>ybot-v2.1.5</code> · macOS <a href="https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5.dmg"><code>RBOWZR-2.1.5.dmg</code></a> · <a href="https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.5/YBOT-2.1.5.dmg"><code>YBOT-2.1.5.dmg</code></a> · iOS/iPadOS <a href="https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.5/RBOWZR-2.1.5-ios.ipa"><code>RBOWZR-2.1.5-ios.ipa</code></a> · <a href="https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.5/YBOT-2.1.5-ios.ipa"><code>YBOT-2.1.5-ios.ipa</code></a></li>
-      <li>ЯBOWZR + ЯBOT 2.1.4 (build 2026101303) · one set · tags <code>rbowzr-v2.1.4</code> / <code>ybot-v2.1.4</code> · macOS <a href="https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4.dmg"><code>RBOWZR-2.1.4.dmg</code></a> · <a href="https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4.dmg"><code>YBOT-2.1.4.dmg</code></a> · iOS/iPadOS <a href="https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.4/RBOWZR-2.1.4-ios.ipa"><code>RBOWZR-2.1.4-ios.ipa</code></a> · <a href="https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.4/YBOT-2.1.4-ios.ipa"><code>YBOT-2.1.4-ios.ipa</code></a></li>
-      <li>ЯBOWZR + ЯBOT 2.1.2 (build 2026101218) · one set · tags <code>rbowzr-v2.1.2</code> / <code>ybot-v2.1.2</code> · macOS <a href="https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.2/RBOWZR-2.1.2.dmg"><code>RBOWZR-2.1.2.dmg</code></a> · <a href="https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.2/YBOT-2.1.2.dmg"><code>YBOT-2.1.2.dmg</code></a> · iOS/iPadOS <a href="https://github.com/rizalward/rizal.info/releases/download/rbowzr-v2.1.2/RBOWZR-2.1.2-ios.ipa"><code>RBOWZR-2.1.2-ios.ipa</code></a> · <a href="https://github.com/rizalward/rizal.info/releases/download/ybot-v2.1.2/YBOT-2.1.2-ios.ipa"><code>YBOT-2.1.2-ios.ipa</code></a></li>
-      <li>ЯBOWZR 1.2.8 (build 17) — GitHub Release tag <code>rbowzr-v1.2.8</code> · asset <a href="https://github.com/rizalward/rizal.info/releases/download/rbowzr-v1.2.8/RBOWZR-1.2.8-mac.dmg"><code>RBOWZR-1.2.8-mac.dmg</code></a> · iOS/iPadOS <a href="https://github.com/rizalward/rizal.info/releases/download/rbowzr-v1.2.8/RBOWZR-1.2.8-ios.ipa"><code>RBOWZR-1.2.8-ios.ipa</code></a></li>
-      <li>ЯBOT 0.3.8 (build 2026100507) — tag <code>ybot-v0.3.8</code> · asset <a href="https://github.com/rizalward/rizal.info/releases/download/ybot-v0.3.8/YBOT-0.3.8.dmg"><code>YBOT-0.3.8.dmg</code></a> (heart fused in)</li>
-      <li>Repo: <code>rizalward/rizal.info</code> · verify against <a href="/SHA256SUMS">/SHA256SUMS</a> + <a href="/SHA256SUMS.sig">.sig</a></li>
-    </ul>
-  </section>
-
-  <p class="meta">Scripts: <a href="/install.sh">install.sh</a> · <a href="/install-ybot.sh">install-ybot.sh</a> · feeds: <a href="/rbowzr/appcast.json">rbowzr</a> · <a href="/ybot/appcast.json">ybot</a><br>
-  Release pubkey (ed25519): <code>zs7M4OOB0zQhWOQw3SHpAY+XYxbZJvcPESy1y400Ti0=</code></p>
-
-  <section class="sec" id="potlatchBanner" aria-label="Я Potlatch App Market" style="margin-top:28px">
-    <h2>Я OS Я POTLATCH APP MARKET</h2>
-    <p>Get free installs and updates for every Я app. Optional <b>SEND IT</b> donations — no processor keys on-site.</p>
-    <p style="margin-top:12px"><a class="cta" href="/potlatch/" style="display:inline-block;text-decoration:none;padding:12px 22px;border-radius:999px;background:#fff;color:#000;font-weight:600">Open Potlatch</a></p>
-  </section>
-
+  <h2>Screens</h2>
+  <div class="shots">
+    <figure><img src="/assets/teraformr/v6-flora-forest.webp" alt="Cloud forest" loading="lazy"><figcaption>Cloud forest</figcaption></figure>
+    <figure><img src="/assets/teraformr/v6-crafting.webp" alt="Crafting" loading="lazy"><figcaption>Crafting</figcaption></figure>
+    <figure><img src="/assets/teraformr/v6-wildlife-rainforest.webp" alt="Rainforest wildlife" loading="lazy"><figcaption>Rainforest wildlife</figcaption></figure>
+    <figure><img src="/assets/teraformr/v6-riding.webp" alt="Village" loading="lazy"><figcaption>Village life</figcaption></figure>
+    <figure><img src="/assets/teraformr/v6-coast-reef.webp" alt="Coast and reef" loading="lazy"><figcaption>Coast and reef</figcaption></figure>
+    <figure><img src="/assets/teraformr/v6-hunt-combat.webp" alt="Wild hunt" loading="lazy"><figcaption>Wild hunt</figcaption></figure>
+  </div>
 </main>
-<footer>Published from ЯLAB · HTTPS live and enforced on rizal.info + rizal.pw (valid certificates)</footer>
-<script>
-(function () {
-  var host = (location.hostname || '').toLowerCase();
-  if (host !== 'rizal.info' && host !== 'rizal.pw' && host !== 'www.rizal.info' && host !== 'www.rizal.pw') {
-    host = 'rizal.info';
-  }
-  if (host.indexOf('www.') === 0) host = host.slice(4);
-  var base = 'https://' + host;
-  document.getElementById('hostMark').textContent = host;
-  document.title = 'Download · ' + host;
-
-  function setCmd(id, path, suffix) {
-    var el = document.getElementById(id);
-    if (!el) return;
-    el.textContent = 'curl -fsSL ' + base + path + ' | sh' + (suffix || '');
-  }
-  setCmd('c1', '/install.sh', '');
-  setCmd('c2', '/install-ybot.sh', '');
-  var alt = document.getElementById('c2alt');
-  if (alt) alt.textContent = 'curl -fsSL ' + base + '/install.sh | sh -s -- ybot';
-
-  function flash(btn, okLabel) {
-    var prev = btn.textContent;
-    btn.textContent = okLabel;
-    btn.classList.add('done');
-    setTimeout(function () { btn.textContent = prev; btn.classList.remove('done'); }, 1600);
-  }
-  async function copyText(text, btn, okLabel) {
-    try {
-      await navigator.clipboard.writeText(text);
-      flash(btn, okLabel || 'COPIED');
-    } catch (e) {
-      flash(btn, 'SELECT + ⌘C');
-    }
-  }
-
-  document.getElementById('downloadBtn').addEventListener('click', function () {
-    copyText(document.getElementById('c1').textContent, this, 'Copied — paste in Terminal');
-  });
-  document.querySelectorAll('button.copy[data-for]').forEach(function (b) {
-    b.addEventListener('click', function () {
-      copyText(document.getElementById(b.dataset.for).textContent, b, 'COPIED');
-    });
-  });
-})();
-</script>
+<footer>
+  <a href="/terraformya/play/">Play TerraformЯ</a> · <a href="/home/">rizal.info home &amp; downloads</a> · <a href="/terraformya/">About the game</a> · <a href="https://rizal.pw/">rizal.pw</a>
+</footer>
 </body>
 </html>
