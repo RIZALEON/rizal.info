@@ -1,0 +1,5 @@
+/* Injects BOTLATCH chrome: thunderbird header, crypto ticker, R:\ prompt footer. */
+(function(){var h=document.createElement('div');h.className='bl-head';h.innerHTML='<span>ANTI SOCIAL CRYPTOSOCIAL · BOTLATCH</span><i>Я · GHOSTCHAIN · RGENERATOR</i>';
+var t=document.createElement('div');t.className='bl-ticker';var s='Я/SOL ORCA · MINT BB9uA5Bu…Q1Lv · SUPPLY 1,000,000 · FREEZE NONE · GHOSTCHAIN 274 · DATA PKGS 143 · HEART CALLS 108 · RWALLET → ЯCASKET FACE ID · NO KEYS IN PAGE · ';t.innerHTML='<b>'+s+s+s+s+'</b>';
+var w=document.querySelector('.w')||document.body.firstElementChild;document.body.insertBefore(t,document.body.firstChild);document.body.insertBefore(h,t);
+var f=document.createElement('div');f.className='bl-foot';f.innerHTML='R:\\BOTLATCH&gt; READY <span class="bl-respect">· motifs are original designs inspired by Northwest Coast formline, potlatch giving and thunderbird stories, made with respect; no crests or artists\' works are reproduced</span>';document.body.appendChild(f)})();
