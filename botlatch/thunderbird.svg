@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" role="img" aria-label="Original formline-inspired thunderbird mark (BOTLATCH)">
+<!-- Original design for BOTLATCH: abstract formline-inspired shapes (ovoids, U-forms, split-U). Not a copy of any artist's work or crest. -->
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#39ff14"/><stop offset="1" stop-color="#b388ff"/></linearGradient></defs>
+<g fill="none" stroke-linejoin="round" stroke-linecap="round">
+ <!-- wings: stacked U-forms -->
+ <g stroke="#c8102e" stroke-width="10">
+  <path d="M300 110 C250 60 170 40 40 60 C90 80 120 95 150 120 C190 112 240 112 300 130"/>
+  <path d="M300 110 C350 60 430 40 560 60 C510 80 480 95 450 120 C410 112 360 112 300 130"/>
+ </g>
+ <g stroke="url(#g)" stroke-width="5">
+  <path d="M70 72 q30 10 45 30 M110 66 q30 12 45 34 M150 62 q30 14 45 38 M190 62 q28 16 40 40"/>
+  <path d="M530 72 q-30 10 -45 30 M490 66 q-30 12 -45 34 M450 62 q-30 14 -45 38 M410 62 q-28 16 -40 40"/>
+ </g>
+ <!-- body / head: ovoids -->
+ <ellipse cx="300" cy="80" rx="34" ry="26" stroke="#e8e8e8" stroke-width="9"/>
+ <ellipse cx="300" cy="80" rx="13" ry="10" fill="#39ff14" stroke="none"/>
+ <path d="M300 102 l-12 22 h24 z" fill="#c8102e" stroke="none"/>
+ <path d="M300 54 c-18 -22 -10 -38 0 -44 c10 6 18 22 0 44" stroke="#b388ff" stroke-width="6"/>
+ <rect x="270" y="132" width="60" height="44" rx="18" stroke="#e8e8e8" stroke-width="8"/>
+ <path d="M282 150 h36 M288 162 h24" stroke="#39ff14" stroke-width="5"/>
+ <!-- tail: split-U -->
+ <path d="M270 186 q30 30 60 0 M300 186 v22" stroke="#c8102e" stroke-width="9"/>
+</g>
+<!-- crypto flair: block-hash row -->
+<g font-family="Menlo,Consolas,monospace" font-size="11" fill="#39ff14" opacity=".7"><text x="20" y="212">BLK#0x7a·ГHOSTCHAIN</text><text x="430" y="212">Я·SOL·ORCA·RGEN</text></g>
+</svg>

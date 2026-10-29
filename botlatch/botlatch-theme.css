@@ -1,0 +1,34 @@
+/* BOTLATCH theme · based on rizal.pw "Anti Social CryptoSocial Media" (rdragon-cryptosocial.css): black, #39ff14 terminal green,
+   #8a2be2/#b388ff purple, Menlo mono, glow, R:\> prompts. Adds crypto flair + original Northwest-Coast-inspired formline motifs
+   (ovoids, U-forms, totem-stack dividers) in CSS/SVG. Original shapes only: no artist's work, no crests. */
+:root{--bg:#000;--g:#39ff14;--p:#8a2be2;--pl:#b388ff;--red:#c8102e;--bone:#e8e8e8;--mono:"Menlo","Consolas","Courier New",monospace}
+html,body{background:#000!important;color:#ddd!important;font:13px/1.55 var(--mono)!important}
+body{background-image:radial-gradient(rgba(57,255,20,.05) 1px,transparent 1px)!important;background-size:14px 14px!important}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 3px);z-index:9999}
+a{color:var(--g)!important;text-shadow:0 0 6px rgba(57,255,20,.5)}
+h1{font:bold 34px/1.1 var(--mono)!important;color:var(--g)!important;text-shadow:0 0 8px var(--g);letter-spacing:.06em;text-transform:uppercase}
+h1::before{content:"R:\\BOTLATCH> ";color:var(--pl);font-size:.45em;display:block;text-shadow:none}
+h2,h3{font-family:var(--mono)!important;color:var(--pl)!important}
+nav{border:1px solid var(--g);padding:6px 10px;background:#0a1a0a;margin-bottom:16px!important}
+.bl-head{max-width:980px;margin:0 auto 10px;border:2px solid var(--p);background:#1a0630 url(/botlatch/thunderbird.svg) center/contain no-repeat;height:170px;position:relative;box-shadow:0 0 18px rgba(138,43,226,.45)}
+.bl-head span{position:absolute;left:10px;bottom:6px;font:bold 12px var(--mono);color:var(--g)}
+.bl-head i{position:absolute;right:10px;top:6px;font:11px var(--mono);color:var(--pl);font-style:normal}
+.bl-ticker{max-width:980px;margin:0 auto 16px;overflow:hidden;white-space:nowrap;border-top:1px solid var(--red);border-bottom:1px solid var(--red);color:var(--g);font:11px var(--mono)}
+.bl-ticker b{display:inline-block;padding:3px 0;animation:blt 40s linear infinite}@keyframes blt{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* totem-stack: panels get a formline top cap (U-form) and a red/black side rail */
+.t,.box,.blt,.rw-box{position:relative;background:#050505!important;border:2px solid var(--g)!important;border-radius:0!important;box-shadow:0 0 0 1px #000,6px 6px 0 var(--p)!important;padding-left:26px!important}
+.t::before,.box::before,.blt::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:
+ radial-gradient(ellipse 6px 9px at 7px 14px,var(--red) 98%,transparent) 0 0/14px 28px repeat-y,#000;border-right:1px solid var(--red)}
+.t::after,.box::after,.blt::after{content:"";position:absolute;left:40%;right:40%;top:-10px;height:10px;border:3px solid var(--red);border-bottom:0;border-radius:40px 40px 0 0;background:#000}
+.blt,.blt *{font-family:var(--mono)!important}.blt{max-width:980px!important}
+.blt h3,h3{letter-spacing:.25em!important}
+.blt .c,.g>div{background:#000!important;border:1px solid #333!important;border-left:3px solid var(--pl)!important;border-radius:0!important}
+.blt .n{color:var(--g)!important;text-shadow:0 0 8px var(--g)}
+.unk,.gap,.warn{color:#ff5470!important}
+button,.tabs button,.go{font:bold 13px var(--mono)!important;border-radius:0!important;border:2px solid var(--g)!important;background:#000!important;color:var(--g)!important;letter-spacing:.15em;text-transform:uppercase;cursor:pointer}
+.tabs button.on,button:hover{background:var(--g)!important;color:#000!important;box-shadow:0 0 10px var(--g)}
+input,select{font:12px var(--mono)!important;background:#0a1a0a!important;color:var(--g)!important;border:1px solid var(--g)!important;border-radius:0!important}
+code{color:var(--pl)}
+.bl-foot{max-width:980px;margin:18px auto 0;font:12px var(--mono);color:var(--g);border-top:1px dashed var(--g);padding-top:6px}
+.bl-foot::after{content:"_";animation:bk 1s steps(1) infinite}@keyframes bk{50%{opacity:0}}
+.bl-respect{color:#777;font-size:11px}

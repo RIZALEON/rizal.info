@@ -2,7 +2,7 @@
 <style>body{margin:0;background:#000;color:#eee;font:15px/1.5 system-ui,sans-serif;padding:24px 14px}a{color:#f2b25c}.w{max-width:960px;margin:0 auto}
 .tabs{display:flex;gap:8px;margin:16px 0}.tabs button{flex:1;padding:12px;border-radius:10px;border:1px solid #333;background:#111;color:#eee;font:700 15px system-ui;letter-spacing:.15em;cursor:pointer}.tabs button.on{background:#f2b25c;color:#2a1406}
 .box{border:1px solid #2a2a2a;border-radius:14px;padding:18px;margin-bottom:18px}label{display:block;margin:8px 0 2px;color:#999;font-size:12px}select,input{background:#111;color:#eee;border:1px solid #333;border-radius:6px;padding:8px;width:100%;max-width:320px}
-.go{margin-top:14px;padding:12px 28px;border-radius:999px;border:0;background:#444;color:#aaa;font-weight:800}[hidden]{display:none!important}.warn{color:#e08a5c;font-size:13px}</style></head>
+.go{margin-top:14px;padding:12px 28px;border-radius:999px;border:0;background:#444;color:#aaa;font-weight:800}[hidden]{display:none!important}.warn{color:#e08a5c;font-size:13px}</style><link rel="stylesheet" href="/botlatch/botlatch-theme.css"></head>
 <body><div class="w"><nav><a href="/">TerraformЯ</a> · <a href="/terraformya/play/">▶ Play</a> · <a href="/botlatch/tracker/">Mint tracker</a> · <a href="/botlatch/contracts/">Contracts</a></nav>
 <h1>BOTLATCH Exchange</h1><p>Buy · sell · trade · swap game assets, bot tokens, data packages and R credits for TerraformЯ.</p>
 <p class="warn">Trades are requests only: this page holds no keys and signs nothing. Every request goes to your RWALLET for your own Face ID approval. Nothing is sent from this page. R credits are local game credit, not money, and no player is promised profit. Opens only after the owner signs off.</p>
@@ -18,4 +18,4 @@
 <script>rwCon.onclick=function(){BOTLATCH_RWALLET.connect(document.getElementById('rw'),'BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv')};
 rwReq.onclick=function(){var sel=document.querySelectorAll('.box select'),d={mode:mode.textContent,asset:sel[0].value,amount:document.querySelector('.box input').value,for:forS.hidden?null:forS.value};
 BOTLATCH_RWALLET.request(mode.textContent.toLowerCase(),d).then(function(r){rwRes.textContent=JSON.stringify(r,null,1)})};</script>
-<script src="/botlatch/tracker/botlatch-tracker.js"></script></body></html>
+<script src="/botlatch/tracker/botlatch-tracker.js"></script><script src="/botlatch/botlatch-theme.js"></script></body></html>
