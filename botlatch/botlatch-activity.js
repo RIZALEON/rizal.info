@@ -1,12 +1,13 @@
 /* BOTLATCH on-chain activity tracker — read-only. No keys, no signing. Rows come only from real Solana txs. */
 (function(){
-var MINT='BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv',POOL='HSroUxVkVKv6kX9e7dpoJtbFqKcL76BzrkuuRfAGxs9s',RPC='https://api.mainnet-beta.solana.com';
+var MINT='BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv',POOL='HSroUxVkVKv6kX9e7dpoJtbFqKcL76BzrkuuRfAGxs9s',RPCS=['https://solana-rpc.publicnode.com','https://api.mainnet-beta.solana.com'],GT='https://api.geckoterminal.com/api/v2/networks/solana/pools/';
 var TYPES=['mint','burn','buy','sell','swap','transfer','lp_add','lp_remove','pool_setup','create','other'];
 var LABEL={transfer:'transfer/send',lp_add:'LP add',lp_remove:'LP remove',pool_setup:'pool setup',other:'other (no Я moved)'};
 function sh(a){return a?a.slice(0,4)+'…'+a.slice(-4):'—'}
 function acct(a){return a?'<a target=_blank rel=noopener href="https://solscan.io/account/'+a+'">'+sh(a)+'</a>':'—'}
 function mt(t){return t?new Date(t*1000).toLocaleString('en-US',{timeZone:'America/Denver',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})+' MT':'?'}
-async function rpc(m,p){for(var i=0;i<4;i++){try{var r=await fetch(RPC,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method:m,params:p})});if(r.status==429){await new Promise(z=>setTimeout(z,1500*Math.pow(2,i)));continue}var j=await r.json();if(j.error)throw j.error;return j.result}catch(e){if(i==3)throw e;await new Promise(z=>setTimeout(z,1500*Math.pow(2,i)))}}throw 'rate limited'}
+async function rpc(m,p){var last;for(var u of RPCS){try{return await rpc1(u,m,p)}catch(e){last=e}}throw last}
+async function rpc1(RPC,m,p){for(var i=0;i<3;i++){try{var r=await fetch(RPC,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method:m,params:p})});if(r.status==403)throw 'forbidden';if(r.status==429){await new Promise(z=>setTimeout(z,1500*Math.pow(2,i)));continue}var j=await r.json();if(j.error)throw j.error;return j.result}catch(e){if(e==='forbidden'||i==2)throw e;await new Promise(z=>setTimeout(z,1500*Math.pow(2,i)))}}throw 'rate limited'}
 function classify(sig,t){var m=t.meta,msg=t.transaction.message,ins=[];msg.instructions.concat(...(m.innerInstructions||[]).map(g=>g.instructions)).forEach(x=>{if(x.parsed&&typeof x.parsed=='object')ins.push(x.parsed.type)});
  var d={},pre={},post={};(m.preTokenBalances||[]).forEach(b=>{if(b.mint==MINT)pre[b.accountIndex]=b});(m.postTokenBalances||[]).forEach(b=>{if(b.mint==MINT)post[b.accountIndex]=b});
  Object.keys(Object.assign({},pre,post)).forEach(k=>{var b=post[k]||pre[k],v=(+((post[k]||{}).uiTokenAmount||{}).uiAmount||0)-(+((pre[k]||{}).uiTokenAmount||{}).uiAmount||0);if(Math.abs(v)>0)d[b.owner]=(d[b.owner]||0)+v});
@@ -32,7 +33,9 @@ function mount(el){
  function snap(){return fetch('/botlatch/contracts/activity.json',{cache:'no-store'}).then(r=>r.json()).then(j=>{j.rows.forEach(r=>rows[r.sig]=r);status='Snapshot '+new Date(j.generated).toLocaleString('en-US',{timeZone:'America/Denver'})+' MT · '+j.rows.length+' txs';draw()}).catch(()=>{})}
  async function live(){try{var s=[];for(var a of [MINT,POOL])s=s.concat(await rpc('getSignaturesForAddress',[a,{limit:25}]));
   var n=s.filter(x=>!x.err&&!rows[x.signature]),k=0;for(var x of n.slice(0,10)){var t=await rpc('getTransaction',[x.signature,{encoding:'jsonParsed',maxSupportedTransactionVersion:0}]);if(t){rows[x.signature]=classify(x.signature,t);k++}await new Promise(z=>setTimeout(z,500))}
-  status='Live check '+mt(Date.now()/1000)+' · '+Object.keys(rows).length+' txs · '+k+' new · auto-refresh 90 s'}catch(e){status='Public RPC is rate-limiting; showing the snapshot. Will retry in 90 s.'}draw()}
+  status='Live check '+mt(Date.now()/1000)+' · '+Object.keys(rows).length+' txs · '+k+' new · auto-refresh 90 s'}catch(e){status='Public Solana RPC is limiting browser reads; showing the snapshot plus GeckoTerminal pool trades. Retry in 90 s.'}
+  try{var g=await fetch(GT+POOL+'/trades',{headers:{accept:'application/json'}}).then(r=>r.ok?r.json():{data:[]});var gk=0;(g.data||[]).forEach(function(d){var a=d.attributes||{};if(!a.tx_hash||rows[a.tx_hash])return;var buy=a.kind==='buy';rows[a.tx_hash]={sig:a.tx_hash,time:Date.parse(a.block_timestamp)/1000,type:buy?'buy':'sell',amount:+(buy?a.to_token_amount:a.from_token_amount)||0,from:buy?POOL:a.tx_from_address,to:buy?a.tx_from_address:POOL,src:'geckoterminal'};gk++});if(gk)status+=' · +'+gk+' GeckoTerminal trades'}catch(e){}
+  draw()}
  snap().then(live);setInterval(live,90000)}
 function go(){document.querySelectorAll('[data-botlatch-activity]').forEach(mount)}
 document.readyState=='loading'?document.addEventListener('DOMContentLoaded',go):go();
