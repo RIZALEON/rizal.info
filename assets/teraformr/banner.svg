@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="TERAFORMR">
+<defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b3b6f"/><stop offset=".6" stop-color="#3f7fbf"/><stop offset="1" stop-color="#f2b25c"/></linearGradient>
+<linearGradient id="t" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#e0782b"/></linearGradient></defs>
+<rect width="1200" height="300" fill="url(#s)"/>
+<path d="M0 230 L120 150 L210 200 L330 90 L450 190 L560 120 L690 210 L820 70 L950 180 L1060 130 L1200 200 V300 H0Z" fill="#2c4a3a"/>
+<path d="M0 260 L150 210 L300 245 L470 200 L640 250 L800 205 L980 245 L1200 215 V300 H0Z" fill="#5b3a22"/>
+<path d="M0 260 L150 210 L300 245 L470 200 L640 250 L800 205 L980 245 L1200 215 V228 L980 258 L800 218 L640 263 L470 213 L300 258 L150 223 L0 273Z" fill="#4f9a3c"/>
+<text x="600" y="150" text-anchor="middle" font-family="Impact,'Arial Black',system-ui,sans-serif" font-size="128" letter-spacing="6" fill="#3a1d0b" transform="translate(6,8)">TERAFORMЯ</text>
+<text x="600" y="150" text-anchor="middle" font-family="Impact,'Arial Black',system-ui,sans-serif" font-size="128" letter-spacing="6" fill="url(#t)" stroke="#3a1d0b" stroke-width="4">TERAFORMЯ</text>
+<text x="600" y="200" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="22" letter-spacing="8" fill="#fff">CLAYMATION CORDILLERAS SANDBOX · 0.5.0</text>
+</svg>
