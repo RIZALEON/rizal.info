@@ -5,8 +5,8 @@ self.TFY_BLOB_INDEX={
     "blobs/index.pck.part00.js",
     "blobs/index.pck.part01.js"
    ],
-   "sha256": "2d37040f6ca7d01a2cf1a0e0dcf0b8cb1e07cc911e2f6a3aa652b3d31308d65f",
-   "size": 12371296
+   "sha256": "ba681e3ed6713472188d40119bda035497fded21bfbbc7e73771f879f65166a3",
+   "size": 12374208
   },
   "index.wasm": {
    "parts": [
@@ -30,7 +30,7 @@ self.TFY_BLOB_INDEX={
   "executable": "index",
   "experimentalVK": false,
   "fileSizes": {
-   "index.pck": 12371296,
+   "index.pck": 12374208,
    "index.wasm": 39514754
   },
   "focusCanvas": true,
