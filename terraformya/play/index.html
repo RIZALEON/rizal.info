@@ -4,7 +4,9 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob:; connect-src blob: data:; img-src 'self' blob: data:; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:; frame-src 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>TerraformЯ · egg</title>
+<title>TerraformЯ 0.5.1 test</title>
+<link rel="icon" type="image/png" href="tile-180.png">
+<link rel="apple-touch-icon" href="tile-180.png">
 <style>
 html,body{margin:0;height:100%;background:#0b0f1a;overflow:hidden;touch-action:none}
 #canvas{display:block;width:100%;height:100%;outline:none}
@@ -100,21 +102,8 @@ html,body{margin:0;height:100%;background:#0b0f1a;overflow:hidden;touch-action:n
       var missing = Engine.getMissingFeatures({ threads: false });
       if (missing.length) return fail("missing browser features: " + missing.join(", "));
       var cfg = Object.assign({}, IDX.godotConfig, { canvas: document.getElementById("canvas"), ensureCrossOriginIsolationHeaders: false, serviceWorker: "" });
-      // optional view options from the page URL (?tod=0.9&goto=cave&torches=1) -> engine args; whitelisted, local only
-      var q = new URLSearchParams(location.search), extra = [];
-      if (/^[0-9.]+$/.test(q.get("tod") || "")) extra.push("--tod=" + q.get("tod"));
-      if (/^(cave|pond|forest|terrace|village|rainforest|reef|coast|mangrove|volcano|farm|-?[0-9]+,-?[0-9]+)$/.test(q.get("goto") || "")) extra.push("--goto=" + q.get("goto"));
-      // 0.5.0 screenshot scenes (wildlife / flora staging, local only; whitelisted names)
-      if (/^(rainforest|reef|farm|terraces|hunt|capture|befriend|roster|riding|bestiary|flora_sheet|flora_forest|reef_flora|crafting|cooking)$/.test(q.get("scene") || "")) extra.push("--scene=" + q.get("scene"));
-      if (q.get("torches") === "1") extra.push("--torches");
-      if (/^(axe|pick|shovel),0?\.[0-9]{1,3}$/.test(q.get("swing") || "")) extra.push("--swing=" + q.get("swing"));
-      if (q.get("fresh") === "1") extra.push("--fresh");
-      if (q.get("notitle") === "1") extra.push("--notitle");
-      if (q.get("touch") === "1") extra.push("--touch");
-      if (/^(inventory|gizmo|wallet|settings|load|map)$/.test(q.get("open") || "")) extra.push("--open=" + q.get("open"));
-      for (const s of q.getAll("say").slice(0, 3)) if (/^[A-Za-z0-9 ,.'!?-]{1,120}$/.test(s)) extra.push("--gizmo-say=" + encodeURIComponent(s));
-      if (q.get("approve") === "1") extra.push("--gizmo-approve");
-      cfg.args = (cfg.args || []).concat(extra);
+      // 0.5.1 test build: no URL launch options (no --goto / --scene / shots); the playtest build ignores args too
+      cfg.args = [];
       var engine = new Engine(cfg);
       await engine.startGame({
         onProgress: function (cur, tot) { if (tot > 0) fill.style.width = (70 + Math.round(cur / tot * 30)) + "%"; }

@@ -1,1 +1,1 @@
-self.TFY_EGG_VERSION="0.5.0";
+self.TFY_EGG_VERSION="0.5.1-test";
