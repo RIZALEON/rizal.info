@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob:; connect-src blob: data:; img-src 'self' blob: data:; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:; frame-src 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob:; connect-src blob: data: https://rizal.info/terraformya/updates/; img-src 'self' blob: data:; style-src 'self' 'unsafe-inline'; worker-src 'self' blob:; frame-src 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 <title>TerraformЯ 0.5.1 test</title>
 <link rel="icon" type="image/png" href="tile-180.png">
@@ -69,7 +69,7 @@ html,body{margin:0;height:100%;background:#0b0f1a;overflow:hidden;touch-action:n
   if (location.protocol !== "http:" && location.protocol !== "https:") {
     try { Object.defineProperty(navigator, "serviceWorker", { value: undefined, configurable: true }); } catch (e) {}
   }
-  var realFetch = self.fetch ? self.fetch.bind(self) : null;
+  var realFetch = self.fetch ? self.fetch.bind(self) : null, allowedPatches = {};
   self.fetch = function (input, init) {
     var url = typeof input === "string" ? input : (input && input.url) || String(input);
     var name = url.split("#")[0].split("?")[0].split("/").pop();
@@ -77,6 +77,31 @@ html,body{margin:0;height:100%;background:#0b0f1a;overflow:hidden;touch-action:n
       var type = /\.wasm$/.test(name) ? "application/wasm" : "application/octet-stream";
       return Promise.resolve(new Response(bytes[name], { status: 200, headers: { "Content-Type": type, "Content-Length": String(bytes[name].length) } }));
     }
+    // 0.5.1 LIVE UPDATES (approved by Rizal 2026-10-30): the ONLY network the egg may use is the same-origin
+    // update manifest and the .pck content patches that manifest lists (sha256-checked here AND in the game).
+    try {
+      var u = new URL(url, location.href);
+      if (realFetch && u.origin === location.origin && (location.protocol === "https:" || location.protocol === "http:")) {
+        if (u.pathname === "/terraformya/updates/manifest.json") {
+          return realFetch(u.href, { cache: "no-store", credentials: "omit" }).then(function (r) {
+            return r.clone().json().then(function (m) {
+              ((m && m.patches) || []).forEach(function (p) {
+                if (p && /^[a-z0-9_.-]+\.pck$/i.test(String(p.url || "")) && /^[0-9a-f]{64}$/.test(String(p.sha256 || ""))) allowedPatches["/terraformya/updates/" + p.url] = p.sha256;
+              });
+              return r;
+            }, function () { return r; });
+          });
+        }
+        if (allowedPatches[u.pathname]) {
+          var want = allowedPatches[u.pathname];
+          return realFetch(u.href, { cache: "no-store", credentials: "omit" }).then(function (r) { return r.arrayBuffer(); }).then(async function (buf) {
+            var got = hex(await crypto.subtle.digest("SHA-256", buf));
+            if (got !== want) throw new TypeError("update patch sha256 mismatch for " + u.pathname);
+            return new Response(buf, { status: 200, headers: { "Content-Type": "application/octet-stream", "Content-Length": String(buf.byteLength) } });
+          });
+        }
+      }
+    } catch (e) {}
     console.warn("[terraformya] offline egg refused fetch: " + url);
     return Promise.reject(new TypeError("offline egg: network refused for " + url));
   };
