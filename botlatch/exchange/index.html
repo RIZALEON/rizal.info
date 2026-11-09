@@ -14,6 +14,7 @@
 <button class="go" id="rwReq">Request in RWALLET</button> <button class="go" id="rwCon" style="background:#f2b25c;color:#2a1406">Connect RWALLET</button><div id="rw"></div><pre id="rwRes" style="white-space:pre-wrap;color:#9a9a9a;font-size:12px"></pre></div>
 <div data-botlatch="/botlatch/tracker/snapshot.json"></div></div>
 <script>document.querySelectorAll('#tabs button').forEach(function(b){b.onclick=function(){document.querySelectorAll('#tabs button').forEach(function(x){x.className=''});b.className='on';document.getElementById('mode').textContent=b.textContent;var t=/TRADE|SWAP/.test(b.textContent);forL.hidden=forS.hidden=!t}})</script>
+<script src="/rwallet/rghostkey-api.js?v=0.1.4"></script><!-- RWALLET 0.1.4 rghostkey-api (soft site: request only) -->
 <script src="/botlatch/contracts/rwallet-connect.js"></script>
 <script>rwCon.onclick=function(){BOTLATCH_RWALLET.connect(document.getElementById('rw'),'BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv')};
 rwReq.onclick=function(){var sel=document.querySelectorAll('.box select'),d={mode:mode.textContent,asset:sel[0].value,amount:document.querySelector('.box input').value,for:forS.hidden?null:forS.value};
