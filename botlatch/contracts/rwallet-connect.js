@@ -21,6 +21,8 @@
  /* request(): hand a trade intent to RWALLET. RWALLET marks buy/sell/send/sign as GATED -> ЯCASKET approval preview. */
  function request(kind,detail){var u=U();if(!u)return Promise.resolve({status:'no-rwallet',note:'Open in RWALLET to request approval.'});
   var id={buy:'buy',sell:'sell',trade:'sign',swap:'sign'}[kind]||'sign';
-  return u.run(id).then(function(r){return{status:r.status,request:r.out,detail:detail,note:'Sent to RWALLET for your own Face ID approval. Nothing is signed here.'}})}
+  /* 20261110 RDRAGON: pass the order detail into RWALLET (was run(id) only, so asset/amount/for never reached the approval). */
+  var args='botlatch.'+String(kind)+' '+JSON.stringify(detail==null?{}:detail);
+  return u.run(id,args).then(function(r){return{status:r.status,request:r.out,detail:detail,note:'Sent to RWALLET for your own Face ID approval. Nothing is signed here.'}})}
  window.BOTLATCH_RWALLET={connect:connect,request:request,present:function(){return !!U()}};
 })();
