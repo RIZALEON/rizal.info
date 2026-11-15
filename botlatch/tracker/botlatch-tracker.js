@@ -10,10 +10,10 @@
     return '<div class="c"><div class="u">'+c.category.toUpperCase()+'</div><b>'+c.label+'</b><div class="n">'+fmt(c.count)+'</div><div class="u">'+c.unit+'</div>'+(k?'<div class="k">'+k+'</div>':'')+(c.status!=='ledger'?'<div class="gap">'+c.status+'</div>':'')+'</div>'}).join('');
    var total=S.categories.filter(function(c){return c.status==='ledger'}).reduce(function(a,c){return a+(+c.count||0)},0);
    node.innerHTML='<div class="blt"><h3>BOTLATCH · MINT TRACKER</h3><small>RGENERATOR-linked · snapshot '+S.generated+' · '+fmt(total)+' tracked ledger records · sha '+S.sha256.slice(0,12)+'</small><div class="g">'+cards+'</div>'+
-   '<div class="conv"><h3>CONVERTER</h3><small>Display math only. R credits are local game credit, not money (10 pts = 1 R, cap 100 R/day).</small><p><input id="bltIn" type="number" value="100" min="0"> <select id="bltFrom"><option value="pts">game points</option><option value="R">R credits</option></select> = <b id="bltOut"></b></p></div>'+
+   '<div class="conv"><h3>CONVERTER</h3><small>Display math only. CRYPTOGAME pair Rcoin/Я: 100 Rcoins = 1 Rtoken, rounded down, minimum 100 Rcoins, cap 100 Rtoken per person per day (Rizal GO 2026-11-14 9:15 PM MT; supersedes 10:1). Rcoins are local game credit, not money.</small><p><input id="bltIn" type="number" value="1000" min="0" step="1"> <select id="bltFrom"><option value="pts">Rcoins</option><option value="R">Rtoken</option></select> = <b id="bltOut"></b></p></div>'+
    '<small>'+S.note+'</small></div>';
    function conv(){var v=+node.querySelector('#bltIn').value||0,f=node.querySelector('#bltFrom').value;
-    node.querySelector('#bltOut').textContent=f==='pts'?Math.min(v/10,100).toLocaleString()+' R (capped 100/day)':(v*10).toLocaleString()+' game points'}
+    var RATE=100,CAP=100,c=Math.floor(v);node.querySelector('#bltOut').textContent=f==='pts'?(c<RATE?'refused: minimum '+RATE+' Rcoins':Math.min(Math.floor(c/RATE),CAP).toLocaleString()+' Rtoken'+(Math.floor(c/RATE)>CAP?' (capped '+CAP+'/day)':'')+' · '+(c-Math.min(Math.floor(c/RATE),CAP)*RATE).toLocaleString()+' Rcoins left'):(c*RATE).toLocaleString()+' Rcoins'}
    node.querySelector('#bltIn').oninput=conv;node.querySelector('#bltFrom').onchange=conv;conv();
   }).catch(function(){node.textContent='BOTLATCH snapshot unavailable.'})
  }
