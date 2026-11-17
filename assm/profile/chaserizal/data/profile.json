@@ -13,5 +13,11 @@
   "logo": "/assm/profile/assets/ghostmachine-logo.jpg",
   "joined": "2019-04-06T20:26:46.552Z",
   "location": "Mount Olympus, UT",
-  "link": "https://rizal.info/assm/profile/chaserizal/"
+  "link": "https://rizal.info/assm/profile/chaserizal/",
+  "following": [
+    "@krog"
+  ],
+  "followers": [
+    "@krog"
+  ]
 }

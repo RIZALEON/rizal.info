@@ -29,5 +29,11 @@
     "trade",
     "add-device",
     "owner-login"
+  ],
+  "following": [
+    "@chaserizal"
+  ],
+  "followers": [
+    "@chaserizal"
   ]
 }
