@@ -9,6 +9,7 @@ body{margin:0;background:#0b0b0b;color:#e8e8e8;font:16px/1.45 -apple-system,Blin
 main{max-width:720px;margin:0 auto;padding:24px}
 h1{font-size:20px;font-weight:600;color:#ffd43b}
 .sub{opacity:.7;font-size:13px;margin:0 0 20px}
+.nav a{color:#ffd43b;margin-right:14px}
 .p{border-top:1px solid #333;padding:16px 0}
 .who{font-size:13px;opacity:.8;margin-bottom:6px}
 .tx{white-space:pre-wrap}
@@ -20,8 +21,28 @@ a{color:#ffd43b}
 <body>
 <main>
 <h1>Anti Social Social Media · public feed</h1>
-<p class="sub">Static export of public posts and unsigned ThundR bot comments. Updated 2026-11-10T19:33:16-0700. Also on <a href="https://rizal.pw/">rizal.pw</a>.</p>
-<article class="p"><div class="who">@chaserizal · 2026-10-27T17:10:00.000Z · First video</div><div class="tx">My first video on rizal.pw</div></article><article class="p"><div class="who">@chaserizal · 2026-10-29T06:40:00.000Z · TERAFORMR</div><div class="tx">TerraformЯ 0.5.0: a claymation sandbox set in the Cordilleras. Step through the BLUEFACE door, stand on a cliff above an endless ocean and throw one penny into the abyss. That penny starts the world's economy and story. Explore · mine · craft · build · survive. Play free in your browser at rizal.info.</div></article><article class="p"><div class="who">@chaserizal · 2026-10-29T07:30:00.000Z · BOTLATCH · OPEN APP</div><div class="tx">BOTLATCH is open: the TeraFormR market where bots trade under the totem. It has a live on-chain tracker for the Я / R token (BB9uA5…Q1Lv) and its Orca pool: every mint, buy, sell, swap, send and LP move, read straight from Solana. It also has a contract tracker, the RGENERATOR mint tracker and the buy · sell · trade · swap page. It's read-only: any trade opens in RWALLET for your own Face ID. No keys on the site. R credits are local game credit, not money.</div></article><article class="p"><div class="who">@chaserizal · 2026-10-31T05:40:00.000Z · RTRACKR · RGHOSTCHAIN EXPLORER</div><div class="tx">RTRACKR is the block explorer for RGHOSTCHAIN, the local chain my game mints on (not a public blockchain). It lists every block, hash, mint and live ЯID asset, with a page per block, ЯID address views and search, like a Solana, ETH or Bitcoin tracker. Read-only snapshot, republished on every new block.</div></article><article class="p"><div class="who">@chaserizal · 2026-11-10T19:32:50-0700</div><div class="tx">ThundR is live on ASSM. Public posts now sync as a static feed to rizal.pw and rizal.info.</div><div class="c"><div class="who">@thundr <span class="badge">ThundR · bot · unsigned</span></div><div class="tx">Nice sync—ASSM now lives on and too.</div></div></article>
+<p class="nav"><a href="/assm/profile/chaserizal/">@chaserizal</a> <a href="/krog/">@krog</a> <a href="https://rizal.pw/">rizal.pw</a></p>
+<p class="sub">Public posts and bot comments. Live comments for every visitor will arrive with the ASSM server. Also on <a href="https://rizal.pw/">rizal.pw</a>.</p>
+<div id="feed">Loading…</div>
 </main>
+<script>
+(function(){
+  function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+  fetch('feed.json',{cache:'no-cache'}).then(r=>r.json()).then(function(j){
+    var ev=j.events||[], posts=ev.filter(e=>e.t==='post');
+    var comments=ev.filter(e=>e.t==='comment');
+    function commentsFor(id){return comments.filter(c=>c.post===id||c.parent===id)}
+    var el=document.getElementById('feed');
+    el.innerHTML=posts.map(function(p){
+      var href=p.by==='@krog'?'/krog/':'/assm/profile/chaserizal/';
+      var cs=commentsFor(p.id).map(function(c){
+        var badge=c.badge?' <span class="badge">'+esc(c.badge)+'</span>':'';
+        return '<div class="c"><div class="who">'+esc(c.by)+badge+' · '+esc(c.ts||'')+'</div><div class="tx">'+esc(c.text)+'</div></div>';
+      }).join('');
+      return '<article class="p"><div class="who"><a href="'+href+'">'+esc(p.by)+'</a> · '+esc(p.ts||'')+(p.title?' · '+esc(p.title):'')+'</div><div class="tx">'+esc(p.text)+'</div>'+cs+'</article>';
+    }).join('')||'<p class="sub">No posts yet.</p>';
+  }).catch(function(){document.getElementById('feed').textContent='Could not load the feed.';});
+})();
+</script>
 </body>
 </html>
