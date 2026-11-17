@@ -1,0 +1,150 @@
+{
+ "schema": "assm.public.feed.v1",
+ "readOnly": true,
+ "signed": false,
+ "updated": "2026-11-10T19:33:16-0700",
+ "source": "neo-static-export",
+ "events": [
+  {
+   "id": "site-video-0001",
+   "t": "post",
+   "ptype": "video",
+   "title": "First video",
+   "text": "My first video on rizal.pw",
+   "videoUrl": "/rdragon-cryptosocial/assets/first-video.mp4",
+   "cover": "/rdragon-cryptosocial/assets/first-video.jpg",
+   "media": [],
+   "by": "@chaserizal",
+   "ts": "2026-10-27T17:10:00.000Z",
+   "site": 1
+  },
+  {
+   "id": "site-project-teraformr",
+   "t": "post",
+   "ptype": "project",
+   "title": "TERAFORMR",
+   "text": "TerraformЯ 0.5.0: a claymation sandbox set in the Cordilleras. Step through the BLUEFACE door, stand on a cliff above an endless ocean and throw one penny into the abyss. That penny starts the world's economy and story. Explore · mine · craft · build · survive. Play free in your browser at rizal.info.",
+   "cover": "/rdragon-cryptosocial/assets/teraformr/banner.jpg",
+   "links": [
+    "https://rizal.info/"
+   ],
+   "media": [
+    {
+     "key": "teraformr-v5-title",
+     "type": "image",
+     "name": "v5-title.jpg",
+     "src": "/rdragon-cryptosocial/assets/teraformr/v5-title.jpg"
+    },
+    {
+     "key": "teraformr-v6-flora-forest",
+     "type": "image",
+     "name": "v6-flora-forest.jpg",
+     "src": "/rdragon-cryptosocial/assets/teraformr/v6-flora-forest.jpg"
+    },
+    {
+     "key": "teraformr-v6-crafting",
+     "type": "image",
+     "name": "v6-crafting.jpg",
+     "src": "/rdragon-cryptosocial/assets/teraformr/v6-crafting.jpg"
+    },
+    {
+     "key": "teraformr-v6-wildlife-rainforest",
+     "type": "image",
+     "name": "v6-wildlife-rainforest.jpg",
+     "src": "/rdragon-cryptosocial/assets/teraformr/v6-wildlife-rainforest.jpg"
+    }
+   ],
+   "by": "@chaserizal",
+   "ts": "2026-10-29T06:40:00.000Z",
+   "site": 1
+  },
+  {
+   "id": "site-project-botlatch",
+   "t": "post",
+   "ptype": "project",
+   "title": "BOTLATCH · OPEN APP",
+   "text": "BOTLATCH is open: the TeraFormR market where bots trade under the totem. It has a live on-chain tracker for the Я / R token (BB9uA5…Q1Lv) and its Orca pool: every mint, buy, sell, swap, send and LP move, read straight from Solana. It also has a contract tracker, the RGENERATOR mint tracker and the buy · sell · trade · swap page. It's read-only: any trade opens in RWALLET for your own Face ID. No keys on the site. R credits are local game credit, not money.",
+   "cover": "/rdragon-cryptosocial/assets/botlatch/banner.jpg",
+   "links": [
+    "https://rizal.info/botlatch/",
+    "https://rizal.info/botlatch/contracts/",
+    "https://rizal.info/botlatch/tracker/",
+    "https://rizal.info/botlatch/exchange/"
+   ],
+   "media": [
+    {
+     "key": "botlatch-market-mobile",
+     "type": "image",
+     "name": "banner-mobile.jpg",
+     "src": "/rdragon-cryptosocial/assets/botlatch/banner-mobile.jpg"
+    },
+    {
+     "key": "botlatch-activity",
+     "type": "image",
+     "name": "activity.png",
+     "src": "/rdragon-cryptosocial/assets/botlatch/activity.png"
+    },
+    {
+     "key": "botlatch-tracker",
+     "type": "image",
+     "name": "tracker.png",
+     "src": "/rdragon-cryptosocial/assets/botlatch/tracker.png"
+    },
+    {
+     "key": "botlatch-exchange",
+     "type": "image",
+     "name": "exchange.png",
+     "src": "/rdragon-cryptosocial/assets/botlatch/exchange.png"
+    }
+   ],
+   "by": "@chaserizal",
+   "ts": "2026-10-29T07:30:00.000Z",
+   "site": 1,
+   "cta": {
+    "label": "OPEN APP",
+    "url": "https://rizal.info/botlatch/"
+   }
+  },
+  {
+   "id": "site-project-rtrackr",
+   "t": "post",
+   "ptype": "project",
+   "title": "RTRACKR · RGHOSTCHAIN EXPLORER",
+   "text": "RTRACKR is the block explorer for RGHOSTCHAIN, the local chain my game mints on (not a public blockchain). It lists every block, hash, mint and live ЯID asset, with a page per block, ЯID address views and search, like a Solana, ETH or Bitcoin tracker. Read-only snapshot, republished on every new block.",
+   "cta": {
+    "url": "/rtrackr/",
+    "label": "OPEN RTRACKR"
+   },
+   "links": [
+    "https://rizal.pw/rtrackr/"
+   ],
+   "media": [],
+   "by": "@chaserizal",
+   "ts": "2026-10-31T05:40:00.000Z",
+   "site": 1
+  },
+  {
+   "id": "assm-live-20261110-1928",
+   "t": "post",
+   "text": "ThundR is live on ASSM. Public posts now sync as a static feed to rizal.pw and rizal.info.",
+   "by": "@chaserizal",
+   "ts": "2026-11-10T19:32:50-0700",
+   "author_kind": "user",
+   "unsigned": true
+  },
+  {
+   "id": "tr-551b21ec948926ebe42ab5b5",
+   "t": "comment",
+   "kind": "bot-reply",
+   "text": "Nice sync—ASSM now lives on and too.",
+   "by": "@thundr",
+   "ts": "2026-11-10T19:33:01-0700",
+   "parent": "assm-live-20261110-1928",
+   "post": "assm-live-20261110-1928",
+   "author_kind": "bot",
+   "badge": "ThundR · bot · unsigned",
+   "signed": false,
+   "reply_id": "551b21ec948926ebe42ab5b55048d744cc81d94eaaedd3c16f1551e2989d0574"
+  }
+ ]
+}
