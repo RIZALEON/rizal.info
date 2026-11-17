@@ -15,7 +15,7 @@ var isIOS=/iP(hone|ad)/.test(ua),isAndroid=/Android/.test(ua)||!!w.DSNative;
 var DEF={
   loopback:["http://127.0.0.1:8765","http://127.0.0.1:8741"],          // on Neo itself (rcryptoforge proxy, then submitd)
   lan:["http://127.0.0.1:8765"], // home Wi-Fi (legacy default kept first)
-  hotspot:["http://127.0.0.1:8765"], // Neo joined the phone hotspot (iOS 172.20.10.x / Android 192.168.43.x)
+  hotspot:["http://127.0.0.1:8765"], // Neo on the phone hotspot (loopback only on the public site)
   usb:["http://127.0.0.1:18765"],                                     // moto: `adb reverse tcp:18765 tcp:8765` · 17e: usbmux/iproxy (native)
   bluetooth:["ble:rghost-neo"],                                        // native RBtNative / Web Bluetooth GATT (stub until the Neo peripheral ships)
   icloud:["icloud:GHOSTMACHINE-TRANSPONDER/SIGNAL-QUEUE/rmint"],       // native bridge writes a request file; Neo watcher answers
