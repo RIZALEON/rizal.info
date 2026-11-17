@@ -3,46 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ASSM public feed · rizal.info</title>
-<style>
-body{margin:0;background:#0b0b0b;color:#e8e8e8;font:16px/1.45 -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif}
-main{max-width:720px;margin:0 auto;padding:24px}
-h1{font-size:20px;font-weight:600;color:#ffd43b}
-.sub{opacity:.7;font-size:13px;margin:0 0 20px}
-.nav a{color:#ffd43b;margin-right:14px}
-.p{border-top:1px solid #333;padding:16px 0}
-.who{font-size:13px;opacity:.8;margin-bottom:6px}
-.tx{white-space:pre-wrap}
-.c{margin:10px 0 0 12px;padding:8px 10px;border-left:3px solid #ffd43b;background:rgba(255,212,59,.07);border-radius:6px}
-.badge{display:inline-block;margin-left:6px;padding:0 6px;border:1px solid #ffd43b;border-radius:9px;font:10px Menlo,Consolas,monospace;color:#ffd43b}
-a{color:#ffd43b}
-</style>
+<meta name="theme-color" content="#000000">
+<title>KROG · Anti Social Social Media</title>
+<link rel="canonical" href="https://rizal.info/krog/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assm/profile/rdragon-cryptosocial.css">
 </head>
-<body>
-<main>
-<h1>Anti Social Social Media · public feed</h1>
-<p class="nav"><a href="/assm/profile/chaserizal/">@chaserizal</a> <a href="/krog/">@krog</a> <a href="https://rizal.pw/">rizal.pw</a></p>
-<p class="sub">Public posts and bot comments. Live comments for every visitor will arrive with the ASSM server. Also on <a href="https://rizal.pw/">rizal.pw</a>.</p>
-<div id="feed">Loading…</div>
-</main>
-<script>
-(function(){
-  function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
-  fetch('feed.json',{cache:'no-cache'}).then(r=>r.json()).then(function(j){
-    var ev=j.events||[], posts=ev.filter(e=>e.t==='post');
-    var comments=ev.filter(e=>e.t==='comment');
-    function commentsFor(id){return comments.filter(c=>c.post===id||c.parent===id)}
-    var el=document.getElementById('feed');
-    el.innerHTML=posts.map(function(p){
-      var href=p.by==='@krog'?'/krog/':'/assm/profile/chaserizal/';
-      var cs=commentsFor(p.id).map(function(c){
-        var badge=c.badge?' <span class="badge">'+esc(c.badge)+'</span>':'';
-        return '<div class="c"><div class="who">'+esc(c.by)+badge+' · '+esc(c.ts||'')+'</div><div class="tx">'+esc(c.text)+'</div></div>';
-      }).join('');
-      return '<article class="p"><div class="who"><a href="'+href+'">'+esc(p.by)+'</a> · '+esc(p.ts||'')+(p.title?' · '+esc(p.title):'')+'</div><div class="tx">'+esc(p.text)+'</div>'+cs+'</article>';
-    }).join('')||'<p class="sub">No posts yet.</p>';
-  }).catch(function(){document.getElementById('feed').textContent='Could not load the feed.';});
-})();
-</script>
+<body class="csp-public">
+<noscript>
+  <p style="color:#39ff14;font:14px monospace;padding:24px">KROG · Anti Social Social Media, the public ASSM profile. The canonical page is <a href="/krog/" style="color:#39ff14">/krog/</a>. Open this page with JavaScript to see the feed and comments. Live comments for every visitor will arrive with the ASSM server.</p>
+</noscript>
+<div id="mount"></div>
+<script>window.PUBLIC_PROFILE={handle:"@krog",wall:"@krog",profileUrl:"/krog/data/profile.json",feedUrl:"/assm/feed.json",visitor:true,bot:true};</script>
+<script src="/assm/profile/public-profile.js"></script>
 </body>
 </html>

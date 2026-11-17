@@ -185,7 +185,7 @@
     var link = prof.link ? '<div>link · <a href="' + esc(prof.link) + '">' + esc(prof.link) + "</a></div>" : "";
     var joined = prof.joined ? '<div>joined · ' + esc(when(prof.joined)) + "</div>" : "";
     var other = bot
-      ? '<a href="/assm/profile/chaserizal/">@chaserizal</a>'
+      ? '<a href="https://rizal.pw/">@chaserizal</a>'
       : '<a href="/krog/">@krog</a>';
     return '<div id="csp-panel" class="csp-visitor">' +
       '<div class="csp-top">' + esc(prof.title || "Anti Social Social Media") + "</div>" +
@@ -205,7 +205,7 @@
             (followOn ? "✓ Following" : "+ Follow") + "</button>" +
         "</div></div></div>" +
       '<div class="csp-ff"><span><b>0</b> Following</span> · <span><b>0</b> Followers</span></div>' +
-      '<div class="csp-public-links">Public profiles · ' + other + ' · <a href="/assm/">ASSM feed</a> · <a href="https://rizal.pw/">rizal.pw</a></div>' +
+      '<div class="csp-public-links">Public profiles · ' + other + ' · <a href="/krog/">@krog</a> · <a href="/assm/">ASSM</a> · <a href="/assm/feed.json">feed</a></div>' +
       '<div class="csp-tabs">' +
         ["Posts","Video","Articles","Projects","Kubo"].map(function (t, i) {
           return '<span data-a="tab" data-t="' + t + '"' + (i === 0 ? ' class="on"' : "") + ">" + t + "</span>";
