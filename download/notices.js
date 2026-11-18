@@ -1,4 +1,4 @@
-/* Я NOTIFICATIONS — update alerts from the signed ЯLAB appcasts (rlab-appcast.v1).
+/* Я NOTIFICATIONS — update alerts from the signed ЯLAB appcasts (rlab-appcast.v1). Rtor-gated: only owner-signed feeds (.sig.json) count.
    Used by /potlatch/ (hub tile) and /download/. Read-only: no keys, no installs, no tracking.
    Feeds: same-origin /<app>/appcast.json → https://rizal.info → https://rizal.pw (GitHub Pages serves CORS *).
    "New" = the feed version differs from the one this browser last marked seen (localStorage only). */
@@ -9,14 +9,27 @@
   function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
   function seen(){try{return JSON.parse(localStorage.getItem(SEEN_KEY)||'{}')||{};}catch(e){return {};}}
   function saveSeen(m){try{localStorage.setItem(SEEN_KEY,JSON.stringify(m));}catch(e){}}
+  var gateP=null;
+  function load1(src){return new Promise(function(ok){var d=document,x=d.createElement('script');x.src=src;x.onload=function(){ok(true)};x.onerror=function(){ok(false)};(d.head||d.documentElement).appendChild(x);});}
+  function gate(){
+    if(gateP) return gateP;
+    gateP=(window.RTOR_VERIFY?Promise.resolve():load1('/rtor/rtor-verify.js?v=1.0')).then(function(){
+      return window.RTOR_FEEDS?null:load1('/rtor/rtor-feeds.js?v=1.0');
+    }).then(function(){return (window.RTOR_VERIFY&&window.RTOR_FEEDS)?window.RTOR_FEEDS:null;});
+    return gateP;
+  }
   function fetchFeed(key){
     var i=0;
     function next(err){
       if(i>=ORIGINS.length) return Promise.reject(err||new Error('no feed reachable'));
       var base=ORIGINS[i++], url=base+'/'+key+'/appcast.json';
-      return fetch(url+'?t='+Date.now(),{cache:'no-store'}).then(function(r){
-        if(!r.ok) throw new Error('HTTP '+r.status);
-        return r.json();
+      // Rtor gate (Rizal YES 2026-11-18): a feed counts only when <feed>.sig.json verifies (owner key e5833fdfbbfe). Unsigned = refused.
+      return gate().then(function(F){
+        if(!F) throw new Error('refused: signature missing/invalid (Rtor verify not loaded)');
+        return F.fetchVerifiedJSON(url+'?t='+Date.now(),F.expectFor(url));
+      }).then(function(v){
+        if(!v.ok) throw new Error(v.status+' ('+v.why+')');
+        return v.json;
       }).then(function(j){
         if(!j||String(j.schema||'').indexOf('rlab-appcast.')!==0) throw new Error('not an rlab appcast');
         return {feed:j,url:url,origin:base||location.origin};
@@ -44,7 +57,7 @@
   function alertsFrom(results){
     var s=seen(), first=!Object.keys(s).length, list=[];
     results.forEach(function(r){
-      if(!r.ok){list.push({key:r.app.key,kind:'error',title:r.app.title,text:'Feed unreachable · '+r.error,parts:[]});return;}
+      if(!r.ok){list.push({key:r.app.key,kind:'error',title:r.app.title,text:(/^refused:/.test(r.error)?'Update '+r.error:'Feed unreachable · '+r.error),parts:[]});return;}
       var parts=[], changed=[];
       entries(r.feed).forEach(function(x){
         var id=r.app.key+':'+x.platform, v=x.e.version||'?', file=x.e.kind==='app'&&x.e.url;

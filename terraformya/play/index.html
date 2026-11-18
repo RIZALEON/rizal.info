@@ -19,6 +19,7 @@ html,body{margin:0;height:100%;background:#0b0f1a;overflow:hidden;touch-action:n
 <body>
 <canvas id="canvas" tabindex="0">TerraformЯ needs WebGL 2.</canvas>
 <div id="status"><b>TerraformЯ</b><span id="msg">opening egg · offline</span><div id="bar"><div id="fill"></div></div></div>
+<script src="/rtor/rtor-verify.js?v=1.0"></script>
 <script src="egg-version.js"></script>
 <script src="blobs/index.js"></script>
 <script>
@@ -83,14 +84,28 @@ html,body{margin:0;height:100%;background:#0b0f1a;overflow:hidden;touch-action:n
       var u = new URL(url, location.href);
       if (realFetch && u.origin === location.origin && (location.protocol === "https:" || location.protocol === "http:")) {
         if (u.pathname === "/terraformya/updates/manifest.json") {
-          return realFetch(u.href, { cache: "no-store", credentials: "omit" }).then(function (r) {
-            return r.clone().json().then(function (m) {
+          // Rtor gate (Rizal YES 2026-11-18): the manifest is used ONLY when manifest.json.sig.json verifies against Rizal's
+          // pinned owner key (e5833fdfbbfe) for these exact bytes. Unsigned/invalid = refused, and no patch is allowed.
+          // Uses realFetch directly (not RTOR_VERIFY.fetchVerified) so this shim is not re-entered.
+          allowedPatches = {};
+          var V = self.RTOR_VERIFY, STATUS = "refused: signature missing/invalid";
+          if (!V) { console.warn("[terraformya] update manifest " + STATUS + " (Rtor verify not loaded)"); return Promise.reject(new TypeError("update manifest " + STATUS)); }
+          var sigUrl = u.origin + u.pathname + ".sig.json";
+          return Promise.all([realFetch(u.href, { cache: "no-store", credentials: "omit" }), realFetch(sigUrl, { cache: "no-store", credentials: "omit" })]).then(function (rs) {
+            if (!rs[0].ok || !rs[1].ok) throw new TypeError("update manifest " + STATUS + " (missing file or signature)");
+            return Promise.all([rs[0].arrayBuffer(), rs[1].json()]);
+          }).then(function (x) {
+            var buf = x[0], entry = x[1];
+            if (!entry || entry.id !== "terraformya-updates" || entry.name !== "manifest.json") throw new TypeError("update manifest " + STATUS + " (signature is for another file)");
+            return V.verifyItemBytes(entry, new Uint8Array(buf)).then(function (v) {
+              if (!v.ok) throw new TypeError("update manifest " + STATUS + " (" + v.why + ")");
+              var m = JSON.parse(new TextDecoder().decode(new Uint8Array(buf)));
               ((m && m.patches) || []).forEach(function (p) {
                 if (p && /^[a-z0-9_.-]+\.pck$/i.test(String(p.url || "")) && /^[0-9a-f]{64}$/.test(String(p.sha256 || ""))) allowedPatches["/terraformya/updates/" + p.url] = p.sha256;
               });
-              return r;
-            }, function () { return r; });
-          });
+              return new Response(buf, { status: 200, headers: { "Content-Type": "application/json", "Content-Length": String(buf.byteLength) } });
+            });
+          }).catch(function (e) { allowedPatches = {}; console.warn("[terraformya] " + (e && e.message || e)); throw e instanceof TypeError ? e : new TypeError("update manifest " + STATUS); });
         }
         if (allowedPatches[u.pathname]) {
           var want = allowedPatches[u.pathname];
