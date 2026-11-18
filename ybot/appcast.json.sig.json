@@ -1,0 +1,10 @@
+{
+ "kind": "appcast",
+ "id": "appcast.ybot",
+ "version": "sha-f447a1c355af",
+ "name": "appcast.json",
+ "size": 23266,
+ "sha256": "f447a1c355afc114fa5b31b7dd16f6ba6190a0b8d9f023a3cf02561347d3f5eb",
+ "ed25519": "/Fmnubgy9h8deafNHcNRrm5dSgqE/CaA8d63jgeh4x+E+leVzsCz0iKu7moU2X+opDOpA8AjnHFYpk9ZbzpqAQ==",
+ "keyId": "e5833fdfbbfe"
+}

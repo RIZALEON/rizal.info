@@ -1,0 +1,10 @@
+{
+ "kind": "appcast",
+ "id": "appcast.rbowzr",
+ "version": "sha-347b4ebabf85",
+ "name": "appcast.json",
+ "size": 21997,
+ "sha256": "347b4ebabf8556ce649fd05d3d99e52908f1a7e01544dbd2b0dffeaf66ab4928",
+ "ed25519": "Hw5vi+ymSy7byWaZJIE8i1M2Q3HGRcLJKnQ8gfkve1ZiuDuNKY5VFQ7oyo0sSLk+pGHgDH4lwr9J5fu0C3n1Cg==",
+ "keyId": "e5833fdfbbfe"
+}
