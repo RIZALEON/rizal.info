@@ -14,3 +14,11 @@ Gates added:
 2. Rizal commands ThundR to sign it: `~/R/ЯLAB/RTOR/tools/rtor-sign-request --signer thundr --app rizal.pw-version --version <v> --file rdragon-version.json --owner-command "<Rizal: rizal.pw-version <v> <sha12>>" --queue`,
    approve with Face ID on the 17e, copy the produced `rdragon-version.json.sig.json` next to the manifest. Same for `rwallet-v6/RWALLET.sha256`.
 3. Merge to main (Rizal) → Pages deploys. Every later manifest change needs a new signature (CI does not sign).
+
+## 2026-11-18 · rtor-finish-20261118 (ЯBOWZR for Rizal, local branch, not pushed)
+Parity with rizal.pw branch rtor-finish-20261118:
+- `/rtor/feed.json` (`rtor-feed-v1`, `node tests/rtor/make-feed.cjs`): the public files on rizal.info (RWALLET.sha256, appcasts,
+  TerraformЯ updates manifest + GIZMO pack), each with size + sha256 + expected `.sig.json`, all `signed: false` / pending.
+  No inline signatures, so rtor-verify.js refuses every entry until Rizal's sidecar is published. Test: `node tests/rtor/test-feed.cjs`.
+- `/rtor/join/`: same join page as rizal.pw → ЯLOGIN option 3 on https://rizal.pw/login/options/ (Face ID approval, no secrets).
+- `/rtor/` links both; the homepage now loads `/rtor/rtor-verify.js` like rizal.pw does. rizal.info still has no rdiag in-page updater.
