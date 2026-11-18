@@ -22,3 +22,14 @@ Parity with rizal.pw branch rtor-finish-20261118:
   No inline signatures, so rtor-verify.js refuses every entry until Rizal's sidecar is published. Test: `node tests/rtor/test-feed.cjs`.
 - `/rtor/join/`: same join page as rizal.pw → ЯLOGIN option 3 on https://rizal.pw/login/options/ (Face ID approval, no secrets).
 - `/rtor/` links both; the homepage now loads `/rtor/rtor-verify.js` like rizal.pw does. rizal.info still has no rdiag in-page updater.
+
+### Feed consumers are now gated (Rizal YES 2026-11-18, 1:49 PM MT)
+- `/rtor/rtor-feeds.js` (`RTOR_FEEDS`): `fetchVerifiedJSON(url)` returns JSON only when `<url>.sig.json` verifies under the pinned
+  owner key for that exact file (id + name, ids = `tests/rtor/make-feed.cjs`). Otherwise `{refused, status:"refused: signature missing/invalid", why}`.
+- Wired: `/rtor/` checks every feed entry live; `terraformya/updates/` lists patches only from a verified manifest.
+  rizal.info also: the TerraformЯ egg (`terraformya/play/`) allows `.pck` patches only from a verified `manifest.json`, and
+  `download/notices.js` (ЯBOWZR / ЯBOT update alerts) uses only signed appcasts.
+- Native apps (RDRAGON SelfUpdate, ThundR, RCODE, GIZMO) read these appcasts outside this repo; they need the same
+  sidecar rule in RtorVerify.swift / rtor_verify.py on their own branches (not done here).
+- Until Rizal's sidecars are placed, all of these show "refused: signature missing/invalid" on purpose.
+- rizal.info appcasts synced from rizal.pw (byte-identical, so one signature serves both sites). rizal.info-only feeds kept: `dragon-skull/appcast.json`, `rbowzr/appcast.json`, `ybot/appcast.json`.
