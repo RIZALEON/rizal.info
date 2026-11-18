@@ -1,4 +1,4 @@
-> rizal.info copy (2026-11-17, Rizal GO t246u): same verifier as rizal.pw /rtor (from rizal.pw 9a09187/bac2a66). rizal.info has no in-page updater (rdiag) and still serves RWALLET 0.1.4, so nothing here is gated yet; pages can load `/rtor/rtor-verify.js` and call `RTOR.fetchVerified(url)` (needs `url.sig.json`).
+> rizal.info copy (2026-11-17, Rizal GO t246u): same verifier as rizal.pw /rtor (from rizal.pw 9a09187/bac2a66). On rizal.info the RWALLET v6 drift gate is wired (rwallet-v6/, needs `RWALLET.sha256.sig.json`); rizal.info has no in-page updater (rdiag), so the version-manifest gate below applies to rizal.pw only.
 
 # /rtor — Rtor verify for rizal.pw (branch rtor-verify-20261117)
 `rtor-verify.js` pins Rizal's release public key (keyId prefix e5833fdf, same key as RDRAGON SelfUpdate / rlab-sign / ЯCASKET).
