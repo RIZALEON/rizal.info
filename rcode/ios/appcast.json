@@ -1,0 +1,38 @@
+{
+ "product": "RCODE",
+ "id": "rcode-ios",
+ "platform": "ios",
+ "bundleId": "info.rizal.rcode",
+ "lineVersion": "1.0",
+ "latest": {
+  "version": "1.0",
+  "build": 9,
+  "commit": "94fa435",
+  "repo": "RIZALEON/RCODE (private), branch offline-model (PR #1, merge 2bc612f)",
+  "appTreeSha256": "b1b6247b3a3793967074478a9933e9fe77fee2680558fa64890b3366bca7d4c8",
+  "appTreeFiles": 17,
+  "modelSha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+  "notes": "Build 9: Rtor 1.2 GHOSTKEY: updates accepted only when signed by the GHOSTKEY root e5833fdfbbfe or an ACTIVE ring member (iPhone 17e, MacBook Neo, Moto Android; /rtor/ghostkey.json 2026-11-18.2) for seed/leech/send/receive. Unsigned, label-only, unknown, revoked and tampered items are refused. Built on build 7 (Mint Approve screen, Rtor update check, fused Qwen3-1.7B, add/delete/rename chats, honesty rule).",
+  "trust": {
+   "ring": "/rtor/ghostkey.json",
+   "ringVersion": "2026-11-18.2",
+   "root": "e5833fdfbbfe",
+   "members": 6,
+   "ops": [
+    "seed",
+    "leech",
+    "send",
+    "receive"
+   ]
+  }
+ },
+ "install": {
+  "method": "devicectl from the Neo seeder (iOS apps cannot replace themselves)",
+  "tool": "tools/rtor-install-rcode.py install <RCODE.app> (RCODE repo): accepts Rizal's e5833fdfbbfe sidecar, or an owner-command-authorized feed entry whose size+sha256 match this file; then checks the app-tree sha256 and build and runs xcrun devicectl device install app",
+  "itms-services": "none (no OTA manifest exists)"
+ },
+ "signed": false,
+ "note": "No cryptographic signature (none was made or faked). Build 9 itself refuses label-only entries, so this listing is informational until it is signed by the GHOSTKEY root or a ring member. The feed entry carries this file's exact size and sha256.",
+ "updated": "2026-11-18T18:30:00-07:00",
+ "authorization": "owner-command"
+}
