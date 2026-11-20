@@ -1,0 +1,52 @@
+{
+  "schema": "terraformr.instant-mint.relays.v1",
+  "note": "2026-11-20 t203u. Relays carry only already-sealed mints (rsign_seal.sig). No LAN IP literals. Token gate stays on :8796 (chat). 127.0.0.1:8765 was dead (RTOR binds LAN only) and was removed. Live chain: Neo loopback hybrid + RTOR mDNS :8765. website/rpipe/rsync/reggs/https/usb write lists stay empty until those transponders exist (staged adapters in RMINT-HYBRID/devices/mint-adapters).",
+  "rsync": {
+    "chain": [],
+    "rpipe": [],
+    "botlatch": [],
+    "status": "staged"
+  },
+  "website": {
+    "chain": [],
+    "rpipe": [],
+    "botlatch": [],
+    "status": "staged",
+    "read_rtrackr": [
+      "https://rizal.pw/rtrackr/data/rghostchain.json"
+    ]
+  },
+  "rklowd": {
+    "chain": [],
+    "rpipe": [],
+    "botlatch": [],
+    "status": "staged"
+  },
+  "rtor": {
+    "chain": [
+      "http://rizals-MacBook-Neo.local:8765"
+    ],
+    "rpipe": [],
+    "botlatch": [],
+    "status": "live"
+  },
+  "reggs": {
+    "chain": [],
+    "rpipe": [],
+    "botlatch": [],
+    "status": "staged"
+  },
+  "https": {
+    "chain": [],
+    "rpipe": [],
+    "botlatch": [],
+    "status": "staged"
+  },
+  "usb": {
+    "chain": [],
+    "rpipe": [],
+    "botlatch": [],
+    "status": "staged"
+  },
+  "neo_peer": true
+}
