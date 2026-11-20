@@ -13,9 +13,9 @@ function cachedReply(path){var h=statusCache(path);if(!h||!h.data)return null;va
 var loc=w.location||{},host=String(loc.hostname||""),ua=String((w.navigator||{}).userAgent||"");
 var isIOS=/iP(hone|ad)/.test(ua),isAndroid=/Android/.test(ua)||!!w.DSNative;
 var DEF={
-  loopback:["http://127.0.0.1:8765","http://127.0.0.1:8741"],          // on Neo itself (rcryptoforge proxy, then submitd)
-  lan:["http://127.0.0.1:8765"], // home Wi-Fi (legacy default kept first)
-  hotspot:["http://127.0.0.1:8765"], // Neo on the phone hotspot (loopback only on the public site)
+  loopback:["http://127.0.0.1:8766","http://127.0.0.1:8741"],          // on Neo itself (rcryptoforge proxy, then submitd)
+  lan:["http://rizals-MacBook-Neo.local:8765"], // home Wi-Fi (legacy default kept first)
+  hotspot:["http://rizals-MacBook-Neo.local:8765"], // Neo on the phone hotspot (loopback only on the public site)
   usb:["http://127.0.0.1:18765"],                                     // moto: `adb reverse tcp:18765 tcp:8765` · 17e: usbmux/iproxy (native)
   bluetooth:["ble:rghost-neo"],                                        // native RBtNative / Web Bluetooth GATT (stub until the Neo peripheral ships)
   icloud:["icloud:GHOSTMACHINE-TRANSPONDER/SIGNAL-QUEUE/rmint"],       // native bridge writes a request file; Neo watcher answers
@@ -69,12 +69,18 @@ function call(path,method,body,opt){opt=opt||{};var c=cfg(),tries=[];
 function enqueueOp(path,body,kind){if(/\/(rghostchain|rmint)\/(submit|bind)$/.test(path)){var s=body&&((body.asset&&body.asset.rsign_seal)||body.rsign_seal);if(!(s&&s.sig))return false}
   var q=ls(OK)||[];q.push({path:path,body:body,kind:kind||"op",t:new Date().toISOString()});ls(OK,q);emit("rmint:queue",{size:q.length});return true}
 function ops(){return ls(OK)||[]}
-function flush(){var q=ops(),keep=[],out=[];if(!q.length)return Promise.resolve({sent:0,left:0});
-  return q.reduce(function(p,it){return p.then(function(){return call(it.path,"POST",it.body).then(function(r){if(r.net)keep.push(it);else out.push({kind:it.kind,ok:!!r.ok,r:r})})})},Promise.resolve())
+/* 20261120 t203u/t213u: flush already-sealed queue items when a relay is reachable. Unsigned mints stay queued. */
+function isMintPath(p){return /\/(rghostchain|rmint)\/submit$/.test(p)}
+function sealed(body){var s=body&&((body.asset&&body.asset.rsign_seal)||body.rsign_seal);return !!(s&&s.sig)}
+function flush(approvals){approvals=approvals||{};var q=ops(),keep=[],out=[];if(!q.length)return Promise.resolve({sent:0,left:0});
+  return q.reduce(function(p,it){return p.then(function(){var b=it.body;if(isMintPath(it.path)){if(!sealed(b)){keep.push(it);return}var a=(b&&b.asset)||{},t=approvals[a.rid]||approvals[a.item]||"";b=Object.assign({},b,{flush:"sealed-queue"});if(t)b.rizal_command=t}
+  return call(it.path,"POST",b).then(function(r){if(r.net)keep.push(it);else out.push({kind:it.kind,ok:!!r.ok,r:r})})})},Promise.resolve())
    .then(function(){ls(OK,keep);emit("rmint:queue",{size:keep.length});return{sent:out.length,left:keep.length,results:out}})}
 function probe(){return call("/rghostchain/health","GET").then(function(r){return{online:!r.net,link:r._link||"offline",via:r._via||null,height:r.real_blocks}})}
 function status(){return{last:last,queued_ops:ops().length,queued_mints:(ls(QK)||[]).length,cfg:cfg()}}
 var flushing=false;function auto(){if(flushing)return;flushing=true;flush().then(function(){if(w.RMINT_ONETAP&&w.RMINT_ONETAP.retry)return w.RMINT_ONETAP.retry()}).catch(function(){}).then(function(){flushing=false})}
-if(w.addEventListener){w.addEventListener("online",auto);w.addEventListener("focus",auto)}setInterval(auto,30000);
-w.RMINT_TRANSPORT={version:"1.0.1",call:call,flush:flush,probe:probe,status:status,cfg:cfg,setCfg:setCfg,enqueue:enqueueOp,ops:ops,cached:cachedReply,ORDER:ORDER,DEFAULTS:DEF};
+function onOnline(){probe().then(function(s){if(s.online)auto()})}
+if(typeof window!=="undefined"){window.addEventListener("online",onOnline);window.addEventListener("focus",onOnline)}
+setInterval(onOnline, 30000);
+w.RMINT_TRANSPORT={version:"1.1",call:call,flush:flush,probe:probe,status:status,cfg:cfg,setCfg:setCfg,enqueue:enqueueOp,ops:ops,cached:cachedReply,ORDER:ORDER,DEFAULTS:DEF};
 })(typeof window!=="undefined"?window:globalThis);
