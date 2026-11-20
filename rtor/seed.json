@@ -3,16 +3,27 @@
  "label": "unsigned listing",
  "note": "Unsigned index of this site's signed Rtor catalog. Trust nothing here: fetch each url and its sig over HTTPS and verify with the pinned GHOSTKEY root e5833fdfbbfe.",
  "site": "https://rizal.info",
- "generated": "2026-11-19T03:16:07Z",
+ "generated": "2026-11-20T17:10:18Z",
  "feed": {
   "url": "https://rizal.info/rtor/feed.json",
   "sig": "https://rizal.info/rtor/feed.json.sig.json",
-  "sha256": "8bc1ee37ea22656134d9c084afe5dfdc27028cd960a0397d57322b89447d6e30",
-  "size": 12864,
-  "version": "20261118-2",
+  "sha256": "f54159f9141b5ec9e4e7db00ed3159430166465ca5fbacfe041e3995e58db402",
+  "size": 13858,
+  "version": "20261118-5",
   "keyId": "e5833fdfbbfe"
  },
  "entries": [
+  {
+   "id": "rizal.pw-version",
+   "kind": "web",
+   "version": "20261117-bac2a66",
+   "name": "rdragon-version.json",
+   "url": "https://rizal.info/rdragon-version.json",
+   "sig": "https://rizal.info/rdragon-version.json.sig.json",
+   "sha256": "44e2f1d203301d95ac2848038681365125a0573dc6302b3ded3a0aa9a6a9b5ca",
+   "size": 2386,
+   "keyId": "e5833fdfbbfe"
+  },
   {
    "id": "rwallet-v6",
    "kind": "web",
@@ -44,17 +55,6 @@
    "sig": "https://rizal.info/dragon-skull/android/appcast.json.sig.json",
    "sha256": "acd07e5420d28f909bfb7f9d0ddf3eba27765b0194e94d171b8df4490fc3161f",
    "size": 1495,
-   "keyId": "e5833fdfbbfe"
-  },
-  {
-   "id": "appcast.dragon-skull",
-   "kind": "appcast",
-   "version": "sha-939bc48dfb28",
-   "name": "appcast.json",
-   "url": "https://rizal.info/dragon-skull/appcast.json",
-   "sig": "https://rizal.info/dragon-skull/appcast.json.sig.json",
-   "sha256": "939bc48dfb283f09741711029081d23d65f49b608cc2edb8bd477584acf765dc",
-   "size": 5145,
    "keyId": "e5833fdfbbfe"
   },
   {
@@ -201,17 +201,6 @@
    "keyId": "e5833fdfbbfe"
   },
   {
-   "id": "appcast.rbowzr",
-   "kind": "appcast",
-   "version": "sha-347b4ebabf85",
-   "name": "appcast.json",
-   "url": "https://rizal.info/rbowzr/appcast.json",
-   "sig": "https://rizal.info/rbowzr/appcast.json.sig.json",
-   "sha256": "347b4ebabf8556ce649fd05d3d99e52908f1a7e01544dbd2b0dffeaf66ab4928",
-   "size": 21997,
-   "keyId": "e5833fdfbbfe"
-  },
-  {
    "id": "appcast.rbowzr.ios",
    "kind": "appcast",
    "version": "20261024T190500Z",
@@ -267,25 +256,14 @@
    "keyId": "e5833fdfbbfe"
   },
   {
-   "id": "appcast.ybot",
-   "kind": "appcast",
-   "version": "sha-f447a1c355af",
-   "name": "appcast.json",
-   "url": "https://rizal.info/ybot/appcast.json",
-   "sig": "https://rizal.info/ybot/appcast.json.sig.json",
-   "sha256": "f447a1c355afc114fa5b31b7dd16f6ba6190a0b8d9f023a3cf02561347d3f5eb",
-   "size": 23266,
-   "keyId": "e5833fdfbbfe"
-  },
-  {
    "id": "terraformya-updates",
    "kind": "web",
-   "version": "20261030T173649Z",
+   "version": "20261102T092840Z",
    "name": "manifest.json",
    "url": "https://rizal.info/terraformya/updates/manifest.json",
    "sig": "https://rizal.info/terraformya/updates/manifest.json.sig.json",
-   "sha256": "ffb6a3058c94a9dd8ff354aea28186d457fd40c364aee4968c5d0cf209871f15",
-   "size": 460,
+   "sha256": "81c50107289cf02c1882f9fec055741b980a902ed4bf75631688fa01e2941225",
+   "size": 1528,
    "keyId": "e5833fdfbbfe"
   },
   {
@@ -297,6 +275,50 @@
    "sig": "https://rizal.info/terraformya/updates/gizmo_species_nx112-1.0.0.pck.sig.json",
    "sha256": "e4e9602f7ce6cb1ff01b8d2cbadc6e7e0ddf5c3613b65d9bdad12f96df141da9",
    "size": 11636,
+   "keyId": "e5833fdfbbfe"
+  },
+  {
+   "id": "rtrackr.rghostchain",
+   "kind": "data",
+   "version": "sha-72fdf4a69a78",
+   "name": "rghostchain.json",
+   "url": "https://rizal.info/rtrackr/data/rghostchain.json",
+   "sig": "https://rizal.info/rtrackr/data/rghostchain.json.sig.json",
+   "sha256": "72fdf4a69a784e22124eabe9ae8b41a60972a83834280947311fff1196732e70",
+   "size": 6950529,
+   "keyId": "e5833fdfbbfe"
+  },
+  {
+   "id": "rtrackr.rtoken",
+   "kind": "data",
+   "version": "sha-a7b44d624d52",
+   "name": "rtoken.json",
+   "url": "https://rizal.info/rtrackr/data/rtoken.json",
+   "sig": "https://rizal.info/rtrackr/data/rtoken.json.sig.json",
+   "sha256": "a7b44d624d5212731aa7bbed1d4af1c2714e7c7349405537e68cc8bb5003483d",
+   "size": 10385,
+   "keyId": "e5833fdfbbfe"
+  },
+  {
+   "id": "rtrackr.token-pool",
+   "kind": "data",
+   "version": "sha-dc382c767f04",
+   "name": "token-pool.json",
+   "url": "https://rizal.info/rtrackr/data/token-pool.json",
+   "sig": "https://rizal.info/rtrackr/data/token-pool.json.sig.json",
+   "sha256": "dc382c767f04fdb5efb283e0abaa23937e71866a1d7190fc7477ded32c80369d",
+   "size": 2803,
+   "keyId": "e5833fdfbbfe"
+  },
+  {
+   "id": "rtrackr.economy-rates",
+   "kind": "data",
+   "version": "sha-a400608635b3",
+   "name": "economy-rates.json",
+   "url": "https://rizal.info/rtrackr/data/economy-rates.json",
+   "sig": "https://rizal.info/rtrackr/data/economy-rates.json.sig.json",
+   "sha256": "a400608635b3030ecca04c91b52d1b6231316502c5379b6598a79420d94fd418",
+   "size": 3254,
    "keyId": "e5833fdfbbfe"
   }
  ]
