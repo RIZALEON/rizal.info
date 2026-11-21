@@ -3,13 +3,13 @@
  "label": "unsigned listing",
  "note": "Unsigned index of this site's signed Rtor catalog. Trust nothing here: fetch each url and its sig over HTTPS and verify with the pinned GHOSTKEY root e5833fdfbbfe.",
  "site": "https://rizal.info",
- "generated": "2026-11-20T17:10:18Z",
+ "generated": "2026-11-21T18:37:21Z",
  "feed": {
   "url": "https://rizal.info/rtor/feed.json",
   "sig": "https://rizal.info/rtor/feed.json.sig.json",
-  "sha256": "f54159f9141b5ec9e4e7db00ed3159430166465ca5fbacfe041e3995e58db402",
-  "size": 13858,
-  "version": "20261118-5",
+  "sha256": "ed7661ee1bacce9a48058813f2f99487b92cbf256ad3bfa4ea7d20e17145bf06",
+  "size": 13942,
+  "version": "20261120-2",
   "keyId": "e5833fdfbbfe"
  },
  "entries": [
