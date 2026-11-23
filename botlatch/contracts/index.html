@@ -22,4 +22,4 @@ fetch('contracts.json',{cache:'no-store'}).then(r=>r.json()).then(function(R){va
  fetch('https://api.geckoterminal.com/api/v2/networks/solana/pools/HSroUxVkVKv6kX9e7dpoJtbFqKcL76BzrkuuRfAGxs9s').then(r=>r.json()).then(function(j){var a=j.data.attributes;px=+a.base_token_price_usd;cv();var k=document.querySelector('#r-token .k');if(k)k.textContent='GeckoTerminal live · price $'+px+' · liquidity $'+(+a.reserve_in_usd).toFixed(2)}).catch(function(){});
 });
 document.getElementById('rwBtn').onclick=function(){BOTLATCH_RWALLET.connect(document.getElementById('rw'),'BB9uA5BuacDnWyDf5Npc9nMb9yFbyThsNrQPBYJ5Q1Lv')};
-</script><script src="/botlatch/botlatch-activity.js"></script><script src="/botlatch/botlatch-theme.js"></script></body></html>
+</script><script src="/botlatch/botlatch-activity.js"></script><script src="/botlatch/botlatch-theme.js"></script><script src="/botlatch/botlatch-game-listings.js?v=20261122g10"></script></body></html>
